@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SL Resistance Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <p class="eyebrow">Synthetic Lethal Clinical Trials</p>
+      <h1>Resistance Prediction Explorer</h1>
+      <p id="meta-info" class="meta"></p>
+    </header>
+
+    <section class="search-panel">
+      <label for="global-search">Global Search (therapy pair or gene)</label>
+      <div class="search-row">
+        <input id="global-search" type="text" placeholder="e.g. BRCA1 + ATR or BRCA1" autocomplete="off">
+        <button id="search-button" type="button">Search</button>
+      </div>
+      <p id="search-feedback" class="feedback"></p>
+    </section>
+
+    <section class="tabs" aria-label="Views">
+      <button id="therapy-tab" class="tab active" type="button" data-target="therapy-view">Therapy Pair</button>
+      <button id="gene-tab" class="tab" type="button" data-target="gene-view">Gene</button>
+    </section>
+
+    <section id="therapy-view" class="panel active" aria-live="polite">
+      <div class="toolbar">
+        <label for="therapy-select">Select therapy pair</label>
+        <select id="therapy-select"></select>
+      </div>
+      <p id="therapy-topn-note" class="topn-note"></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Gene</th>
+            <th>PredictionScore</th>
+          </tr>
+        </thead>
+        <tbody id="therapy-results"></tbody>
+      </table>
+    </section>
+
+    <section id="gene-view" class="panel" aria-live="polite">
+      <div class="toolbar">
+        <label for="gene-select">Select gene</label>
+        <select id="gene-select"></select>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>TherapyPair</th>
+            <th>Rank</th>
+            <th>PredictionScore</th>
+          </tr>
+        </thead>
+        <tbody id="gene-results"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

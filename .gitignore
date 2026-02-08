@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# R
+.Rhistory
+
+# Codex
+.codex/
+
+# build output
+dist/
+
+# Python
+__pycache__/
+*.pyc
+
+*.csv
