@@ -1,0 +1,176 @@
+{
+  "BUB1": [
+    {
+      "therapy_id": "CCNE1__PKMYT1",
+      "display": "CCNE1 _PKMYT1",
+      "rank": 49,
+      "score": 0.04899656507585834
+    },
+    {
+      "therapy_id": "KRAS_PLK1",
+      "display": "KRAS + PLK1",
+      "rank": 77,
+      "score": 0.06544813360889379
+    },
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 88,
+      "score": 0.05580747161788653
+    },
+    {
+      "therapy_id": "BRCA1_ATR",
+      "display": "BRCA1 + ATR",
+      "rank": 197,
+      "score": 0.05203253320078566
+    }
+  ],
+  "CDH1": [
+    {
+      "therapy_id": "FBXW7__PKMYT1",
+      "display": "FBXW7 _PKMYT1",
+      "rank": 146,
+      "score": 0.036321772772256594
+    }
+  ],
+  "CDK12": [
+    {
+      "therapy_id": "MSH6_WRN",
+      "display": "MSH6 + WRN",
+      "rank": 48,
+      "score": 0.06985317339911626
+    }
+  ],
+  "CXXC1": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 170,
+      "score": 0.027049071809414328
+    }
+  ],
+  "FANCF": [
+    {
+      "therapy_id": "BRCA1_ATR",
+      "display": "BRCA1 + ATR",
+      "rank": 84,
+      "score": 0.06851132225613102
+    },
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 87,
+      "score": 0.0650013941947278
+    },
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 121,
+      "score": 0.049766087465657534
+    },
+    {
+      "therapy_id": "BRCA1_PARG",
+      "display": "BRCA1 + PARG",
+      "rank": 198,
+      "score": 0.04391594769832636
+    }
+  ],
+  "HRAS": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 71,
+      "score": 0.03606274608778742
+    },
+    {
+      "therapy_id": "KRAS_PLK1",
+      "display": "KRAS + PLK1",
+      "rank": 167,
+      "score": 0.05365909175456293
+    }
+  ],
+  "KIFC1": [
+    {
+      "therapy_id": "CCNE1__PKMYT1",
+      "display": "CCNE1 _PKMYT1",
+      "rank": 50,
+      "score": 0.04881089117973465
+    },
+    {
+      "therapy_id": "FBXW7__PKMYT1",
+      "display": "FBXW7 _PKMYT1",
+      "rank": 163,
+      "score": 0.03513700624969214
+    }
+  ],
+  "RPA3": [
+    {
+      "therapy_id": "BRCA1_ATR",
+      "display": "BRCA1 + ATR",
+      "rank": 123,
+      "score": 0.061091556808001865
+    },
+    {
+      "therapy_id": "FBXW7__PKMYT1",
+      "display": "FBXW7 _PKMYT1",
+      "rank": 153,
+      "score": 0.035909443203001316
+    },
+    {
+      "therapy_id": "ATM_ATR",
+      "display": "ATM + ATR",
+      "rank": 181,
+      "score": 0.051496701031492384
+    }
+  ],
+  "SETD1B": [
+    {
+      "therapy_id": "MTAP_PRMT5",
+      "display": "MTAP + PRMT5",
+      "rank": 153,
+      "score": 0.04405419653026185
+    }
+  ],
+  "SNAI1": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 92,
+      "score": 0.03347451550608305
+    }
+  ],
+  "ZMYND8": [
+    {
+      "therapy_id": "KRAS_PLK1",
+      "display": "KRAS + PLK1",
+      "rank": 161,
+      "score": 0.05400801481326506
+    }
+  ],
+  "ZNF217": [
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 93,
+      "score": 0.06345278259933428
+    },
+    {
+      "therapy_id": "BRCA1_PARG",
+      "display": "BRCA1 + PARG",
+      "rank": 94,
+      "score": 0.05273411881392012
+    },
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 115,
+      "score": 0.050765056476907724
+    },
+    {
+      "therapy_id": "BRCA1_ATR",
+      "display": "BRCA1 + ATR",
+      "rank": 189,
+      "score": 0.05277575242534936
+    }
+  ]
+}

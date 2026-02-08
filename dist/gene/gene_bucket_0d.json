@@ -1,0 +1,202 @@
+{
+  "AKIRIN2": [
+    {
+      "therapy_id": "MTAP_PRMT5",
+      "display": "MTAP + PRMT5",
+      "rank": 180,
+      "score": 0.043117853256556406
+    }
+  ],
+  "ANLN": [
+    {
+      "therapy_id": "FBXW7__PKMYT1",
+      "display": "FBXW7 _PKMYT1",
+      "rank": 37,
+      "score": 0.05169844578036915
+    },
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 96,
+      "score": 0.05409807555105277
+    },
+    {
+      "therapy_id": "BRCA1_PARG",
+      "display": "BRCA1 + PARG",
+      "rank": 141,
+      "score": 0.04796825030760001
+    },
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 168,
+      "score": 0.05473658813314988
+    },
+    {
+      "therapy_id": "CCNE1__PKMYT1",
+      "display": "CCNE1 _PKMYT1",
+      "rank": 180,
+      "score": 0.03330524995550098
+    }
+  ],
+  "ASCC3": [
+    {
+      "therapy_id": "MSH6_WRN",
+      "display": "MSH6 + WRN",
+      "rank": 66,
+      "score": 0.06505433540499915
+    },
+    {
+      "therapy_id": "ATM_ATR",
+      "display": "ATM + ATR",
+      "rank": 109,
+      "score": 0.060804833352424516
+    },
+    {
+      "therapy_id": "BRCA1_ATR",
+      "display": "BRCA1 + ATR",
+      "rank": 151,
+      "score": 0.05784793449870212
+    }
+  ],
+  "AXIN1": [
+    {
+      "therapy_id": "KRAS_PLK1",
+      "display": "KRAS + PLK1",
+      "rank": 9,
+      "score": 0.10303666043192301
+    },
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 89,
+      "score": 0.03365852375335339
+    },
+    {
+      "therapy_id": "FBXW7__PKMYT1",
+      "display": "FBXW7 _PKMYT1",
+      "rank": 96,
+      "score": 0.04099669969761044
+    }
+  ],
+  "CCND3": [
+    {
+      "therapy_id": "CCNE1__PKMYT1",
+      "display": "CCNE1 _PKMYT1",
+      "rank": 168,
+      "score": 0.034250476696815434
+    }
+  ],
+  "CDC26": [
+    {
+      "therapy_id": "CCNE1__PKMYT1",
+      "display": "CCNE1 _PKMYT1",
+      "rank": 134,
+      "score": 0.03705968944893126
+    }
+  ],
+  "DDRGK1": [
+    {
+      "therapy_id": "FBXW7__PKMYT1",
+      "display": "FBXW7 _PKMYT1",
+      "rank": 44,
+      "score": 0.04969528405942904
+    }
+  ],
+  "DNM1L": [
+    {
+      "therapy_id": "CCNE1__PKMYT1",
+      "display": "CCNE1 _PKMYT1",
+      "rank": 98,
+      "score": 0.0397541563101891
+    }
+  ],
+  "ERBB3": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 29,
+      "score": 0.046279767667937906
+    }
+  ],
+  "FANCB": [
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 110,
+      "score": 0.061364140501344214
+    }
+  ],
+  "FOXA1": [
+    {
+      "therapy_id": "FBXW7__PKMYT1",
+      "display": "FBXW7 _PKMYT1",
+      "rank": 93,
+      "score": 0.041449205048172295
+    },
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 115,
+      "score": 0.030827522109058716
+    }
+  ],
+  "FOXO3": [
+    {
+      "therapy_id": "KRAS_PLK1",
+      "display": "KRAS + PLK1",
+      "rank": 174,
+      "score": 0.05302870252971893
+    }
+  ],
+  "GATA3": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 154,
+      "score": 0.02791659352114029
+    }
+  ],
+  "RAD51C": [
+    {
+      "therapy_id": "BRCA1_PARG",
+      "display": "BRCA1 + PARG",
+      "rank": 78,
+      "score": 0.05500029431040525
+    },
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 130,
+      "score": 0.05764495039660372
+    },
+    {
+      "therapy_id": "BRCA1_ATR",
+      "display": "BRCA1 + ATR",
+      "rank": 140,
+      "score": 0.05893515938357273
+    },
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 154,
+      "score": 0.04621652667435498
+    }
+  ],
+  "RECQL": [
+    {
+      "therapy_id": "MSH6_WRN",
+      "display": "MSH6 + WRN",
+      "rank": 113,
+      "score": 0.05297677234294442
+    }
+  ],
+  "RPS4Y2": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 34,
+      "score": 0.045118507694473266
+    }
+  ]
+}

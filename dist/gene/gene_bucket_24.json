@@ -1,0 +1,198 @@
+{
+  "AHR": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 153,
+      "score": 0.02791825663459216
+    },
+    {
+      "therapy_id": "MTAP_PRMT5",
+      "display": "MTAP + PRMT5",
+      "rank": 178,
+      "score": 0.04314650506863773
+    }
+  ],
+  "ANAPC13": [
+    {
+      "therapy_id": "CCNE1__PKMYT1",
+      "display": "CCNE1 _PKMYT1",
+      "rank": 159,
+      "score": 0.03462236264392669
+    }
+  ],
+  "CDC7": [
+    {
+      "therapy_id": "CCNE1__PKMYT1",
+      "display": "CCNE1 _PKMYT1",
+      "rank": 71,
+      "score": 0.04346748205425264
+    }
+  ],
+  "EIF2S1": [
+    {
+      "therapy_id": "MTAP_PRMT5",
+      "display": "MTAP + PRMT5",
+      "rank": 71,
+      "score": 0.051796746063164006
+    }
+  ],
+  "EP300": [
+    {
+      "therapy_id": "ATM_ATR",
+      "display": "ATM + ATR",
+      "rank": 1,
+      "score": 0.1607015260640416
+    },
+    {
+      "therapy_id": "BRCA1_ATR",
+      "display": "BRCA1 + ATR",
+      "rank": 2,
+      "score": 0.1482405206637231
+    },
+    {
+      "therapy_id": "FBXW7__PKMYT1",
+      "display": "FBXW7 _PKMYT1",
+      "rank": 6,
+      "score": 0.08691263653689309
+    },
+    {
+      "therapy_id": "MTAP_PRMT5",
+      "display": "MTAP + PRMT5",
+      "rank": 9,
+      "score": 0.08224682334093715
+    },
+    {
+      "therapy_id": "MSH6_WRN",
+      "display": "MSH6 + WRN",
+      "rank": 14,
+      "score": 0.08925890543196227
+    },
+    {
+      "therapy_id": "BRCA1_PARG",
+      "display": "BRCA1 + PARG",
+      "rank": 22,
+      "score": 0.07720322964963756
+    },
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 23,
+      "score": 0.04889639016896358
+    },
+    {
+      "therapy_id": "KRAS_PLK1",
+      "display": "KRAS + PLK1",
+      "rank": 25,
+      "score": 0.08726526665192035
+    },
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 34,
+      "score": 0.06913131507632923
+    },
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 64,
+      "score": 0.07167129357669345
+    },
+    {
+      "therapy_id": "CCNE1__PKMYT1",
+      "display": "CCNE1 _PKMYT1",
+      "rank": 72,
+      "score": 0.043370357667999355
+    }
+  ],
+  "KLF3": [
+    {
+      "therapy_id": "KRAS_PLK1",
+      "display": "KRAS + PLK1",
+      "rank": 79,
+      "score": 0.06448057346629653
+    }
+  ],
+  "PDCD6IP": [
+    {
+      "therapy_id": "MSH6_WRN",
+      "display": "MSH6 + WRN",
+      "rank": 77,
+      "score": 0.060908167654481815
+    }
+  ],
+  "PFAS": [
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 190,
+      "score": 0.05295650428295006
+    }
+  ],
+  "PTPN11": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 93,
+      "score": 0.03336451479530044
+    }
+  ],
+  "RASA1": [
+    {
+      "therapy_id": "KRAS_PLK1",
+      "display": "KRAS + PLK1",
+      "rank": 106,
+      "score": 0.06016969565307843
+    }
+  ],
+  "RFC5": [
+    {
+      "therapy_id": "ATM_ATR",
+      "display": "ATM + ATR",
+      "rank": 100,
+      "score": 0.061842352846714604
+    },
+    {
+      "therapy_id": "MSH6_WRN",
+      "display": "MSH6 + WRN",
+      "rank": 142,
+      "score": 0.04989419310276095
+    }
+  ],
+  "SMG1": [
+    {
+      "therapy_id": "CCNE1__PKMYT1",
+      "display": "CCNE1 _PKMYT1",
+      "rank": 189,
+      "score": 0.03285839999855717
+    }
+  ],
+  "SNAI2": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 76,
+      "score": 0.03565264929899739
+    },
+    {
+      "therapy_id": "MTAP_PRMT5",
+      "display": "MTAP + PRMT5",
+      "rank": 163,
+      "score": 0.04369905217625246
+    }
+  ],
+  "SUPT20H": [
+    {
+      "therapy_id": "KRAS_PLK1",
+      "display": "KRAS + PLK1",
+      "rank": 114,
+      "score": 0.058669775120977326
+    },
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 196,
+      "score": 0.02571014351769674
+    }
+  ]
+}

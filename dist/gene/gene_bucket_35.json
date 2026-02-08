@@ -1,0 +1,116 @@
+{
+  "ATXN3": [
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 69,
+      "score": 0.07033398440216601
+    }
+  ],
+  "CHTF18": [
+    {
+      "therapy_id": "CCNE1__PKMYT1",
+      "display": "CCNE1 _PKMYT1",
+      "rank": 110,
+      "score": 0.03868894875611133
+    },
+    {
+      "therapy_id": "FBXW7__PKMYT1",
+      "display": "FBXW7 _PKMYT1",
+      "rank": 148,
+      "score": 0.03623569387891073
+    },
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 162,
+      "score": 0.04534330183320864
+    },
+    {
+      "therapy_id": "BRCA1_ATR",
+      "display": "BRCA1 + ATR",
+      "rank": 187,
+      "score": 0.05287708362079862
+    }
+  ],
+  "CSK": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 51,
+      "score": 0.041247076384404786
+    }
+  ],
+  "KDM5C": [
+    {
+      "therapy_id": "MTAP_PRMT5",
+      "display": "MTAP + PRMT5",
+      "rank": 58,
+      "score": 0.05383444480473421
+    }
+  ],
+  "MCMBP": [
+    {
+      "therapy_id": "MSH6_WRN",
+      "display": "MSH6 + WRN",
+      "rank": 44,
+      "score": 0.0713713539857723
+    }
+  ],
+  "POTEI": [
+    {
+      "therapy_id": "MTAP_PRMT5",
+      "display": "MTAP + PRMT5",
+      "rank": 139,
+      "score": 0.04537201220985
+    }
+  ],
+  "PTTG1": [
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 167,
+      "score": 0.04500608712622742
+    },
+    {
+      "therapy_id": "CCNE1__PKMYT1",
+      "display": "CCNE1 _PKMYT1",
+      "rank": 177,
+      "score": 0.033373860245185155
+    }
+  ],
+  "TUBE1": [
+    {
+      "therapy_id": "KRAS_PLK1",
+      "display": "KRAS + PLK1",
+      "rank": 193,
+      "score": 0.05160350561231388
+    }
+  ],
+  "XRCC2": [
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 53,
+      "score": 0.061996266753256805
+    },
+    {
+      "therapy_id": "BRCA1_PARG",
+      "display": "BRCA1 + PARG",
+      "rank": 68,
+      "score": 0.056742096341191234
+    },
+    {
+      "therapy_id": "ATM_ATR",
+      "display": "ATM + ATR",
+      "rank": 101,
+      "score": 0.061764493972215506
+    },
+    {
+      "therapy_id": "BRCA1_ATR",
+      "display": "BRCA1 + ATR",
+      "rank": 126,
+      "score": 0.06054278241795584
+    }
+  ]
+}

@@ -1,0 +1,6281 @@
+[
+  {
+    "symbol": "ABL1",
+    "aliases": [
+      "ABL1",
+      "abl1"
+    ]
+  },
+  {
+    "symbol": "ABRAXAS1",
+    "aliases": [
+      "ABRAXAS1",
+      "abraxas1"
+    ]
+  },
+  {
+    "symbol": "ACD",
+    "aliases": [
+      "ACD",
+      "acd"
+    ]
+  },
+  {
+    "symbol": "ACTB",
+    "aliases": [
+      "ACTB",
+      "actb"
+    ]
+  },
+  {
+    "symbol": "ADRM1",
+    "aliases": [
+      "ADRM1",
+      "adrm1"
+    ]
+  },
+  {
+    "symbol": "ADSL",
+    "aliases": [
+      "ADSL",
+      "adsl"
+    ]
+  },
+  {
+    "symbol": "AFDN",
+    "aliases": [
+      "AFDN",
+      "afdn"
+    ]
+  },
+  {
+    "symbol": "AGAP6",
+    "aliases": [
+      "AGAP6",
+      "agap6"
+    ]
+  },
+  {
+    "symbol": "AGPS",
+    "aliases": [
+      "AGPS",
+      "agps"
+    ]
+  },
+  {
+    "symbol": "AHCY",
+    "aliases": [
+      "AHCY",
+      "ahcy"
+    ]
+  },
+  {
+    "symbol": "AHR",
+    "aliases": [
+      "AHR",
+      "ahr"
+    ]
+  },
+  {
+    "symbol": "AKIRIN2",
+    "aliases": [
+      "AKIRIN2",
+      "akirin2"
+    ]
+  },
+  {
+    "symbol": "AKT1",
+    "aliases": [
+      "AKT1",
+      "akt1"
+    ]
+  },
+  {
+    "symbol": "ALDH18A1",
+    "aliases": [
+      "ALDH18A1",
+      "aldh18a1"
+    ]
+  },
+  {
+    "symbol": "ALK",
+    "aliases": [
+      "ALK",
+      "alk"
+    ]
+  },
+  {
+    "symbol": "AMBRA1",
+    "aliases": [
+      "AMBRA1",
+      "ambra1"
+    ]
+  },
+  {
+    "symbol": "ANAPC1",
+    "aliases": [
+      "ANAPC1",
+      "anapc1"
+    ]
+  },
+  {
+    "symbol": "ANAPC11",
+    "aliases": [
+      "ANAPC11",
+      "anapc11"
+    ]
+  },
+  {
+    "symbol": "ANAPC13",
+    "aliases": [
+      "ANAPC13",
+      "anapc13"
+    ]
+  },
+  {
+    "symbol": "ANAPC2",
+    "aliases": [
+      "ANAPC2",
+      "anapc2"
+    ]
+  },
+  {
+    "symbol": "ANAPC4",
+    "aliases": [
+      "ANAPC4",
+      "anapc4"
+    ]
+  },
+  {
+    "symbol": "ANLN",
+    "aliases": [
+      "ANLN",
+      "anln"
+    ]
+  },
+  {
+    "symbol": "APC",
+    "aliases": [
+      "APC",
+      "apc"
+    ]
+  },
+  {
+    "symbol": "APEX1",
+    "aliases": [
+      "APEX1",
+      "apex1"
+    ]
+  },
+  {
+    "symbol": "APEX2",
+    "aliases": [
+      "APEX2",
+      "apex2"
+    ]
+  },
+  {
+    "symbol": "APTX",
+    "aliases": [
+      "APTX",
+      "aptx"
+    ]
+  },
+  {
+    "symbol": "ARCN1",
+    "aliases": [
+      "ARCN1",
+      "arcn1"
+    ]
+  },
+  {
+    "symbol": "ARF6",
+    "aliases": [
+      "ARF6",
+      "arf6"
+    ]
+  },
+  {
+    "symbol": "ARHGAP11A",
+    "aliases": [
+      "ARHGAP11A",
+      "arhgap11a"
+    ]
+  },
+  {
+    "symbol": "ARID1A",
+    "aliases": [
+      "ARID1A",
+      "arid1a"
+    ]
+  },
+  {
+    "symbol": "ARID1B",
+    "aliases": [
+      "ARID1B",
+      "arid1b"
+    ]
+  },
+  {
+    "symbol": "ARID2",
+    "aliases": [
+      "ARID2",
+      "arid2"
+    ]
+  },
+  {
+    "symbol": "ARIH2",
+    "aliases": [
+      "ARIH2",
+      "arih2"
+    ]
+  },
+  {
+    "symbol": "ARNT",
+    "aliases": [
+      "ARNT",
+      "arnt"
+    ]
+  },
+  {
+    "symbol": "ASCC3",
+    "aliases": [
+      "ASCC3",
+      "ascc3"
+    ]
+  },
+  {
+    "symbol": "ASF1A",
+    "aliases": [
+      "ASF1A",
+      "asf1a"
+    ]
+  },
+  {
+    "symbol": "ASF1B",
+    "aliases": [
+      "ASF1B",
+      "asf1b"
+    ]
+  },
+  {
+    "symbol": "ASH2L",
+    "aliases": [
+      "ASH2L",
+      "ash2l"
+    ]
+  },
+  {
+    "symbol": "ASNS",
+    "aliases": [
+      "ASNS",
+      "asns"
+    ]
+  },
+  {
+    "symbol": "ASPM",
+    "aliases": [
+      "ASPM",
+      "aspm"
+    ]
+  },
+  {
+    "symbol": "ATAD5",
+    "aliases": [
+      "ATAD5",
+      "atad5"
+    ]
+  },
+  {
+    "symbol": "ATM",
+    "aliases": [
+      "ATM",
+      "atm"
+    ]
+  },
+  {
+    "symbol": "ATMIN",
+    "aliases": [
+      "ATMIN",
+      "atmin"
+    ]
+  },
+  {
+    "symbol": "ATP23",
+    "aliases": [
+      "ATP23",
+      "atp23"
+    ]
+  },
+  {
+    "symbol": "ATR",
+    "aliases": [
+      "ATR",
+      "atr"
+    ]
+  },
+  {
+    "symbol": "ATRIP",
+    "aliases": [
+      "ATRIP",
+      "atrip"
+    ]
+  },
+  {
+    "symbol": "ATRX",
+    "aliases": [
+      "ATRX",
+      "atrx"
+    ]
+  },
+  {
+    "symbol": "ATXN3",
+    "aliases": [
+      "ATXN3",
+      "atxn3"
+    ]
+  },
+  {
+    "symbol": "AUNIP",
+    "aliases": [
+      "AUNIP",
+      "aunip"
+    ]
+  },
+  {
+    "symbol": "AURKA",
+    "aliases": [
+      "AURKA",
+      "aurka"
+    ]
+  },
+  {
+    "symbol": "AURKB",
+    "aliases": [
+      "AURKB",
+      "aurkb"
+    ]
+  },
+  {
+    "symbol": "AXIN1",
+    "aliases": [
+      "AXIN1",
+      "axin1"
+    ]
+  },
+  {
+    "symbol": "BABAM2",
+    "aliases": [
+      "BABAM2",
+      "babam2"
+    ]
+  },
+  {
+    "symbol": "BAP1",
+    "aliases": [
+      "BAP1",
+      "bap1"
+    ]
+  },
+  {
+    "symbol": "BARD1",
+    "aliases": [
+      "BARD1",
+      "bard1"
+    ]
+  },
+  {
+    "symbol": "BAZ1B",
+    "aliases": [
+      "BAZ1B",
+      "baz1b"
+    ]
+  },
+  {
+    "symbol": "BCAR1",
+    "aliases": [
+      "BCAR1",
+      "bcar1"
+    ]
+  },
+  {
+    "symbol": "BCL2",
+    "aliases": [
+      "BCL2",
+      "bcl2"
+    ]
+  },
+  {
+    "symbol": "BCL2L1",
+    "aliases": [
+      "BCL2L1",
+      "bcl2l1"
+    ]
+  },
+  {
+    "symbol": "BECN1",
+    "aliases": [
+      "BECN1",
+      "becn1"
+    ]
+  },
+  {
+    "symbol": "BIRC5",
+    "aliases": [
+      "BIRC5",
+      "birc5"
+    ]
+  },
+  {
+    "symbol": "BIRC6",
+    "aliases": [
+      "BIRC6",
+      "birc6"
+    ]
+  },
+  {
+    "symbol": "BLM",
+    "aliases": [
+      "BLM",
+      "blm"
+    ]
+  },
+  {
+    "symbol": "BLTP2",
+    "aliases": [
+      "BLTP2",
+      "bltp2"
+    ]
+  },
+  {
+    "symbol": "BMI1",
+    "aliases": [
+      "BMI1",
+      "bmi1"
+    ]
+  },
+  {
+    "symbol": "BMPR1A",
+    "aliases": [
+      "BMPR1A",
+      "bmpr1a"
+    ]
+  },
+  {
+    "symbol": "BOD1L1",
+    "aliases": [
+      "BOD1L1",
+      "bod1l1"
+    ]
+  },
+  {
+    "symbol": "BORA",
+    "aliases": [
+      "BORA",
+      "bora"
+    ]
+  },
+  {
+    "symbol": "BRAF",
+    "aliases": [
+      "BRAF",
+      "braf"
+    ]
+  },
+  {
+    "symbol": "BRAP",
+    "aliases": [
+      "BRAP",
+      "brap"
+    ]
+  },
+  {
+    "symbol": "BRCA1",
+    "aliases": [
+      "BRCA1",
+      "brca1"
+    ]
+  },
+  {
+    "symbol": "BRCA2",
+    "aliases": [
+      "BRCA2",
+      "brca2"
+    ]
+  },
+  {
+    "symbol": "BRD4",
+    "aliases": [
+      "BRD4",
+      "brd4"
+    ]
+  },
+  {
+    "symbol": "BRD9",
+    "aliases": [
+      "BRD9",
+      "brd9"
+    ]
+  },
+  {
+    "symbol": "BRIP1",
+    "aliases": [
+      "BRIP1",
+      "brip1"
+    ]
+  },
+  {
+    "symbol": "BRPF1",
+    "aliases": [
+      "BRPF1",
+      "brpf1"
+    ]
+  },
+  {
+    "symbol": "BSG",
+    "aliases": [
+      "BSG",
+      "bsg"
+    ]
+  },
+  {
+    "symbol": "BTAF1",
+    "aliases": [
+      "BTAF1",
+      "btaf1"
+    ]
+  },
+  {
+    "symbol": "BTRC",
+    "aliases": [
+      "BTRC",
+      "btrc"
+    ]
+  },
+  {
+    "symbol": "BUB1",
+    "aliases": [
+      "BUB1",
+      "bub1"
+    ]
+  },
+  {
+    "symbol": "BUB1B",
+    "aliases": [
+      "BUB1B",
+      "bub1b"
+    ]
+  },
+  {
+    "symbol": "BUB3",
+    "aliases": [
+      "BUB3",
+      "bub3"
+    ]
+  },
+  {
+    "symbol": "CAND1",
+    "aliases": [
+      "CAND1",
+      "cand1"
+    ]
+  },
+  {
+    "symbol": "CAPRIN1",
+    "aliases": [
+      "CAPRIN1",
+      "caprin1"
+    ]
+  },
+  {
+    "symbol": "CARM1",
+    "aliases": [
+      "CARM1",
+      "carm1"
+    ]
+  },
+  {
+    "symbol": "CASC3",
+    "aliases": [
+      "CASC3",
+      "casc3"
+    ]
+  },
+  {
+    "symbol": "CASP3",
+    "aliases": [
+      "CASP3",
+      "casp3"
+    ]
+  },
+  {
+    "symbol": "CBFB",
+    "aliases": [
+      "CBFB",
+      "cbfb"
+    ]
+  },
+  {
+    "symbol": "CCDC28A",
+    "aliases": [
+      "CCDC28A",
+      "ccdc28a"
+    ]
+  },
+  {
+    "symbol": "CCDC6",
+    "aliases": [
+      "CCDC6",
+      "ccdc6"
+    ]
+  },
+  {
+    "symbol": "CCNA2",
+    "aliases": [
+      "CCNA2",
+      "ccna2"
+    ]
+  },
+  {
+    "symbol": "CCNB1",
+    "aliases": [
+      "CCNB1",
+      "ccnb1"
+    ]
+  },
+  {
+    "symbol": "CCNB2",
+    "aliases": [
+      "CCNB2",
+      "ccnb2"
+    ]
+  },
+  {
+    "symbol": "CCNC",
+    "aliases": [
+      "CCNC",
+      "ccnc"
+    ]
+  },
+  {
+    "symbol": "CCND1",
+    "aliases": [
+      "CCND1",
+      "ccnd1"
+    ]
+  },
+  {
+    "symbol": "CCND2",
+    "aliases": [
+      "CCND2",
+      "ccnd2"
+    ]
+  },
+  {
+    "symbol": "CCND3",
+    "aliases": [
+      "CCND3",
+      "ccnd3"
+    ]
+  },
+  {
+    "symbol": "CCNE1",
+    "aliases": [
+      "CCNE1",
+      "ccne1"
+    ]
+  },
+  {
+    "symbol": "CCNE2",
+    "aliases": [
+      "CCNE2",
+      "ccne2"
+    ]
+  },
+  {
+    "symbol": "CCNF",
+    "aliases": [
+      "CCNF",
+      "ccnf"
+    ]
+  },
+  {
+    "symbol": "CCNH",
+    "aliases": [
+      "CCNH",
+      "ccnh"
+    ]
+  },
+  {
+    "symbol": "CCT5",
+    "aliases": [
+      "CCT5",
+      "cct5"
+    ]
+  },
+  {
+    "symbol": "CD44",
+    "aliases": [
+      "CD44",
+      "cd44"
+    ]
+  },
+  {
+    "symbol": "CDC20",
+    "aliases": [
+      "CDC20",
+      "cdc20"
+    ]
+  },
+  {
+    "symbol": "CDC23",
+    "aliases": [
+      "CDC23",
+      "cdc23"
+    ]
+  },
+  {
+    "symbol": "CDC25A",
+    "aliases": [
+      "CDC25A",
+      "cdc25a"
+    ]
+  },
+  {
+    "symbol": "CDC25B",
+    "aliases": [
+      "CDC25B",
+      "cdc25b"
+    ]
+  },
+  {
+    "symbol": "CDC25C",
+    "aliases": [
+      "CDC25C",
+      "cdc25c"
+    ]
+  },
+  {
+    "symbol": "CDC26",
+    "aliases": [
+      "CDC26",
+      "cdc26"
+    ]
+  },
+  {
+    "symbol": "CDC42",
+    "aliases": [
+      "CDC42",
+      "cdc42"
+    ]
+  },
+  {
+    "symbol": "CDC45",
+    "aliases": [
+      "CDC45",
+      "cdc45"
+    ]
+  },
+  {
+    "symbol": "CDC6",
+    "aliases": [
+      "CDC6",
+      "cdc6"
+    ]
+  },
+  {
+    "symbol": "CDC7",
+    "aliases": [
+      "CDC7",
+      "cdc7"
+    ]
+  },
+  {
+    "symbol": "CDC73",
+    "aliases": [
+      "CDC73",
+      "cdc73"
+    ]
+  },
+  {
+    "symbol": "CDCA3",
+    "aliases": [
+      "CDCA3",
+      "cdca3"
+    ]
+  },
+  {
+    "symbol": "CDCA5",
+    "aliases": [
+      "CDCA5",
+      "cdca5"
+    ]
+  },
+  {
+    "symbol": "CDCA8",
+    "aliases": [
+      "CDCA8",
+      "cdca8"
+    ]
+  },
+  {
+    "symbol": "CDH1",
+    "aliases": [
+      "CDH1",
+      "cdh1"
+    ]
+  },
+  {
+    "symbol": "CDH2",
+    "aliases": [
+      "CDH2",
+      "cdh2"
+    ]
+  },
+  {
+    "symbol": "CDH5",
+    "aliases": [
+      "CDH5",
+      "cdh5"
+    ]
+  },
+  {
+    "symbol": "CDIN1",
+    "aliases": [
+      "CDIN1",
+      "cdin1"
+    ]
+  },
+  {
+    "symbol": "CDK1",
+    "aliases": [
+      "CDK1",
+      "cdk1"
+    ]
+  },
+  {
+    "symbol": "CDK12",
+    "aliases": [
+      "CDK12",
+      "cdk12"
+    ]
+  },
+  {
+    "symbol": "CDK2",
+    "aliases": [
+      "CDK2",
+      "cdk2"
+    ]
+  },
+  {
+    "symbol": "CDK4",
+    "aliases": [
+      "CDK4",
+      "cdk4"
+    ]
+  },
+  {
+    "symbol": "CDK6",
+    "aliases": [
+      "CDK6",
+      "cdk6"
+    ]
+  },
+  {
+    "symbol": "CDK8",
+    "aliases": [
+      "CDK8",
+      "cdk8"
+    ]
+  },
+  {
+    "symbol": "CDK9",
+    "aliases": [
+      "CDK9",
+      "cdk9"
+    ]
+  },
+  {
+    "symbol": "CDKN1A",
+    "aliases": [
+      "CDKN1A",
+      "cdkn1a"
+    ]
+  },
+  {
+    "symbol": "CDKN1B",
+    "aliases": [
+      "CDKN1B",
+      "cdkn1b"
+    ]
+  },
+  {
+    "symbol": "CDKN1C",
+    "aliases": [
+      "CDKN1C",
+      "cdkn1c"
+    ]
+  },
+  {
+    "symbol": "CDKN2A",
+    "aliases": [
+      "CDKN2A",
+      "cdkn2a"
+    ]
+  },
+  {
+    "symbol": "CDKN2B",
+    "aliases": [
+      "CDKN2B",
+      "cdkn2b"
+    ]
+  },
+  {
+    "symbol": "CDT1",
+    "aliases": [
+      "CDT1",
+      "cdt1"
+    ]
+  },
+  {
+    "symbol": "CEBPA",
+    "aliases": [
+      "CEBPA",
+      "cebpa"
+    ]
+  },
+  {
+    "symbol": "CEBPB",
+    "aliases": [
+      "CEBPB",
+      "cebpb"
+    ]
+  },
+  {
+    "symbol": "CENPA",
+    "aliases": [
+      "CENPA",
+      "cenpa"
+    ]
+  },
+  {
+    "symbol": "CENPE",
+    "aliases": [
+      "CENPE",
+      "cenpe"
+    ]
+  },
+  {
+    "symbol": "CENPF",
+    "aliases": [
+      "CENPF",
+      "cenpf"
+    ]
+  },
+  {
+    "symbol": "CENPM",
+    "aliases": [
+      "CENPM",
+      "cenpm"
+    ]
+  },
+  {
+    "symbol": "CENPO",
+    "aliases": [
+      "CENPO",
+      "cenpo"
+    ]
+  },
+  {
+    "symbol": "CENPT",
+    "aliases": [
+      "CENPT",
+      "cenpt"
+    ]
+  },
+  {
+    "symbol": "CENPU",
+    "aliases": [
+      "CENPU",
+      "cenpu"
+    ]
+  },
+  {
+    "symbol": "CENPW",
+    "aliases": [
+      "CENPW",
+      "cenpw"
+    ]
+  },
+  {
+    "symbol": "CENPX",
+    "aliases": [
+      "CENPX",
+      "cenpx"
+    ]
+  },
+  {
+    "symbol": "CEP55",
+    "aliases": [
+      "CEP55",
+      "cep55"
+    ]
+  },
+  {
+    "symbol": "CFAP20",
+    "aliases": [
+      "CFAP20",
+      "cfap20"
+    ]
+  },
+  {
+    "symbol": "CFLAR",
+    "aliases": [
+      "CFLAR",
+      "cflar"
+    ]
+  },
+  {
+    "symbol": "CFTR",
+    "aliases": [
+      "CFTR",
+      "cftr"
+    ]
+  },
+  {
+    "symbol": "CHAF1A",
+    "aliases": [
+      "CHAF1A",
+      "chaf1a"
+    ]
+  },
+  {
+    "symbol": "CHAF1B",
+    "aliases": [
+      "CHAF1B",
+      "chaf1b"
+    ]
+  },
+  {
+    "symbol": "CHD1",
+    "aliases": [
+      "CHD1",
+      "chd1"
+    ]
+  },
+  {
+    "symbol": "CHD4",
+    "aliases": [
+      "CHD4",
+      "chd4"
+    ]
+  },
+  {
+    "symbol": "CHD7",
+    "aliases": [
+      "CHD7",
+      "chd7"
+    ]
+  },
+  {
+    "symbol": "CHD8",
+    "aliases": [
+      "CHD8",
+      "chd8"
+    ]
+  },
+  {
+    "symbol": "CHEK1",
+    "aliases": [
+      "CHEK1",
+      "chek1"
+    ]
+  },
+  {
+    "symbol": "CHEK2",
+    "aliases": [
+      "CHEK2",
+      "chek2"
+    ]
+  },
+  {
+    "symbol": "CHTF18",
+    "aliases": [
+      "CHTF18",
+      "chtf18"
+    ]
+  },
+  {
+    "symbol": "CHUK",
+    "aliases": [
+      "CHUK",
+      "chuk"
+    ]
+  },
+  {
+    "symbol": "CIP2A",
+    "aliases": [
+      "CIP2A",
+      "cip2a"
+    ]
+  },
+  {
+    "symbol": "CIT",
+    "aliases": [
+      "CIT",
+      "cit"
+    ]
+  },
+  {
+    "symbol": "CKAP2L",
+    "aliases": [
+      "CKAP2L",
+      "ckap2l"
+    ]
+  },
+  {
+    "symbol": "CKS1B",
+    "aliases": [
+      "CKS1B",
+      "cks1b"
+    ]
+  },
+  {
+    "symbol": "CKS2",
+    "aliases": [
+      "CKS2",
+      "cks2"
+    ]
+  },
+  {
+    "symbol": "CLNS1A",
+    "aliases": [
+      "CLNS1A",
+      "clns1a"
+    ]
+  },
+  {
+    "symbol": "CLSPN",
+    "aliases": [
+      "CLSPN",
+      "clspn"
+    ]
+  },
+  {
+    "symbol": "CNOT4",
+    "aliases": [
+      "CNOT4",
+      "cnot4"
+    ]
+  },
+  {
+    "symbol": "COIL",
+    "aliases": [
+      "COIL",
+      "coil"
+    ]
+  },
+  {
+    "symbol": "COPA",
+    "aliases": [
+      "COPA",
+      "copa"
+    ]
+  },
+  {
+    "symbol": "COPB2",
+    "aliases": [
+      "COPB2",
+      "copb2"
+    ]
+  },
+  {
+    "symbol": "COPE",
+    "aliases": [
+      "COPE",
+      "cope"
+    ]
+  },
+  {
+    "symbol": "COPZ1",
+    "aliases": [
+      "COPZ1",
+      "copz1"
+    ]
+  },
+  {
+    "symbol": "CPAP",
+    "aliases": [
+      "CPAP",
+      "cpap"
+    ]
+  },
+  {
+    "symbol": "CPNE7",
+    "aliases": [
+      "CPNE7",
+      "cpne7"
+    ]
+  },
+  {
+    "symbol": "CREBBP",
+    "aliases": [
+      "CREBBP",
+      "crebbp"
+    ]
+  },
+  {
+    "symbol": "CRK",
+    "aliases": [
+      "CRK",
+      "crk"
+    ]
+  },
+  {
+    "symbol": "CRKL",
+    "aliases": [
+      "CRKL",
+      "crkl"
+    ]
+  },
+  {
+    "symbol": "CRNKL1",
+    "aliases": [
+      "CRNKL1",
+      "crnkl1"
+    ]
+  },
+  {
+    "symbol": "CSK",
+    "aliases": [
+      "CSK",
+      "csk"
+    ]
+  },
+  {
+    "symbol": "CSNK2A1",
+    "aliases": [
+      "CSNK2A1",
+      "csnk2a1"
+    ]
+  },
+  {
+    "symbol": "CSNK2A2",
+    "aliases": [
+      "CSNK2A2",
+      "csnk2a2"
+    ]
+  },
+  {
+    "symbol": "CTNNA1",
+    "aliases": [
+      "CTNNA1",
+      "ctnna1"
+    ]
+  },
+  {
+    "symbol": "CTNNB1",
+    "aliases": [
+      "CTNNB1",
+      "ctnnb1"
+    ]
+  },
+  {
+    "symbol": "CTNND1",
+    "aliases": [
+      "CTNND1",
+      "ctnnd1"
+    ]
+  },
+  {
+    "symbol": "CTTN",
+    "aliases": [
+      "CTTN",
+      "cttn"
+    ]
+  },
+  {
+    "symbol": "CUL1",
+    "aliases": [
+      "CUL1",
+      "cul1"
+    ]
+  },
+  {
+    "symbol": "CUL2",
+    "aliases": [
+      "CUL2",
+      "cul2"
+    ]
+  },
+  {
+    "symbol": "CUL3",
+    "aliases": [
+      "CUL3",
+      "cul3"
+    ]
+  },
+  {
+    "symbol": "CUL4B",
+    "aliases": [
+      "CUL4B",
+      "cul4b"
+    ]
+  },
+  {
+    "symbol": "CUL5",
+    "aliases": [
+      "CUL5",
+      "cul5"
+    ]
+  },
+  {
+    "symbol": "CWC22",
+    "aliases": [
+      "CWC22",
+      "cwc22"
+    ]
+  },
+  {
+    "symbol": "CXADR",
+    "aliases": [
+      "CXADR",
+      "cxadr"
+    ]
+  },
+  {
+    "symbol": "CXXC1",
+    "aliases": [
+      "CXXC1",
+      "cxxc1"
+    ]
+  },
+  {
+    "symbol": "CYB5R4",
+    "aliases": [
+      "CYB5R4",
+      "cyb5r4"
+    ]
+  },
+  {
+    "symbol": "CYFIP1",
+    "aliases": [
+      "CYFIP1",
+      "cyfip1"
+    ]
+  },
+  {
+    "symbol": "DAPK3",
+    "aliases": [
+      "DAPK3",
+      "dapk3"
+    ]
+  },
+  {
+    "symbol": "DAXX",
+    "aliases": [
+      "DAXX",
+      "daxx"
+    ]
+  },
+  {
+    "symbol": "DAZL",
+    "aliases": [
+      "DAZL",
+      "dazl"
+    ]
+  },
+  {
+    "symbol": "DBF4",
+    "aliases": [
+      "DBF4",
+      "dbf4"
+    ]
+  },
+  {
+    "symbol": "DCLRE1B",
+    "aliases": [
+      "DCLRE1B",
+      "dclre1b"
+    ]
+  },
+  {
+    "symbol": "DCTN1",
+    "aliases": [
+      "DCTN1",
+      "dctn1"
+    ]
+  },
+  {
+    "symbol": "DDRGK1",
+    "aliases": [
+      "DDRGK1",
+      "ddrgk1"
+    ]
+  },
+  {
+    "symbol": "DDX1",
+    "aliases": [
+      "DDX1",
+      "ddx1"
+    ]
+  },
+  {
+    "symbol": "DDX11",
+    "aliases": [
+      "DDX11",
+      "ddx11"
+    ]
+  },
+  {
+    "symbol": "DDX31",
+    "aliases": [
+      "DDX31",
+      "ddx31"
+    ]
+  },
+  {
+    "symbol": "DEPDC1",
+    "aliases": [
+      "DEPDC1",
+      "depdc1"
+    ]
+  },
+  {
+    "symbol": "DHX29",
+    "aliases": [
+      "DHX29",
+      "dhx29"
+    ]
+  },
+  {
+    "symbol": "DHX30",
+    "aliases": [
+      "DHX30",
+      "dhx30"
+    ]
+  },
+  {
+    "symbol": "DHX38",
+    "aliases": [
+      "DHX38",
+      "dhx38"
+    ]
+  },
+  {
+    "symbol": "DHX9",
+    "aliases": [
+      "DHX9",
+      "dhx9"
+    ]
+  },
+  {
+    "symbol": "DIAPH3",
+    "aliases": [
+      "DIAPH3",
+      "diaph3"
+    ]
+  },
+  {
+    "symbol": "DICER1",
+    "aliases": [
+      "DICER1",
+      "dicer1"
+    ]
+  },
+  {
+    "symbol": "DIDO1",
+    "aliases": [
+      "DIDO1",
+      "dido1"
+    ]
+  },
+  {
+    "symbol": "DIS3",
+    "aliases": [
+      "DIS3",
+      "dis3"
+    ]
+  },
+  {
+    "symbol": "DLGAP5",
+    "aliases": [
+      "DLGAP5",
+      "dlgap5"
+    ]
+  },
+  {
+    "symbol": "DMRTA1",
+    "aliases": [
+      "DMRTA1",
+      "dmrta1"
+    ]
+  },
+  {
+    "symbol": "DNA2",
+    "aliases": [
+      "DNA2",
+      "dna2"
+    ]
+  },
+  {
+    "symbol": "DNM1L",
+    "aliases": [
+      "DNM1L",
+      "dnm1l"
+    ]
+  },
+  {
+    "symbol": "DNMT1",
+    "aliases": [
+      "DNMT1",
+      "dnmt1"
+    ]
+  },
+  {
+    "symbol": "DOCK5",
+    "aliases": [
+      "DOCK5",
+      "dock5"
+    ]
+  },
+  {
+    "symbol": "DOLK",
+    "aliases": [
+      "DOLK",
+      "dolk"
+    ]
+  },
+  {
+    "symbol": "DONSON",
+    "aliases": [
+      "DONSON",
+      "donson"
+    ]
+  },
+  {
+    "symbol": "DOT1L",
+    "aliases": [
+      "DOT1L",
+      "dot1l"
+    ]
+  },
+  {
+    "symbol": "DSCC1",
+    "aliases": [
+      "DSCC1",
+      "dscc1"
+    ]
+  },
+  {
+    "symbol": "DUSP1",
+    "aliases": [
+      "DUSP1",
+      "dusp1"
+    ]
+  },
+  {
+    "symbol": "DUXA",
+    "aliases": [
+      "DUXA",
+      "duxa"
+    ]
+  },
+  {
+    "symbol": "DYRK1A",
+    "aliases": [
+      "DYRK1A",
+      "dyrk1a"
+    ]
+  },
+  {
+    "symbol": "E2F1",
+    "aliases": [
+      "E2F1",
+      "e2f1"
+    ]
+  },
+  {
+    "symbol": "E2F3",
+    "aliases": [
+      "E2F3",
+      "e2f3"
+    ]
+  },
+  {
+    "symbol": "E2F6",
+    "aliases": [
+      "E2F6",
+      "e2f6"
+    ]
+  },
+  {
+    "symbol": "E2F7",
+    "aliases": [
+      "E2F7",
+      "e2f7"
+    ]
+  },
+  {
+    "symbol": "E2F8",
+    "aliases": [
+      "E2F8",
+      "e2f8"
+    ]
+  },
+  {
+    "symbol": "EED",
+    "aliases": [
+      "EED",
+      "eed"
+    ]
+  },
+  {
+    "symbol": "EEF1A1",
+    "aliases": [
+      "EEF1A1",
+      "eef1a1"
+    ]
+  },
+  {
+    "symbol": "EFTUD2",
+    "aliases": [
+      "EFTUD2",
+      "eftud2"
+    ]
+  },
+  {
+    "symbol": "EGFR",
+    "aliases": [
+      "EGFR",
+      "egfr"
+    ]
+  },
+  {
+    "symbol": "EGR2",
+    "aliases": [
+      "EGR2",
+      "egr2"
+    ]
+  },
+  {
+    "symbol": "EIF2S1",
+    "aliases": [
+      "EIF2S1",
+      "eif2s1"
+    ]
+  },
+  {
+    "symbol": "EIF4B",
+    "aliases": [
+      "EIF4B",
+      "eif4b"
+    ]
+  },
+  {
+    "symbol": "EIF4G2",
+    "aliases": [
+      "EIF4G2",
+      "eif4g2"
+    ]
+  },
+  {
+    "symbol": "EIF5",
+    "aliases": [
+      "EIF5",
+      "eif5"
+    ]
+  },
+  {
+    "symbol": "EIF5B",
+    "aliases": [
+      "EIF5B",
+      "eif5b"
+    ]
+  },
+  {
+    "symbol": "ELAVL1",
+    "aliases": [
+      "ELAVL1",
+      "elavl1"
+    ]
+  },
+  {
+    "symbol": "ELAVL2",
+    "aliases": [
+      "ELAVL2",
+      "elavl2"
+    ]
+  },
+  {
+    "symbol": "ELOA",
+    "aliases": [
+      "ELOA",
+      "eloa"
+    ]
+  },
+  {
+    "symbol": "ELOC",
+    "aliases": [
+      "ELOC",
+      "eloc"
+    ]
+  },
+  {
+    "symbol": "EML4",
+    "aliases": [
+      "EML4",
+      "eml4"
+    ]
+  },
+  {
+    "symbol": "EMSY",
+    "aliases": [
+      "EMSY",
+      "emsy"
+    ]
+  },
+  {
+    "symbol": "ENO1",
+    "aliases": [
+      "ENO1",
+      "eno1"
+    ]
+  },
+  {
+    "symbol": "EP300",
+    "aliases": [
+      "EP300",
+      "ep300"
+    ]
+  },
+  {
+    "symbol": "EPCAM",
+    "aliases": [
+      "EPCAM",
+      "epcam"
+    ]
+  },
+  {
+    "symbol": "EPHA2",
+    "aliases": [
+      "EPHA2",
+      "epha2"
+    ]
+  },
+  {
+    "symbol": "ERBB2",
+    "aliases": [
+      "ERBB2",
+      "erbb2"
+    ]
+  },
+  {
+    "symbol": "ERBB3",
+    "aliases": [
+      "ERBB3",
+      "erbb3"
+    ]
+  },
+  {
+    "symbol": "ERCC1",
+    "aliases": [
+      "ERCC1",
+      "ercc1"
+    ]
+  },
+  {
+    "symbol": "ERCC2",
+    "aliases": [
+      "ERCC2",
+      "ercc2"
+    ]
+  },
+  {
+    "symbol": "ERCC3",
+    "aliases": [
+      "ERCC3",
+      "ercc3"
+    ]
+  },
+  {
+    "symbol": "ERCC4",
+    "aliases": [
+      "ERCC4",
+      "ercc4"
+    ]
+  },
+  {
+    "symbol": "ERCC5",
+    "aliases": [
+      "ERCC5",
+      "ercc5"
+    ]
+  },
+  {
+    "symbol": "ERCC6",
+    "aliases": [
+      "ERCC6",
+      "ercc6"
+    ]
+  },
+  {
+    "symbol": "ERCC6L",
+    "aliases": [
+      "ERCC6L",
+      "ercc6l"
+    ]
+  },
+  {
+    "symbol": "ERCC6L2",
+    "aliases": [
+      "ERCC6L2",
+      "ercc6l2"
+    ]
+  },
+  {
+    "symbol": "ERCC8",
+    "aliases": [
+      "ERCC8",
+      "ercc8"
+    ]
+  },
+  {
+    "symbol": "ESCO1",
+    "aliases": [
+      "ESCO1",
+      "esco1"
+    ]
+  },
+  {
+    "symbol": "ESCO2",
+    "aliases": [
+      "ESCO2",
+      "esco2"
+    ]
+  },
+  {
+    "symbol": "ESR1",
+    "aliases": [
+      "ESR1",
+      "esr1"
+    ]
+  },
+  {
+    "symbol": "ETAA1",
+    "aliases": [
+      "ETAA1",
+      "etaa1"
+    ]
+  },
+  {
+    "symbol": "ETNK1",
+    "aliases": [
+      "ETNK1",
+      "etnk1"
+    ]
+  },
+  {
+    "symbol": "EXO1",
+    "aliases": [
+      "EXO1",
+      "exo1"
+    ]
+  },
+  {
+    "symbol": "EXOSC10",
+    "aliases": [
+      "EXOSC10",
+      "exosc10"
+    ]
+  },
+  {
+    "symbol": "EZH2",
+    "aliases": [
+      "EZH2",
+      "ezh2"
+    ]
+  },
+  {
+    "symbol": "EZR",
+    "aliases": [
+      "EZR",
+      "ezr"
+    ]
+  },
+  {
+    "symbol": "F11R",
+    "aliases": [
+      "F11R",
+      "f11r"
+    ]
+  },
+  {
+    "symbol": "FAAP100",
+    "aliases": [
+      "FAAP100",
+      "faap100"
+    ]
+  },
+  {
+    "symbol": "FAAP24",
+    "aliases": [
+      "FAAP24",
+      "faap24"
+    ]
+  },
+  {
+    "symbol": "FAM209A",
+    "aliases": [
+      "FAM209A",
+      "fam209a"
+    ]
+  },
+  {
+    "symbol": "FAM83D",
+    "aliases": [
+      "FAM83D",
+      "fam83d"
+    ]
+  },
+  {
+    "symbol": "FANCA",
+    "aliases": [
+      "FANCA",
+      "fanca"
+    ]
+  },
+  {
+    "symbol": "FANCB",
+    "aliases": [
+      "FANCB",
+      "fancb"
+    ]
+  },
+  {
+    "symbol": "FANCC",
+    "aliases": [
+      "FANCC",
+      "fancc"
+    ]
+  },
+  {
+    "symbol": "FANCD2",
+    "aliases": [
+      "FANCD2",
+      "fancd2"
+    ]
+  },
+  {
+    "symbol": "FANCE",
+    "aliases": [
+      "FANCE",
+      "fance"
+    ]
+  },
+  {
+    "symbol": "FANCF",
+    "aliases": [
+      "FANCF",
+      "fancf"
+    ]
+  },
+  {
+    "symbol": "FANCG",
+    "aliases": [
+      "FANCG",
+      "fancg"
+    ]
+  },
+  {
+    "symbol": "FANCI",
+    "aliases": [
+      "FANCI",
+      "fanci"
+    ]
+  },
+  {
+    "symbol": "FANCL",
+    "aliases": [
+      "FANCL",
+      "fancl"
+    ]
+  },
+  {
+    "symbol": "FANCM",
+    "aliases": [
+      "FANCM",
+      "fancm"
+    ]
+  },
+  {
+    "symbol": "FBH1",
+    "aliases": [
+      "FBH1",
+      "fbh1"
+    ]
+  },
+  {
+    "symbol": "FBXO11",
+    "aliases": [
+      "FBXO11",
+      "fbxo11"
+    ]
+  },
+  {
+    "symbol": "FBXO43",
+    "aliases": [
+      "FBXO43",
+      "fbxo43"
+    ]
+  },
+  {
+    "symbol": "FBXO5",
+    "aliases": [
+      "FBXO5",
+      "fbxo5"
+    ]
+  },
+  {
+    "symbol": "FBXW11",
+    "aliases": [
+      "FBXW11",
+      "fbxw11"
+    ]
+  },
+  {
+    "symbol": "FBXW7",
+    "aliases": [
+      "FBXW7",
+      "fbxw7"
+    ]
+  },
+  {
+    "symbol": "FDFT1",
+    "aliases": [
+      "FDFT1",
+      "fdft1"
+    ]
+  },
+  {
+    "symbol": "FEN1",
+    "aliases": [
+      "FEN1",
+      "fen1"
+    ]
+  },
+  {
+    "symbol": "FERMT1",
+    "aliases": [
+      "FERMT1",
+      "fermt1"
+    ]
+  },
+  {
+    "symbol": "FGF18",
+    "aliases": [
+      "FGF18",
+      "fgf18"
+    ]
+  },
+  {
+    "symbol": "FGFR1",
+    "aliases": [
+      "FGFR1",
+      "fgfr1"
+    ]
+  },
+  {
+    "symbol": "FGFR2",
+    "aliases": [
+      "FGFR2",
+      "fgfr2"
+    ]
+  },
+  {
+    "symbol": "FGFR3",
+    "aliases": [
+      "FGFR3",
+      "fgfr3"
+    ]
+  },
+  {
+    "symbol": "FLI1",
+    "aliases": [
+      "FLI1",
+      "fli1"
+    ]
+  },
+  {
+    "symbol": "FLOT1",
+    "aliases": [
+      "FLOT1",
+      "flot1"
+    ]
+  },
+  {
+    "symbol": "FLT3",
+    "aliases": [
+      "FLT3",
+      "flt3"
+    ]
+  },
+  {
+    "symbol": "FOXA1",
+    "aliases": [
+      "FOXA1",
+      "foxa1"
+    ]
+  },
+  {
+    "symbol": "FOXK1",
+    "aliases": [
+      "FOXK1",
+      "foxk1"
+    ]
+  },
+  {
+    "symbol": "FOXM1",
+    "aliases": [
+      "FOXM1",
+      "foxm1"
+    ]
+  },
+  {
+    "symbol": "FOXO1",
+    "aliases": [
+      "FOXO1",
+      "foxo1"
+    ]
+  },
+  {
+    "symbol": "FOXO3",
+    "aliases": [
+      "FOXO3",
+      "foxo3"
+    ]
+  },
+  {
+    "symbol": "FUBP3",
+    "aliases": [
+      "FUBP3",
+      "fubp3"
+    ]
+  },
+  {
+    "symbol": "FUS",
+    "aliases": [
+      "FUS",
+      "fus"
+    ]
+  },
+  {
+    "symbol": "FZR1",
+    "aliases": [
+      "FZR1",
+      "fzr1"
+    ]
+  },
+  {
+    "symbol": "G3BP1",
+    "aliases": [
+      "G3BP1",
+      "g3bp1"
+    ]
+  },
+  {
+    "symbol": "GAK",
+    "aliases": [
+      "GAK",
+      "gak"
+    ]
+  },
+  {
+    "symbol": "GAPDH",
+    "aliases": [
+      "GAPDH",
+      "gapdh"
+    ]
+  },
+  {
+    "symbol": "GART",
+    "aliases": [
+      "GART",
+      "gart"
+    ]
+  },
+  {
+    "symbol": "GATA3",
+    "aliases": [
+      "GATA3",
+      "gata3"
+    ]
+  },
+  {
+    "symbol": "GATA6",
+    "aliases": [
+      "GATA6",
+      "gata6"
+    ]
+  },
+  {
+    "symbol": "GBF1",
+    "aliases": [
+      "GBF1",
+      "gbf1"
+    ]
+  },
+  {
+    "symbol": "GEN1",
+    "aliases": [
+      "GEN1",
+      "gen1"
+    ]
+  },
+  {
+    "symbol": "GFM2",
+    "aliases": [
+      "GFM2",
+      "gfm2"
+    ]
+  },
+  {
+    "symbol": "GIGYF2",
+    "aliases": [
+      "GIGYF2",
+      "gigyf2"
+    ]
+  },
+  {
+    "symbol": "GINS1",
+    "aliases": [
+      "GINS1",
+      "gins1"
+    ]
+  },
+  {
+    "symbol": "GINS2",
+    "aliases": [
+      "GINS2",
+      "gins2"
+    ]
+  },
+  {
+    "symbol": "GMNN",
+    "aliases": [
+      "GMNN",
+      "gmnn"
+    ]
+  },
+  {
+    "symbol": "GOLGA7",
+    "aliases": [
+      "GOLGA7",
+      "golga7"
+    ]
+  },
+  {
+    "symbol": "GORASP2",
+    "aliases": [
+      "GORASP2",
+      "gorasp2"
+    ]
+  },
+  {
+    "symbol": "GPX8",
+    "aliases": [
+      "GPX8",
+      "gpx8"
+    ]
+  },
+  {
+    "symbol": "GRB2",
+    "aliases": [
+      "GRB2",
+      "grb2"
+    ]
+  },
+  {
+    "symbol": "GRHL2",
+    "aliases": [
+      "GRHL2",
+      "grhl2"
+    ]
+  },
+  {
+    "symbol": "GSK3B",
+    "aliases": [
+      "GSK3B",
+      "gsk3b"
+    ]
+  },
+  {
+    "symbol": "GTF2E2",
+    "aliases": [
+      "GTF2E2",
+      "gtf2e2"
+    ]
+  },
+  {
+    "symbol": "GTF2F1",
+    "aliases": [
+      "GTF2F1",
+      "gtf2f1"
+    ]
+  },
+  {
+    "symbol": "GTF2H1",
+    "aliases": [
+      "GTF2H1",
+      "gtf2h1"
+    ]
+  },
+  {
+    "symbol": "GTF3C6",
+    "aliases": [
+      "GTF3C6",
+      "gtf3c6"
+    ]
+  },
+  {
+    "symbol": "GTSE1",
+    "aliases": [
+      "GTSE1",
+      "gtse1"
+    ]
+  },
+  {
+    "symbol": "H1-2",
+    "aliases": [
+      "H1-2",
+      "h1-2"
+    ]
+  },
+  {
+    "symbol": "H2AX",
+    "aliases": [
+      "H2AX",
+      "h2ax"
+    ]
+  },
+  {
+    "symbol": "H2BC15",
+    "aliases": [
+      "H2BC15",
+      "h2bc15"
+    ]
+  },
+  {
+    "symbol": "H3-3B",
+    "aliases": [
+      "H3-3B",
+      "h3-3b"
+    ]
+  },
+  {
+    "symbol": "H4C1",
+    "aliases": [
+      "H4C1",
+      "h4c1"
+    ]
+  },
+  {
+    "symbol": "HAPLN1",
+    "aliases": [
+      "HAPLN1",
+      "hapln1"
+    ]
+  },
+  {
+    "symbol": "HAT1",
+    "aliases": [
+      "HAT1",
+      "hat1"
+    ]
+  },
+  {
+    "symbol": "HDAC1",
+    "aliases": [
+      "HDAC1",
+      "hdac1"
+    ]
+  },
+  {
+    "symbol": "HDAC2",
+    "aliases": [
+      "HDAC2",
+      "hdac2"
+    ]
+  },
+  {
+    "symbol": "HELLS",
+    "aliases": [
+      "HELLS",
+      "hells"
+    ]
+  },
+  {
+    "symbol": "HEXIM1",
+    "aliases": [
+      "HEXIM1",
+      "hexim1"
+    ]
+  },
+  {
+    "symbol": "HGF",
+    "aliases": [
+      "HGF",
+      "hgf"
+    ]
+  },
+  {
+    "symbol": "HIF1A",
+    "aliases": [
+      "HIF1A",
+      "hif1a"
+    ]
+  },
+  {
+    "symbol": "HLTF",
+    "aliases": [
+      "HLTF",
+      "hltf"
+    ]
+  },
+  {
+    "symbol": "HNRNPA1",
+    "aliases": [
+      "HNRNPA1",
+      "hnrnpa1"
+    ]
+  },
+  {
+    "symbol": "HNRNPA2B1",
+    "aliases": [
+      "HNRNPA2B1",
+      "hnrnpa2b1"
+    ]
+  },
+  {
+    "symbol": "HNRNPAB",
+    "aliases": [
+      "HNRNPAB",
+      "hnrnpab"
+    ]
+  },
+  {
+    "symbol": "HNRNPD",
+    "aliases": [
+      "HNRNPD",
+      "hnrnpd"
+    ]
+  },
+  {
+    "symbol": "HNRNPF",
+    "aliases": [
+      "HNRNPF",
+      "hnrnpf"
+    ]
+  },
+  {
+    "symbol": "HP",
+    "aliases": [
+      "HP",
+      "hp"
+    ]
+  },
+  {
+    "symbol": "HRAS",
+    "aliases": [
+      "HRAS",
+      "hras"
+    ]
+  },
+  {
+    "symbol": "HSF1",
+    "aliases": [
+      "HSF1",
+      "hsf1"
+    ]
+  },
+  {
+    "symbol": "HSP90AA1",
+    "aliases": [
+      "HSP90AA1",
+      "hsp90aa1"
+    ]
+  },
+  {
+    "symbol": "HSP90AB1",
+    "aliases": [
+      "HSP90AB1",
+      "hsp90ab1"
+    ]
+  },
+  {
+    "symbol": "HSPA12A",
+    "aliases": [
+      "HSPA12A",
+      "hspa12a"
+    ]
+  },
+  {
+    "symbol": "HSPA4",
+    "aliases": [
+      "HSPA4",
+      "hspa4"
+    ]
+  },
+  {
+    "symbol": "HSPA5",
+    "aliases": [
+      "HSPA5",
+      "hspa5"
+    ]
+  },
+  {
+    "symbol": "HSPA8",
+    "aliases": [
+      "HSPA8",
+      "hspa8"
+    ]
+  },
+  {
+    "symbol": "HUS1",
+    "aliases": [
+      "HUS1",
+      "hus1"
+    ]
+  },
+  {
+    "symbol": "HUWE1",
+    "aliases": [
+      "HUWE1",
+      "huwe1"
+    ]
+  },
+  {
+    "symbol": "IFNA1",
+    "aliases": [
+      "IFNA1",
+      "ifna1"
+    ]
+  },
+  {
+    "symbol": "IFNA10",
+    "aliases": [
+      "IFNA10",
+      "ifna10"
+    ]
+  },
+  {
+    "symbol": "IFNA17",
+    "aliases": [
+      "IFNA17",
+      "ifna17"
+    ]
+  },
+  {
+    "symbol": "IFNA5",
+    "aliases": [
+      "IFNA5",
+      "ifna5"
+    ]
+  },
+  {
+    "symbol": "IFNA7",
+    "aliases": [
+      "IFNA7",
+      "ifna7"
+    ]
+  },
+  {
+    "symbol": "IFNE",
+    "aliases": [
+      "IFNE",
+      "ifne"
+    ]
+  },
+  {
+    "symbol": "IGF1R",
+    "aliases": [
+      "IGF1R",
+      "igf1r"
+    ]
+  },
+  {
+    "symbol": "IK",
+    "aliases": [
+      "IK",
+      "ik"
+    ]
+  },
+  {
+    "symbol": "IKBKB",
+    "aliases": [
+      "IKBKB",
+      "ikbkb"
+    ]
+  },
+  {
+    "symbol": "IKBKG",
+    "aliases": [
+      "IKBKG",
+      "ikbkg"
+    ]
+  },
+  {
+    "symbol": "ILK",
+    "aliases": [
+      "ILK",
+      "ilk"
+    ]
+  },
+  {
+    "symbol": "IPO5",
+    "aliases": [
+      "IPO5",
+      "ipo5"
+    ]
+  },
+  {
+    "symbol": "IQGAP1",
+    "aliases": [
+      "IQGAP1",
+      "iqgap1"
+    ]
+  },
+  {
+    "symbol": "ITGA3",
+    "aliases": [
+      "ITGA3",
+      "itga3"
+    ]
+  },
+  {
+    "symbol": "ITGAV",
+    "aliases": [
+      "ITGAV",
+      "itgav"
+    ]
+  },
+  {
+    "symbol": "ITGB1",
+    "aliases": [
+      "ITGB1",
+      "itgb1"
+    ]
+  },
+  {
+    "symbol": "JAK1",
+    "aliases": [
+      "JAK1",
+      "jak1"
+    ]
+  },
+  {
+    "symbol": "JUN",
+    "aliases": [
+      "JUN",
+      "jun"
+    ]
+  },
+  {
+    "symbol": "JUNB",
+    "aliases": [
+      "JUNB",
+      "junb"
+    ]
+  },
+  {
+    "symbol": "JUND",
+    "aliases": [
+      "JUND",
+      "jund"
+    ]
+  },
+  {
+    "symbol": "JUP",
+    "aliases": [
+      "JUP",
+      "jup"
+    ]
+  },
+  {
+    "symbol": "KAT5",
+    "aliases": [
+      "KAT5",
+      "kat5"
+    ]
+  },
+  {
+    "symbol": "KAT6A",
+    "aliases": [
+      "KAT6A",
+      "kat6a"
+    ]
+  },
+  {
+    "symbol": "KBTBD2",
+    "aliases": [
+      "KBTBD2",
+      "kbtbd2"
+    ]
+  },
+  {
+    "symbol": "KCNA3",
+    "aliases": [
+      "KCNA3",
+      "kcna3"
+    ]
+  },
+  {
+    "symbol": "KDM1A",
+    "aliases": [
+      "KDM1A",
+      "kdm1a"
+    ]
+  },
+  {
+    "symbol": "KDM5C",
+    "aliases": [
+      "KDM5C",
+      "kdm5c"
+    ]
+  },
+  {
+    "symbol": "KDM6A",
+    "aliases": [
+      "KDM6A",
+      "kdm6a"
+    ]
+  },
+  {
+    "symbol": "KEAP1",
+    "aliases": [
+      "KEAP1",
+      "keap1"
+    ]
+  },
+  {
+    "symbol": "KHSRP",
+    "aliases": [
+      "KHSRP",
+      "khsrp"
+    ]
+  },
+  {
+    "symbol": "KIDINS220",
+    "aliases": [
+      "KIDINS220",
+      "kidins220"
+    ]
+  },
+  {
+    "symbol": "KIF11",
+    "aliases": [
+      "KIF11",
+      "kif11"
+    ]
+  },
+  {
+    "symbol": "KIF14",
+    "aliases": [
+      "KIF14",
+      "kif14"
+    ]
+  },
+  {
+    "symbol": "KIF18A",
+    "aliases": [
+      "KIF18A",
+      "kif18a"
+    ]
+  },
+  {
+    "symbol": "KIF18B",
+    "aliases": [
+      "KIF18B",
+      "kif18b"
+    ]
+  },
+  {
+    "symbol": "KIF20A",
+    "aliases": [
+      "KIF20A",
+      "kif20a"
+    ]
+  },
+  {
+    "symbol": "KIF22",
+    "aliases": [
+      "KIF22",
+      "kif22"
+    ]
+  },
+  {
+    "symbol": "KIF23",
+    "aliases": [
+      "KIF23",
+      "kif23"
+    ]
+  },
+  {
+    "symbol": "KIF2A",
+    "aliases": [
+      "KIF2A",
+      "kif2a"
+    ]
+  },
+  {
+    "symbol": "KIF2C",
+    "aliases": [
+      "KIF2C",
+      "kif2c"
+    ]
+  },
+  {
+    "symbol": "KIF4A",
+    "aliases": [
+      "KIF4A",
+      "kif4a"
+    ]
+  },
+  {
+    "symbol": "KIFC1",
+    "aliases": [
+      "KIFC1",
+      "kifc1"
+    ]
+  },
+  {
+    "symbol": "KIRREL1",
+    "aliases": [
+      "KIRREL1",
+      "kirrel1"
+    ]
+  },
+  {
+    "symbol": "KLF3",
+    "aliases": [
+      "KLF3",
+      "klf3"
+    ]
+  },
+  {
+    "symbol": "KMT2A",
+    "aliases": [
+      "KMT2A",
+      "kmt2a"
+    ]
+  },
+  {
+    "symbol": "KMT2C",
+    "aliases": [
+      "KMT2C",
+      "kmt2c"
+    ]
+  },
+  {
+    "symbol": "KNTC1",
+    "aliases": [
+      "KNTC1",
+      "kntc1"
+    ]
+  },
+  {
+    "symbol": "KPNA2",
+    "aliases": [
+      "KPNA2",
+      "kpna2"
+    ]
+  },
+  {
+    "symbol": "KRAS",
+    "aliases": [
+      "KRAS",
+      "kras"
+    ]
+  },
+  {
+    "symbol": "KRT18",
+    "aliases": [
+      "KRT18",
+      "krt18"
+    ]
+  },
+  {
+    "symbol": "KRT6A",
+    "aliases": [
+      "KRT6A",
+      "krt6a"
+    ]
+  },
+  {
+    "symbol": "KRT8",
+    "aliases": [
+      "KRT8",
+      "krt8"
+    ]
+  },
+  {
+    "symbol": "KRTAP10-5",
+    "aliases": [
+      "KRTAP10-5",
+      "krtap10-5"
+    ]
+  },
+  {
+    "symbol": "LARP7",
+    "aliases": [
+      "LARP7",
+      "larp7"
+    ]
+  },
+  {
+    "symbol": "LCE2A",
+    "aliases": [
+      "LCE2A",
+      "lce2a"
+    ]
+  },
+  {
+    "symbol": "LCN1",
+    "aliases": [
+      "LCN1",
+      "lcn1"
+    ]
+  },
+  {
+    "symbol": "LGALS9",
+    "aliases": [
+      "LGALS9",
+      "lgals9"
+    ]
+  },
+  {
+    "symbol": "LIG1",
+    "aliases": [
+      "LIG1",
+      "lig1"
+    ]
+  },
+  {
+    "symbol": "LIG3",
+    "aliases": [
+      "LIG3",
+      "lig3"
+    ]
+  },
+  {
+    "symbol": "LIG4",
+    "aliases": [
+      "LIG4",
+      "lig4"
+    ]
+  },
+  {
+    "symbol": "LIN37",
+    "aliases": [
+      "LIN37",
+      "lin37"
+    ]
+  },
+  {
+    "symbol": "LMNA",
+    "aliases": [
+      "LMNA",
+      "lmna"
+    ]
+  },
+  {
+    "symbol": "LMNB1",
+    "aliases": [
+      "LMNB1",
+      "lmnb1"
+    ]
+  },
+  {
+    "symbol": "LSM5",
+    "aliases": [
+      "LSM5",
+      "lsm5"
+    ]
+  },
+  {
+    "symbol": "LZTR1",
+    "aliases": [
+      "LZTR1",
+      "lztr1"
+    ]
+  },
+  {
+    "symbol": "MAD1L1",
+    "aliases": [
+      "MAD1L1",
+      "mad1l1"
+    ]
+  },
+  {
+    "symbol": "MAD2L2",
+    "aliases": [
+      "MAD2L2",
+      "mad2l2"
+    ]
+  },
+  {
+    "symbol": "MAEA",
+    "aliases": [
+      "MAEA",
+      "maea"
+    ]
+  },
+  {
+    "symbol": "MAP1LC3B",
+    "aliases": [
+      "MAP1LC3B",
+      "map1lc3b"
+    ]
+  },
+  {
+    "symbol": "MAP2K1",
+    "aliases": [
+      "MAP2K1",
+      "map2k1"
+    ]
+  },
+  {
+    "symbol": "MAP2K4",
+    "aliases": [
+      "MAP2K4",
+      "map2k4"
+    ]
+  },
+  {
+    "symbol": "MAPK1",
+    "aliases": [
+      "MAPK1",
+      "mapk1"
+    ]
+  },
+  {
+    "symbol": "MAPK14",
+    "aliases": [
+      "MAPK14",
+      "mapk14"
+    ]
+  },
+  {
+    "symbol": "MARK2",
+    "aliases": [
+      "MARK2",
+      "mark2"
+    ]
+  },
+  {
+    "symbol": "MBD2",
+    "aliases": [
+      "MBD2",
+      "mbd2"
+    ]
+  },
+  {
+    "symbol": "MBD3",
+    "aliases": [
+      "MBD3",
+      "mbd3"
+    ]
+  },
+  {
+    "symbol": "MCL1",
+    "aliases": [
+      "MCL1",
+      "mcl1"
+    ]
+  },
+  {
+    "symbol": "MCM10",
+    "aliases": [
+      "MCM10",
+      "mcm10"
+    ]
+  },
+  {
+    "symbol": "MCM2",
+    "aliases": [
+      "MCM2",
+      "mcm2"
+    ]
+  },
+  {
+    "symbol": "MCM3",
+    "aliases": [
+      "MCM3",
+      "mcm3"
+    ]
+  },
+  {
+    "symbol": "MCM4",
+    "aliases": [
+      "MCM4",
+      "mcm4"
+    ]
+  },
+  {
+    "symbol": "MCM6",
+    "aliases": [
+      "MCM6",
+      "mcm6"
+    ]
+  },
+  {
+    "symbol": "MCM7",
+    "aliases": [
+      "MCM7",
+      "mcm7"
+    ]
+  },
+  {
+    "symbol": "MCMBP",
+    "aliases": [
+      "MCMBP",
+      "mcmbp"
+    ]
+  },
+  {
+    "symbol": "MCPH1",
+    "aliases": [
+      "MCPH1",
+      "mcph1"
+    ]
+  },
+  {
+    "symbol": "MDC1",
+    "aliases": [
+      "MDC1",
+      "mdc1"
+    ]
+  },
+  {
+    "symbol": "MDM2",
+    "aliases": [
+      "MDM2",
+      "mdm2"
+    ]
+  },
+  {
+    "symbol": "MDM4",
+    "aliases": [
+      "MDM4",
+      "mdm4"
+    ]
+  },
+  {
+    "symbol": "MECOM",
+    "aliases": [
+      "MECOM",
+      "mecom"
+    ]
+  },
+  {
+    "symbol": "MED12",
+    "aliases": [
+      "MED12",
+      "med12"
+    ]
+  },
+  {
+    "symbol": "MED23",
+    "aliases": [
+      "MED23",
+      "med23"
+    ]
+  },
+  {
+    "symbol": "MEN1",
+    "aliases": [
+      "MEN1",
+      "men1"
+    ]
+  },
+  {
+    "symbol": "MET",
+    "aliases": [
+      "MET",
+      "met"
+    ]
+  },
+  {
+    "symbol": "METAP2",
+    "aliases": [
+      "METAP2",
+      "metap2"
+    ]
+  },
+  {
+    "symbol": "MKI67",
+    "aliases": [
+      "MKI67",
+      "mki67"
+    ]
+  },
+  {
+    "symbol": "MLH1",
+    "aliases": [
+      "MLH1",
+      "mlh1"
+    ]
+  },
+  {
+    "symbol": "MLH3",
+    "aliases": [
+      "MLH3",
+      "mlh3"
+    ]
+  },
+  {
+    "symbol": "MLST8",
+    "aliases": [
+      "MLST8",
+      "mlst8"
+    ]
+  },
+  {
+    "symbol": "MNT",
+    "aliases": [
+      "MNT",
+      "mnt"
+    ]
+  },
+  {
+    "symbol": "MORF4L1",
+    "aliases": [
+      "MORF4L1",
+      "morf4l1"
+    ]
+  },
+  {
+    "symbol": "MRE11",
+    "aliases": [
+      "MRE11",
+      "mre11"
+    ]
+  },
+  {
+    "symbol": "MRPL40",
+    "aliases": [
+      "MRPL40",
+      "mrpl40"
+    ]
+  },
+  {
+    "symbol": "MSH2",
+    "aliases": [
+      "MSH2",
+      "msh2"
+    ]
+  },
+  {
+    "symbol": "MSH3",
+    "aliases": [
+      "MSH3",
+      "msh3"
+    ]
+  },
+  {
+    "symbol": "MSH6",
+    "aliases": [
+      "MSH6",
+      "msh6"
+    ]
+  },
+  {
+    "symbol": "MT-ATP8",
+    "aliases": [
+      "MT-ATP8",
+      "mt-atp8"
+    ]
+  },
+  {
+    "symbol": "MTOR",
+    "aliases": [
+      "MTOR",
+      "mtor"
+    ]
+  },
+  {
+    "symbol": "MUS81",
+    "aliases": [
+      "MUS81",
+      "mus81"
+    ]
+  },
+  {
+    "symbol": "MYB",
+    "aliases": [
+      "MYB",
+      "myb"
+    ]
+  },
+  {
+    "symbol": "MYBBP1A",
+    "aliases": [
+      "MYBBP1A",
+      "mybbp1a"
+    ]
+  },
+  {
+    "symbol": "MYBL2",
+    "aliases": [
+      "MYBL2",
+      "mybl2"
+    ]
+  },
+  {
+    "symbol": "MYC",
+    "aliases": [
+      "MYC",
+      "myc"
+    ]
+  },
+  {
+    "symbol": "MYCN",
+    "aliases": [
+      "MYCN",
+      "mycn"
+    ]
+  },
+  {
+    "symbol": "MYH9",
+    "aliases": [
+      "MYH9",
+      "myh9"
+    ]
+  },
+  {
+    "symbol": "MYL12B",
+    "aliases": [
+      "MYL12B",
+      "myl12b"
+    ]
+  },
+  {
+    "symbol": "MYL6",
+    "aliases": [
+      "MYL6",
+      "myl6"
+    ]
+  },
+  {
+    "symbol": "NANOG",
+    "aliases": [
+      "NANOG",
+      "nanog"
+    ]
+  },
+  {
+    "symbol": "NASP",
+    "aliases": [
+      "NASP",
+      "nasp"
+    ]
+  },
+  {
+    "symbol": "NBN",
+    "aliases": [
+      "NBN",
+      "nbn"
+    ]
+  },
+  {
+    "symbol": "NCAPG",
+    "aliases": [
+      "NCAPG",
+      "ncapg"
+    ]
+  },
+  {
+    "symbol": "NCAPG2",
+    "aliases": [
+      "NCAPG2",
+      "ncapg2"
+    ]
+  },
+  {
+    "symbol": "NCAPH",
+    "aliases": [
+      "NCAPH",
+      "ncaph"
+    ]
+  },
+  {
+    "symbol": "NCOR1",
+    "aliases": [
+      "NCOR1",
+      "ncor1"
+    ]
+  },
+  {
+    "symbol": "NDC80",
+    "aliases": [
+      "NDC80",
+      "ndc80"
+    ]
+  },
+  {
+    "symbol": "NEDD8",
+    "aliases": [
+      "NEDD8",
+      "nedd8"
+    ]
+  },
+  {
+    "symbol": "NEK2",
+    "aliases": [
+      "NEK2",
+      "nek2"
+    ]
+  },
+  {
+    "symbol": "NELFE",
+    "aliases": [
+      "NELFE",
+      "nelfe"
+    ]
+  },
+  {
+    "symbol": "NF1",
+    "aliases": [
+      "NF1",
+      "nf1"
+    ]
+  },
+  {
+    "symbol": "NF2",
+    "aliases": [
+      "NF2",
+      "nf2"
+    ]
+  },
+  {
+    "symbol": "NFE2L2",
+    "aliases": [
+      "NFE2L2",
+      "nfe2l2"
+    ]
+  },
+  {
+    "symbol": "NFKB1",
+    "aliases": [
+      "NFKB1",
+      "nfkb1"
+    ]
+  },
+  {
+    "symbol": "NKAIN3",
+    "aliases": [
+      "NKAIN3",
+      "nkain3"
+    ]
+  },
+  {
+    "symbol": "NOLC1",
+    "aliases": [
+      "NOLC1",
+      "nolc1"
+    ]
+  },
+  {
+    "symbol": "NONO",
+    "aliases": [
+      "NONO",
+      "nono"
+    ]
+  },
+  {
+    "symbol": "NPM1",
+    "aliases": [
+      "NPM1",
+      "npm1"
+    ]
+  },
+  {
+    "symbol": "NRAS",
+    "aliases": [
+      "NRAS",
+      "nras"
+    ]
+  },
+  {
+    "symbol": "NSMCE2",
+    "aliases": [
+      "NSMCE2",
+      "nsmce2"
+    ]
+  },
+  {
+    "symbol": "NSRP1",
+    "aliases": [
+      "NSRP1",
+      "nsrp1"
+    ]
+  },
+  {
+    "symbol": "NUCKS1",
+    "aliases": [
+      "NUCKS1",
+      "nucks1"
+    ]
+  },
+  {
+    "symbol": "NUF2",
+    "aliases": [
+      "NUF2",
+      "nuf2"
+    ]
+  },
+  {
+    "symbol": "NUP214",
+    "aliases": [
+      "NUP214",
+      "nup214"
+    ]
+  },
+  {
+    "symbol": "NUP93",
+    "aliases": [
+      "NUP93",
+      "nup93"
+    ]
+  },
+  {
+    "symbol": "NUP98",
+    "aliases": [
+      "NUP98",
+      "nup98"
+    ]
+  },
+  {
+    "symbol": "NUTM2F",
+    "aliases": [
+      "NUTM2F",
+      "nutm2f"
+    ]
+  },
+  {
+    "symbol": "OCLN",
+    "aliases": [
+      "OCLN",
+      "ocln"
+    ]
+  },
+  {
+    "symbol": "OGG1",
+    "aliases": [
+      "OGG1",
+      "ogg1"
+    ]
+  },
+  {
+    "symbol": "OR4A47",
+    "aliases": [
+      "OR4A47",
+      "or4a47"
+    ]
+  },
+  {
+    "symbol": "OR7G3",
+    "aliases": [
+      "OR7G3",
+      "or7g3"
+    ]
+  },
+  {
+    "symbol": "ORC1",
+    "aliases": [
+      "ORC1",
+      "orc1"
+    ]
+  },
+  {
+    "symbol": "ORC2",
+    "aliases": [
+      "ORC2",
+      "orc2"
+    ]
+  },
+  {
+    "symbol": "ORC6",
+    "aliases": [
+      "ORC6",
+      "orc6"
+    ]
+  },
+  {
+    "symbol": "OSBPL8",
+    "aliases": [
+      "OSBPL8",
+      "osbpl8"
+    ]
+  },
+  {
+    "symbol": "OTUB1",
+    "aliases": [
+      "OTUB1",
+      "otub1"
+    ]
+  },
+  {
+    "symbol": "OTUD5",
+    "aliases": [
+      "OTUD5",
+      "otud5"
+    ]
+  },
+  {
+    "symbol": "PAF1",
+    "aliases": [
+      "PAF1",
+      "paf1"
+    ]
+  },
+  {
+    "symbol": "PAICS",
+    "aliases": [
+      "PAICS",
+      "paics"
+    ]
+  },
+  {
+    "symbol": "PALB2",
+    "aliases": [
+      "PALB2",
+      "palb2"
+    ]
+  },
+  {
+    "symbol": "PARD3",
+    "aliases": [
+      "PARD3",
+      "pard3"
+    ]
+  },
+  {
+    "symbol": "PARD6B",
+    "aliases": [
+      "PARD6B",
+      "pard6b"
+    ]
+  },
+  {
+    "symbol": "PARP1",
+    "aliases": [
+      "PARP1",
+      "parp1"
+    ]
+  },
+  {
+    "symbol": "PARP2",
+    "aliases": [
+      "PARP2",
+      "parp2"
+    ]
+  },
+  {
+    "symbol": "PAWR",
+    "aliases": [
+      "PAWR",
+      "pawr"
+    ]
+  },
+  {
+    "symbol": "PAX8",
+    "aliases": [
+      "PAX8",
+      "pax8"
+    ]
+  },
+  {
+    "symbol": "PAXIP1",
+    "aliases": [
+      "PAXIP1",
+      "paxip1"
+    ]
+  },
+  {
+    "symbol": "PBRM1",
+    "aliases": [
+      "PBRM1",
+      "pbrm1"
+    ]
+  },
+  {
+    "symbol": "PCF11",
+    "aliases": [
+      "PCF11",
+      "pcf11"
+    ]
+  },
+  {
+    "symbol": "PCGF1",
+    "aliases": [
+      "PCGF1",
+      "pcgf1"
+    ]
+  },
+  {
+    "symbol": "PCNA",
+    "aliases": [
+      "PCNA",
+      "pcna"
+    ]
+  },
+  {
+    "symbol": "PDCD10",
+    "aliases": [
+      "PDCD10",
+      "pdcd10"
+    ]
+  },
+  {
+    "symbol": "PDCD6IP",
+    "aliases": [
+      "PDCD6IP",
+      "pdcd6ip"
+    ]
+  },
+  {
+    "symbol": "PDGFRA",
+    "aliases": [
+      "PDGFRA",
+      "pdgfra"
+    ]
+  },
+  {
+    "symbol": "PDHA1",
+    "aliases": [
+      "PDHA1",
+      "pdha1"
+    ]
+  },
+  {
+    "symbol": "PDS5A",
+    "aliases": [
+      "PDS5A",
+      "pds5a"
+    ]
+  },
+  {
+    "symbol": "PDS5B",
+    "aliases": [
+      "PDS5B",
+      "pds5b"
+    ]
+  },
+  {
+    "symbol": "PFAS",
+    "aliases": [
+      "PFAS",
+      "pfas"
+    ]
+  },
+  {
+    "symbol": "PHF3",
+    "aliases": [
+      "PHF3",
+      "phf3"
+    ]
+  },
+  {
+    "symbol": "PHF5A",
+    "aliases": [
+      "PHF5A",
+      "phf5a"
+    ]
+  },
+  {
+    "symbol": "PIAS1",
+    "aliases": [
+      "PIAS1",
+      "pias1"
+    ]
+  },
+  {
+    "symbol": "PIK3CA",
+    "aliases": [
+      "PIK3CA",
+      "pik3ca"
+    ]
+  },
+  {
+    "symbol": "PIK3R1",
+    "aliases": [
+      "PIK3R1",
+      "pik3r1"
+    ]
+  },
+  {
+    "symbol": "PIK3R4",
+    "aliases": [
+      "PIK3R4",
+      "pik3r4"
+    ]
+  },
+  {
+    "symbol": "PIMREG",
+    "aliases": [
+      "PIMREG",
+      "pimreg"
+    ]
+  },
+  {
+    "symbol": "PITRM1",
+    "aliases": [
+      "PITRM1",
+      "pitrm1"
+    ]
+  },
+  {
+    "symbol": "PKD1",
+    "aliases": [
+      "PKD1",
+      "pkd1"
+    ]
+  },
+  {
+    "symbol": "PKMYT1",
+    "aliases": [
+      "PKMYT1",
+      "pkmyt1"
+    ]
+  },
+  {
+    "symbol": "PLCG1",
+    "aliases": [
+      "PLCG1",
+      "plcg1"
+    ]
+  },
+  {
+    "symbol": "PLK1",
+    "aliases": [
+      "PLK1",
+      "plk1"
+    ]
+  },
+  {
+    "symbol": "PLK4",
+    "aliases": [
+      "PLK4",
+      "plk4"
+    ]
+  },
+  {
+    "symbol": "PLRG1",
+    "aliases": [
+      "PLRG1",
+      "plrg1"
+    ]
+  },
+  {
+    "symbol": "PMS1",
+    "aliases": [
+      "PMS1",
+      "pms1"
+    ]
+  },
+  {
+    "symbol": "PMS2",
+    "aliases": [
+      "PMS2",
+      "pms2"
+    ]
+  },
+  {
+    "symbol": "PNKP",
+    "aliases": [
+      "PNKP",
+      "pnkp"
+    ]
+  },
+  {
+    "symbol": "POLA1",
+    "aliases": [
+      "POLA1",
+      "pola1"
+    ]
+  },
+  {
+    "symbol": "POLD1",
+    "aliases": [
+      "POLD1",
+      "pold1"
+    ]
+  },
+  {
+    "symbol": "POLE",
+    "aliases": [
+      "POLE",
+      "pole"
+    ]
+  },
+  {
+    "symbol": "POLE2",
+    "aliases": [
+      "POLE2",
+      "pole2"
+    ]
+  },
+  {
+    "symbol": "POLE3",
+    "aliases": [
+      "POLE3",
+      "pole3"
+    ]
+  },
+  {
+    "symbol": "POLE4",
+    "aliases": [
+      "POLE4",
+      "pole4"
+    ]
+  },
+  {
+    "symbol": "POLG",
+    "aliases": [
+      "POLG",
+      "polg"
+    ]
+  },
+  {
+    "symbol": "POLH",
+    "aliases": [
+      "POLH",
+      "polh"
+    ]
+  },
+  {
+    "symbol": "POLK",
+    "aliases": [
+      "POLK",
+      "polk"
+    ]
+  },
+  {
+    "symbol": "POLR1B",
+    "aliases": [
+      "POLR1B",
+      "polr1b"
+    ]
+  },
+  {
+    "symbol": "POLR2H",
+    "aliases": [
+      "POLR2H",
+      "polr2h"
+    ]
+  },
+  {
+    "symbol": "POT1",
+    "aliases": [
+      "POT1",
+      "pot1"
+    ]
+  },
+  {
+    "symbol": "POTEI",
+    "aliases": [
+      "POTEI",
+      "potei"
+    ]
+  },
+  {
+    "symbol": "POU5F1",
+    "aliases": [
+      "POU5F1",
+      "pou5f1"
+    ]
+  },
+  {
+    "symbol": "PPIA",
+    "aliases": [
+      "PPIA",
+      "ppia"
+    ]
+  },
+  {
+    "symbol": "PPM1D",
+    "aliases": [
+      "PPM1D",
+      "ppm1d"
+    ]
+  },
+  {
+    "symbol": "PPM1G",
+    "aliases": [
+      "PPM1G",
+      "ppm1g"
+    ]
+  },
+  {
+    "symbol": "PPP1CC",
+    "aliases": [
+      "PPP1CC",
+      "ppp1cc"
+    ]
+  },
+  {
+    "symbol": "PPP1R10",
+    "aliases": [
+      "PPP1R10",
+      "ppp1r10"
+    ]
+  },
+  {
+    "symbol": "PPP2CA",
+    "aliases": [
+      "PPP2CA",
+      "ppp2ca"
+    ]
+  },
+  {
+    "symbol": "PPP2R1A",
+    "aliases": [
+      "PPP2R1A",
+      "ppp2r1a"
+    ]
+  },
+  {
+    "symbol": "PPP2R2A",
+    "aliases": [
+      "PPP2R2A",
+      "ppp2r2a"
+    ]
+  },
+  {
+    "symbol": "PPP2R5C",
+    "aliases": [
+      "PPP2R5C",
+      "ppp2r5c"
+    ]
+  },
+  {
+    "symbol": "PPP4R3A",
+    "aliases": [
+      "PPP4R3A",
+      "ppp4r3a"
+    ]
+  },
+  {
+    "symbol": "PPP6C",
+    "aliases": [
+      "PPP6C",
+      "ppp6c"
+    ]
+  },
+  {
+    "symbol": "PRAMEF12",
+    "aliases": [
+      "PRAMEF12",
+      "pramef12"
+    ]
+  },
+  {
+    "symbol": "PRC1",
+    "aliases": [
+      "PRC1",
+      "prc1"
+    ]
+  },
+  {
+    "symbol": "PRIMPOL",
+    "aliases": [
+      "PRIMPOL",
+      "primpol"
+    ]
+  },
+  {
+    "symbol": "PRKACA",
+    "aliases": [
+      "PRKACA",
+      "prkaca"
+    ]
+  },
+  {
+    "symbol": "PRKAR1A",
+    "aliases": [
+      "PRKAR1A",
+      "prkar1a"
+    ]
+  },
+  {
+    "symbol": "PRKCI",
+    "aliases": [
+      "PRKCI",
+      "prkci"
+    ]
+  },
+  {
+    "symbol": "PRKDC",
+    "aliases": [
+      "PRKDC",
+      "prkdc"
+    ]
+  },
+  {
+    "symbol": "PRMT1",
+    "aliases": [
+      "PRMT1",
+      "prmt1"
+    ]
+  },
+  {
+    "symbol": "PRRC2A",
+    "aliases": [
+      "PRRC2A",
+      "prrc2a"
+    ]
+  },
+  {
+    "symbol": "PSMA1",
+    "aliases": [
+      "PSMA1",
+      "psma1"
+    ]
+  },
+  {
+    "symbol": "PSMA4",
+    "aliases": [
+      "PSMA4",
+      "psma4"
+    ]
+  },
+  {
+    "symbol": "PSMA5",
+    "aliases": [
+      "PSMA5",
+      "psma5"
+    ]
+  },
+  {
+    "symbol": "PSMB2",
+    "aliases": [
+      "PSMB2",
+      "psmb2"
+    ]
+  },
+  {
+    "symbol": "PSMC2",
+    "aliases": [
+      "PSMC2",
+      "psmc2"
+    ]
+  },
+  {
+    "symbol": "PSMC3",
+    "aliases": [
+      "PSMC3",
+      "psmc3"
+    ]
+  },
+  {
+    "symbol": "PSMC3IP",
+    "aliases": [
+      "PSMC3IP",
+      "psmc3ip"
+    ]
+  },
+  {
+    "symbol": "PSMC4",
+    "aliases": [
+      "PSMC4",
+      "psmc4"
+    ]
+  },
+  {
+    "symbol": "PSMC5",
+    "aliases": [
+      "PSMC5",
+      "psmc5"
+    ]
+  },
+  {
+    "symbol": "PSMC6",
+    "aliases": [
+      "PSMC6",
+      "psmc6"
+    ]
+  },
+  {
+    "symbol": "PSMD1",
+    "aliases": [
+      "PSMD1",
+      "psmd1"
+    ]
+  },
+  {
+    "symbol": "PSMD10",
+    "aliases": [
+      "PSMD10",
+      "psmd10"
+    ]
+  },
+  {
+    "symbol": "PSMD11",
+    "aliases": [
+      "PSMD11",
+      "psmd11"
+    ]
+  },
+  {
+    "symbol": "PSMD13",
+    "aliases": [
+      "PSMD13",
+      "psmd13"
+    ]
+  },
+  {
+    "symbol": "PSMD9",
+    "aliases": [
+      "PSMD9",
+      "psmd9"
+    ]
+  },
+  {
+    "symbol": "PSME3",
+    "aliases": [
+      "PSME3",
+      "psme3"
+    ]
+  },
+  {
+    "symbol": "PSTK",
+    "aliases": [
+      "PSTK",
+      "pstk"
+    ]
+  },
+  {
+    "symbol": "PTEN",
+    "aliases": [
+      "PTEN",
+      "pten"
+    ]
+  },
+  {
+    "symbol": "PTK2",
+    "aliases": [
+      "PTK2",
+      "ptk2"
+    ]
+  },
+  {
+    "symbol": "PTPN1",
+    "aliases": [
+      "PTPN1",
+      "ptpn1"
+    ]
+  },
+  {
+    "symbol": "PTPN11",
+    "aliases": [
+      "PTPN11",
+      "ptpn11"
+    ]
+  },
+  {
+    "symbol": "PTTG1",
+    "aliases": [
+      "PTTG1",
+      "pttg1"
+    ]
+  },
+  {
+    "symbol": "PXDNL",
+    "aliases": [
+      "PXDNL",
+      "pxdnl"
+    ]
+  },
+  {
+    "symbol": "PXN",
+    "aliases": [
+      "PXN",
+      "pxn"
+    ]
+  },
+  {
+    "symbol": "RAB10",
+    "aliases": [
+      "RAB10",
+      "rab10"
+    ]
+  },
+  {
+    "symbol": "RAB11A",
+    "aliases": [
+      "RAB11A",
+      "rab11a"
+    ]
+  },
+  {
+    "symbol": "RAB35",
+    "aliases": [
+      "RAB35",
+      "rab35"
+    ]
+  },
+  {
+    "symbol": "RAB5C",
+    "aliases": [
+      "RAB5C",
+      "rab5c"
+    ]
+  },
+  {
+    "symbol": "RABIF",
+    "aliases": [
+      "RABIF",
+      "rabif"
+    ]
+  },
+  {
+    "symbol": "RAC1",
+    "aliases": [
+      "RAC1",
+      "rac1"
+    ]
+  },
+  {
+    "symbol": "RAC3",
+    "aliases": [
+      "RAC3",
+      "rac3"
+    ]
+  },
+  {
+    "symbol": "RACGAP1",
+    "aliases": [
+      "RACGAP1",
+      "racgap1"
+    ]
+  },
+  {
+    "symbol": "RAD1",
+    "aliases": [
+      "RAD1",
+      "rad1"
+    ]
+  },
+  {
+    "symbol": "RAD17",
+    "aliases": [
+      "RAD17",
+      "rad17"
+    ]
+  },
+  {
+    "symbol": "RAD18",
+    "aliases": [
+      "RAD18",
+      "rad18"
+    ]
+  },
+  {
+    "symbol": "RAD21",
+    "aliases": [
+      "RAD21",
+      "rad21"
+    ]
+  },
+  {
+    "symbol": "RAD50",
+    "aliases": [
+      "RAD50",
+      "rad50"
+    ]
+  },
+  {
+    "symbol": "RAD51",
+    "aliases": [
+      "RAD51",
+      "rad51"
+    ]
+  },
+  {
+    "symbol": "RAD51AP1",
+    "aliases": [
+      "RAD51AP1",
+      "rad51ap1"
+    ]
+  },
+  {
+    "symbol": "RAD51B",
+    "aliases": [
+      "RAD51B",
+      "rad51b"
+    ]
+  },
+  {
+    "symbol": "RAD51C",
+    "aliases": [
+      "RAD51C",
+      "rad51c"
+    ]
+  },
+  {
+    "symbol": "RAD51D",
+    "aliases": [
+      "RAD51D",
+      "rad51d"
+    ]
+  },
+  {
+    "symbol": "RAD52",
+    "aliases": [
+      "RAD52",
+      "rad52"
+    ]
+  },
+  {
+    "symbol": "RAD54L",
+    "aliases": [
+      "RAD54L",
+      "rad54l"
+    ]
+  },
+  {
+    "symbol": "RAD9A",
+    "aliases": [
+      "RAD9A",
+      "rad9a"
+    ]
+  },
+  {
+    "symbol": "RAF1",
+    "aliases": [
+      "RAF1",
+      "raf1"
+    ]
+  },
+  {
+    "symbol": "RANBP2",
+    "aliases": [
+      "RANBP2",
+      "ranbp2"
+    ]
+  },
+  {
+    "symbol": "RAPGEF1",
+    "aliases": [
+      "RAPGEF1",
+      "rapgef1"
+    ]
+  },
+  {
+    "symbol": "RASA1",
+    "aliases": [
+      "RASA1",
+      "rasa1"
+    ]
+  },
+  {
+    "symbol": "RASA2",
+    "aliases": [
+      "RASA2",
+      "rasa2"
+    ]
+  },
+  {
+    "symbol": "RB1",
+    "aliases": [
+      "RB1",
+      "rb1"
+    ]
+  },
+  {
+    "symbol": "RBBP4",
+    "aliases": [
+      "RBBP4",
+      "rbbp4"
+    ]
+  },
+  {
+    "symbol": "RBBP7",
+    "aliases": [
+      "RBBP7",
+      "rbbp7"
+    ]
+  },
+  {
+    "symbol": "RBBP8",
+    "aliases": [
+      "RBBP8",
+      "rbbp8"
+    ]
+  },
+  {
+    "symbol": "RBL2",
+    "aliases": [
+      "RBL2",
+      "rbl2"
+    ]
+  },
+  {
+    "symbol": "RBM10",
+    "aliases": [
+      "RBM10",
+      "rbm10"
+    ]
+  },
+  {
+    "symbol": "RBM15",
+    "aliases": [
+      "RBM15",
+      "rbm15"
+    ]
+  },
+  {
+    "symbol": "RBM22",
+    "aliases": [
+      "RBM22",
+      "rbm22"
+    ]
+  },
+  {
+    "symbol": "RBMX2",
+    "aliases": [
+      "RBMX2",
+      "rbmx2"
+    ]
+  },
+  {
+    "symbol": "RBX1",
+    "aliases": [
+      "RBX1",
+      "rbx1"
+    ]
+  },
+  {
+    "symbol": "RECQL",
+    "aliases": [
+      "RECQL",
+      "recql"
+    ]
+  },
+  {
+    "symbol": "REST",
+    "aliases": [
+      "REST",
+      "rest"
+    ]
+  },
+  {
+    "symbol": "REV1",
+    "aliases": [
+      "REV1",
+      "rev1"
+    ]
+  },
+  {
+    "symbol": "REV3L",
+    "aliases": [
+      "REV3L",
+      "rev3l"
+    ]
+  },
+  {
+    "symbol": "RFC1",
+    "aliases": [
+      "RFC1",
+      "rfc1"
+    ]
+  },
+  {
+    "symbol": "RFC2",
+    "aliases": [
+      "RFC2",
+      "rfc2"
+    ]
+  },
+  {
+    "symbol": "RFC3",
+    "aliases": [
+      "RFC3",
+      "rfc3"
+    ]
+  },
+  {
+    "symbol": "RFC4",
+    "aliases": [
+      "RFC4",
+      "rfc4"
+    ]
+  },
+  {
+    "symbol": "RFC5",
+    "aliases": [
+      "RFC5",
+      "rfc5"
+    ]
+  },
+  {
+    "symbol": "RFWD3",
+    "aliases": [
+      "RFWD3",
+      "rfwd3"
+    ]
+  },
+  {
+    "symbol": "RHNO1",
+    "aliases": [
+      "RHNO1",
+      "rhno1"
+    ]
+  },
+  {
+    "symbol": "RHOA",
+    "aliases": [
+      "RHOA",
+      "rhoa"
+    ]
+  },
+  {
+    "symbol": "RHOF",
+    "aliases": [
+      "RHOF",
+      "rhof"
+    ]
+  },
+  {
+    "symbol": "RIC8A",
+    "aliases": [
+      "RIC8A",
+      "ric8a"
+    ]
+  },
+  {
+    "symbol": "RIF1",
+    "aliases": [
+      "RIF1",
+      "rif1"
+    ]
+  },
+  {
+    "symbol": "RIOK1",
+    "aliases": [
+      "RIOK1",
+      "riok1"
+    ]
+  },
+  {
+    "symbol": "RMI1",
+    "aliases": [
+      "RMI1",
+      "rmi1"
+    ]
+  },
+  {
+    "symbol": "RMI2",
+    "aliases": [
+      "RMI2",
+      "rmi2"
+    ]
+  },
+  {
+    "symbol": "RNASEH1",
+    "aliases": [
+      "RNASEH1",
+      "rnaseh1"
+    ]
+  },
+  {
+    "symbol": "RNASEH2A",
+    "aliases": [
+      "RNASEH2A",
+      "rnaseh2a"
+    ]
+  },
+  {
+    "symbol": "RNASEH2C",
+    "aliases": [
+      "RNASEH2C",
+      "rnaseh2c"
+    ]
+  },
+  {
+    "symbol": "RNF146",
+    "aliases": [
+      "RNF146",
+      "rnf146"
+    ]
+  },
+  {
+    "symbol": "RNF168",
+    "aliases": [
+      "RNF168",
+      "rnf168"
+    ]
+  },
+  {
+    "symbol": "RNF2",
+    "aliases": [
+      "RNF2",
+      "rnf2"
+    ]
+  },
+  {
+    "symbol": "RNF4",
+    "aliases": [
+      "RNF4",
+      "rnf4"
+    ]
+  },
+  {
+    "symbol": "RNF40",
+    "aliases": [
+      "RNF40",
+      "rnf40"
+    ]
+  },
+  {
+    "symbol": "RNF7",
+    "aliases": [
+      "RNF7",
+      "rnf7"
+    ]
+  },
+  {
+    "symbol": "RNF8",
+    "aliases": [
+      "RNF8",
+      "rnf8"
+    ]
+  },
+  {
+    "symbol": "RNH1",
+    "aliases": [
+      "RNH1",
+      "rnh1"
+    ]
+  },
+  {
+    "symbol": "RO60",
+    "aliases": [
+      "RO60",
+      "ro60"
+    ]
+  },
+  {
+    "symbol": "ROCK1",
+    "aliases": [
+      "ROCK1",
+      "rock1"
+    ]
+  },
+  {
+    "symbol": "ROCK2",
+    "aliases": [
+      "ROCK2",
+      "rock2"
+    ]
+  },
+  {
+    "symbol": "RPA1",
+    "aliases": [
+      "RPA1",
+      "rpa1"
+    ]
+  },
+  {
+    "symbol": "RPA2",
+    "aliases": [
+      "RPA2",
+      "rpa2"
+    ]
+  },
+  {
+    "symbol": "RPA3",
+    "aliases": [
+      "RPA3",
+      "rpa3"
+    ]
+  },
+  {
+    "symbol": "RPL6",
+    "aliases": [
+      "RPL6",
+      "rpl6"
+    ]
+  },
+  {
+    "symbol": "RPL9",
+    "aliases": [
+      "RPL9",
+      "rpl9"
+    ]
+  },
+  {
+    "symbol": "RPS4Y2",
+    "aliases": [
+      "RPS4Y2",
+      "rps4y2"
+    ]
+  },
+  {
+    "symbol": "RPS6KB1",
+    "aliases": [
+      "RPS6KB1",
+      "rps6kb1"
+    ]
+  },
+  {
+    "symbol": "RRM1",
+    "aliases": [
+      "RRM1",
+      "rrm1"
+    ]
+  },
+  {
+    "symbol": "RRM2",
+    "aliases": [
+      "RRM2",
+      "rrm2"
+    ]
+  },
+  {
+    "symbol": "RTF1",
+    "aliases": [
+      "RTF1",
+      "rtf1"
+    ]
+  },
+  {
+    "symbol": "RUNX1",
+    "aliases": [
+      "RUNX1",
+      "runx1"
+    ]
+  },
+  {
+    "symbol": "RUNX2",
+    "aliases": [
+      "RUNX2",
+      "runx2"
+    ]
+  },
+  {
+    "symbol": "SAP30BP",
+    "aliases": [
+      "SAP30BP",
+      "sap30bp"
+    ]
+  },
+  {
+    "symbol": "SCAF8",
+    "aliases": [
+      "SCAF8",
+      "scaf8"
+    ]
+  },
+  {
+    "symbol": "SDC1",
+    "aliases": [
+      "SDC1",
+      "sdc1"
+    ]
+  },
+  {
+    "symbol": "SDHC",
+    "aliases": [
+      "SDHC",
+      "sdhc"
+    ]
+  },
+  {
+    "symbol": "SEC16A",
+    "aliases": [
+      "SEC16A",
+      "sec16a"
+    ]
+  },
+  {
+    "symbol": "SEMA4D",
+    "aliases": [
+      "SEMA4D",
+      "sema4d"
+    ]
+  },
+  {
+    "symbol": "SEPSECS",
+    "aliases": [
+      "SEPSECS",
+      "sepsecs"
+    ]
+  },
+  {
+    "symbol": "SETD1B",
+    "aliases": [
+      "SETD1B",
+      "setd1b"
+    ]
+  },
+  {
+    "symbol": "SETD2",
+    "aliases": [
+      "SETD2",
+      "setd2"
+    ]
+  },
+  {
+    "symbol": "SETDB1",
+    "aliases": [
+      "SETDB1",
+      "setdb1"
+    ]
+  },
+  {
+    "symbol": "SETX",
+    "aliases": [
+      "SETX",
+      "setx"
+    ]
+  },
+  {
+    "symbol": "SGO1",
+    "aliases": [
+      "SGO1",
+      "sgo1"
+    ]
+  },
+  {
+    "symbol": "SHLD1",
+    "aliases": [
+      "SHLD1",
+      "shld1"
+    ]
+  },
+  {
+    "symbol": "SIRT1",
+    "aliases": [
+      "SIRT1",
+      "sirt1"
+    ]
+  },
+  {
+    "symbol": "SKA1",
+    "aliases": [
+      "SKA1",
+      "ska1"
+    ]
+  },
+  {
+    "symbol": "SKA3",
+    "aliases": [
+      "SKA3",
+      "ska3"
+    ]
+  },
+  {
+    "symbol": "SKP1",
+    "aliases": [
+      "SKP1",
+      "skp1"
+    ]
+  },
+  {
+    "symbol": "SKP2",
+    "aliases": [
+      "SKP2",
+      "skp2"
+    ]
+  },
+  {
+    "symbol": "SLX4",
+    "aliases": [
+      "SLX4",
+      "slx4"
+    ]
+  },
+  {
+    "symbol": "SMAD4",
+    "aliases": [
+      "SMAD4",
+      "smad4"
+    ]
+  },
+  {
+    "symbol": "SMARCA2",
+    "aliases": [
+      "SMARCA2",
+      "smarca2"
+    ]
+  },
+  {
+    "symbol": "SMARCA4",
+    "aliases": [
+      "SMARCA4",
+      "smarca4"
+    ]
+  },
+  {
+    "symbol": "SMARCA5",
+    "aliases": [
+      "SMARCA5",
+      "smarca5"
+    ]
+  },
+  {
+    "symbol": "SMARCAD1",
+    "aliases": [
+      "SMARCAD1",
+      "smarcad1"
+    ]
+  },
+  {
+    "symbol": "SMARCAL1",
+    "aliases": [
+      "SMARCAL1",
+      "smarcal1"
+    ]
+  },
+  {
+    "symbol": "SMARCB1",
+    "aliases": [
+      "SMARCB1",
+      "smarcb1"
+    ]
+  },
+  {
+    "symbol": "SMARCC1",
+    "aliases": [
+      "SMARCC1",
+      "smarcc1"
+    ]
+  },
+  {
+    "symbol": "SMARCD1",
+    "aliases": [
+      "SMARCD1",
+      "smarcd1"
+    ]
+  },
+  {
+    "symbol": "SMARCE1",
+    "aliases": [
+      "SMARCE1",
+      "smarce1"
+    ]
+  },
+  {
+    "symbol": "SMC3",
+    "aliases": [
+      "SMC3",
+      "smc3"
+    ]
+  },
+  {
+    "symbol": "SMC5",
+    "aliases": [
+      "SMC5",
+      "smc5"
+    ]
+  },
+  {
+    "symbol": "SMG1",
+    "aliases": [
+      "SMG1",
+      "smg1"
+    ]
+  },
+  {
+    "symbol": "SNAI1",
+    "aliases": [
+      "SNAI1",
+      "snai1"
+    ]
+  },
+  {
+    "symbol": "SNAI2",
+    "aliases": [
+      "SNAI2",
+      "snai2"
+    ]
+  },
+  {
+    "symbol": "SNIP1",
+    "aliases": [
+      "SNIP1",
+      "snip1"
+    ]
+  },
+  {
+    "symbol": "SNRNP70",
+    "aliases": [
+      "SNRNP70",
+      "snrnp70"
+    ]
+  },
+  {
+    "symbol": "SNRPA",
+    "aliases": [
+      "SNRPA",
+      "snrpa"
+    ]
+  },
+  {
+    "symbol": "SNRPD3",
+    "aliases": [
+      "SNRPD3",
+      "snrpd3"
+    ]
+  },
+  {
+    "symbol": "SNRPE",
+    "aliases": [
+      "SNRPE",
+      "snrpe"
+    ]
+  },
+  {
+    "symbol": "SNRPG",
+    "aliases": [
+      "SNRPG",
+      "snrpg"
+    ]
+  },
+  {
+    "symbol": "SNW1",
+    "aliases": [
+      "SNW1",
+      "snw1"
+    ]
+  },
+  {
+    "symbol": "SOS1",
+    "aliases": [
+      "SOS1",
+      "sos1"
+    ]
+  },
+  {
+    "symbol": "SOX10",
+    "aliases": [
+      "SOX10",
+      "sox10"
+    ]
+  },
+  {
+    "symbol": "SOX2",
+    "aliases": [
+      "SOX2",
+      "sox2"
+    ]
+  },
+  {
+    "symbol": "SOX9",
+    "aliases": [
+      "SOX9",
+      "sox9"
+    ]
+  },
+  {
+    "symbol": "SP1",
+    "aliases": [
+      "SP1",
+      "sp1"
+    ]
+  },
+  {
+    "symbol": "SPAG5",
+    "aliases": [
+      "SPAG5",
+      "spag5"
+    ]
+  },
+  {
+    "symbol": "SPC24",
+    "aliases": [
+      "SPC24",
+      "spc24"
+    ]
+  },
+  {
+    "symbol": "SPC25",
+    "aliases": [
+      "SPC25",
+      "spc25"
+    ]
+  },
+  {
+    "symbol": "SPDEF",
+    "aliases": [
+      "SPDEF",
+      "spdef"
+    ]
+  },
+  {
+    "symbol": "SRC",
+    "aliases": [
+      "SRC",
+      "src"
+    ]
+  },
+  {
+    "symbol": "SRF",
+    "aliases": [
+      "SRF",
+      "srf"
+    ]
+  },
+  {
+    "symbol": "SRM",
+    "aliases": [
+      "SRM",
+      "srm"
+    ]
+  },
+  {
+    "symbol": "SRP54",
+    "aliases": [
+      "SRP54",
+      "srp54"
+    ]
+  },
+  {
+    "symbol": "SRP68",
+    "aliases": [
+      "SRP68",
+      "srp68"
+    ]
+  },
+  {
+    "symbol": "SSBP1",
+    "aliases": [
+      "SSBP1",
+      "ssbp1"
+    ]
+  },
+  {
+    "symbol": "ST13",
+    "aliases": [
+      "ST13",
+      "st13"
+    ]
+  },
+  {
+    "symbol": "STAG1",
+    "aliases": [
+      "STAG1",
+      "stag1"
+    ]
+  },
+  {
+    "symbol": "STAG2",
+    "aliases": [
+      "STAG2",
+      "stag2"
+    ]
+  },
+  {
+    "symbol": "STAT3",
+    "aliases": [
+      "STAT3",
+      "stat3"
+    ]
+  },
+  {
+    "symbol": "STEAP2",
+    "aliases": [
+      "STEAP2",
+      "steap2"
+    ]
+  },
+  {
+    "symbol": "STIP1",
+    "aliases": [
+      "STIP1",
+      "stip1"
+    ]
+  },
+  {
+    "symbol": "STK11",
+    "aliases": [
+      "STK11",
+      "stk11"
+    ]
+  },
+  {
+    "symbol": "STN1",
+    "aliases": [
+      "STN1",
+      "stn1"
+    ]
+  },
+  {
+    "symbol": "STUB1",
+    "aliases": [
+      "STUB1",
+      "stub1"
+    ]
+  },
+  {
+    "symbol": "STX4",
+    "aliases": [
+      "STX4",
+      "stx4"
+    ]
+  },
+  {
+    "symbol": "SUPT16H",
+    "aliases": [
+      "SUPT16H",
+      "supt16h"
+    ]
+  },
+  {
+    "symbol": "SUPT20H",
+    "aliases": [
+      "SUPT20H",
+      "supt20h"
+    ]
+  },
+  {
+    "symbol": "SUPT7L",
+    "aliases": [
+      "SUPT7L",
+      "supt7l"
+    ]
+  },
+  {
+    "symbol": "SUZ12",
+    "aliases": [
+      "SUZ12",
+      "suz12"
+    ]
+  },
+  {
+    "symbol": "SYNCRIP",
+    "aliases": [
+      "SYNCRIP",
+      "syncrip"
+    ]
+  },
+  {
+    "symbol": "TACC3",
+    "aliases": [
+      "TACC3",
+      "tacc3"
+    ]
+  },
+  {
+    "symbol": "TADA1",
+    "aliases": [
+      "TADA1",
+      "tada1"
+    ]
+  },
+  {
+    "symbol": "TADA2A",
+    "aliases": [
+      "TADA2A",
+      "tada2a"
+    ]
+  },
+  {
+    "symbol": "TADA2B",
+    "aliases": [
+      "TADA2B",
+      "tada2b"
+    ]
+  },
+  {
+    "symbol": "TADA3",
+    "aliases": [
+      "TADA3",
+      "tada3"
+    ]
+  },
+  {
+    "symbol": "TAF5L",
+    "aliases": [
+      "TAF5L",
+      "taf5l"
+    ]
+  },
+  {
+    "symbol": "TAF6L",
+    "aliases": [
+      "TAF6L",
+      "taf6l"
+    ]
+  },
+  {
+    "symbol": "TAMM41",
+    "aliases": [
+      "TAMM41",
+      "tamm41"
+    ]
+  },
+  {
+    "symbol": "TAOK1",
+    "aliases": [
+      "TAOK1",
+      "taok1"
+    ]
+  },
+  {
+    "symbol": "TAS2R46",
+    "aliases": [
+      "TAS2R46",
+      "tas2r46"
+    ]
+  },
+  {
+    "symbol": "TBCE",
+    "aliases": [
+      "TBCE",
+      "tbce"
+    ]
+  },
+  {
+    "symbol": "TBL1XR1",
+    "aliases": [
+      "TBL1XR1",
+      "tbl1xr1"
+    ]
+  },
+  {
+    "symbol": "TBL1Y",
+    "aliases": [
+      "TBL1Y",
+      "tbl1y"
+    ]
+  },
+  {
+    "symbol": "TBP",
+    "aliases": [
+      "TBP",
+      "tbp"
+    ]
+  },
+  {
+    "symbol": "TBX3",
+    "aliases": [
+      "TBX3",
+      "tbx3"
+    ]
+  },
+  {
+    "symbol": "TCF3",
+    "aliases": [
+      "TCF3",
+      "tcf3"
+    ]
+  },
+  {
+    "symbol": "TCF7L2",
+    "aliases": [
+      "TCF7L2",
+      "tcf7l2"
+    ]
+  },
+  {
+    "symbol": "TDG",
+    "aliases": [
+      "TDG",
+      "tdg"
+    ]
+  },
+  {
+    "symbol": "TEDC1",
+    "aliases": [
+      "TEDC1",
+      "tedc1"
+    ]
+  },
+  {
+    "symbol": "TEDC2",
+    "aliases": [
+      "TEDC2",
+      "tedc2"
+    ]
+  },
+  {
+    "symbol": "TELO2",
+    "aliases": [
+      "TELO2",
+      "telo2"
+    ]
+  },
+  {
+    "symbol": "TERF1",
+    "aliases": [
+      "TERF1",
+      "terf1"
+    ]
+  },
+  {
+    "symbol": "TERF2",
+    "aliases": [
+      "TERF2",
+      "terf2"
+    ]
+  },
+  {
+    "symbol": "TERT",
+    "aliases": [
+      "TERT",
+      "tert"
+    ]
+  },
+  {
+    "symbol": "TFDP1",
+    "aliases": [
+      "TFDP1",
+      "tfdp1"
+    ]
+  },
+  {
+    "symbol": "TFDP2",
+    "aliases": [
+      "TFDP2",
+      "tfdp2"
+    ]
+  },
+  {
+    "symbol": "TFG",
+    "aliases": [
+      "TFG",
+      "tfg"
+    ]
+  },
+  {
+    "symbol": "TFIP11",
+    "aliases": [
+      "TFIP11",
+      "tfip11"
+    ]
+  },
+  {
+    "symbol": "TGFBR1",
+    "aliases": [
+      "TGFBR1",
+      "tgfbr1"
+    ]
+  },
+  {
+    "symbol": "TGFBR2",
+    "aliases": [
+      "TGFBR2",
+      "tgfbr2"
+    ]
+  },
+  {
+    "symbol": "TICRR",
+    "aliases": [
+      "TICRR",
+      "ticrr"
+    ]
+  },
+  {
+    "symbol": "TIMELESS",
+    "aliases": [
+      "TIMELESS",
+      "timeless"
+    ]
+  },
+  {
+    "symbol": "TIPARP",
+    "aliases": [
+      "TIPARP",
+      "tiparp"
+    ]
+  },
+  {
+    "symbol": "TJP1",
+    "aliases": [
+      "TJP1",
+      "tjp1"
+    ]
+  },
+  {
+    "symbol": "TLN1",
+    "aliases": [
+      "TLN1",
+      "tln1"
+    ]
+  },
+  {
+    "symbol": "TMCO1",
+    "aliases": [
+      "TMCO1",
+      "tmco1"
+    ]
+  },
+  {
+    "symbol": "TMEM167A",
+    "aliases": [
+      "TMEM167A",
+      "tmem167a"
+    ]
+  },
+  {
+    "symbol": "TMEM80",
+    "aliases": [
+      "TMEM80",
+      "tmem80"
+    ]
+  },
+  {
+    "symbol": "TNS3",
+    "aliases": [
+      "TNS3",
+      "tns3"
+    ]
+  },
+  {
+    "symbol": "TOP1",
+    "aliases": [
+      "TOP1",
+      "top1"
+    ]
+  },
+  {
+    "symbol": "TOP2A",
+    "aliases": [
+      "TOP2A",
+      "top2a"
+    ]
+  },
+  {
+    "symbol": "TOP2B",
+    "aliases": [
+      "TOP2B",
+      "top2b"
+    ]
+  },
+  {
+    "symbol": "TOP3A",
+    "aliases": [
+      "TOP3A",
+      "top3a"
+    ]
+  },
+  {
+    "symbol": "TOPBP1",
+    "aliases": [
+      "TOPBP1",
+      "topbp1"
+    ]
+  },
+  {
+    "symbol": "TP53",
+    "aliases": [
+      "TP53",
+      "tp53"
+    ]
+  },
+  {
+    "symbol": "TP53BP1",
+    "aliases": [
+      "TP53BP1",
+      "tp53bp1"
+    ]
+  },
+  {
+    "symbol": "TP53BP2",
+    "aliases": [
+      "TP53BP2",
+      "tp53bp2"
+    ]
+  },
+  {
+    "symbol": "TRA2B",
+    "aliases": [
+      "TRA2B",
+      "tra2b"
+    ]
+  },
+  {
+    "symbol": "TRAF3",
+    "aliases": [
+      "TRAF3",
+      "traf3"
+    ]
+  },
+  {
+    "symbol": "TRAIP",
+    "aliases": [
+      "TRAIP",
+      "traip"
+    ]
+  },
+  {
+    "symbol": "TRIM28",
+    "aliases": [
+      "TRIM28",
+      "trim28"
+    ]
+  },
+  {
+    "symbol": "TRIP12",
+    "aliases": [
+      "TRIP12",
+      "trip12"
+    ]
+  },
+  {
+    "symbol": "TRIP13",
+    "aliases": [
+      "TRIP13",
+      "trip13"
+    ]
+  },
+  {
+    "symbol": "TRIR",
+    "aliases": [
+      "TRIR",
+      "trir"
+    ]
+  },
+  {
+    "symbol": "TRMT61A",
+    "aliases": [
+      "TRMT61A",
+      "trmt61a"
+    ]
+  },
+  {
+    "symbol": "TROAP",
+    "aliases": [
+      "TROAP",
+      "troap"
+    ]
+  },
+  {
+    "symbol": "TSC1",
+    "aliases": [
+      "TSC1",
+      "tsc1"
+    ]
+  },
+  {
+    "symbol": "TSC2",
+    "aliases": [
+      "TSC2",
+      "tsc2"
+    ]
+  },
+  {
+    "symbol": "TTI1",
+    "aliases": [
+      "TTI1",
+      "tti1"
+    ]
+  },
+  {
+    "symbol": "TTI2",
+    "aliases": [
+      "TTI2",
+      "tti2"
+    ]
+  },
+  {
+    "symbol": "TTK",
+    "aliases": [
+      "TTK",
+      "ttk"
+    ]
+  },
+  {
+    "symbol": "TUBE1",
+    "aliases": [
+      "TUBE1",
+      "tube1"
+    ]
+  },
+  {
+    "symbol": "TYK2",
+    "aliases": [
+      "TYK2",
+      "tyk2"
+    ]
+  },
+  {
+    "symbol": "TYMS",
+    "aliases": [
+      "TYMS",
+      "tyms"
+    ]
+  },
+  {
+    "symbol": "UBA52",
+    "aliases": [
+      "UBA52",
+      "uba52"
+    ]
+  },
+  {
+    "symbol": "UBC",
+    "aliases": [
+      "UBC",
+      "ubc"
+    ]
+  },
+  {
+    "symbol": "UBE2A",
+    "aliases": [
+      "UBE2A",
+      "ube2a"
+    ]
+  },
+  {
+    "symbol": "UBE2C",
+    "aliases": [
+      "UBE2C",
+      "ube2c"
+    ]
+  },
+  {
+    "symbol": "UBE2D3",
+    "aliases": [
+      "UBE2D3",
+      "ube2d3"
+    ]
+  },
+  {
+    "symbol": "UBE2F",
+    "aliases": [
+      "UBE2F",
+      "ube2f"
+    ]
+  },
+  {
+    "symbol": "UBE2H",
+    "aliases": [
+      "UBE2H",
+      "ube2h"
+    ]
+  },
+  {
+    "symbol": "UBE2I",
+    "aliases": [
+      "UBE2I",
+      "ube2i"
+    ]
+  },
+  {
+    "symbol": "UBE2K",
+    "aliases": [
+      "UBE2K",
+      "ube2k"
+    ]
+  },
+  {
+    "symbol": "UBE2M",
+    "aliases": [
+      "UBE2M",
+      "ube2m"
+    ]
+  },
+  {
+    "symbol": "UBE2N",
+    "aliases": [
+      "UBE2N",
+      "ube2n"
+    ]
+  },
+  {
+    "symbol": "UBE2S",
+    "aliases": [
+      "UBE2S",
+      "ube2s"
+    ]
+  },
+  {
+    "symbol": "UBE2T",
+    "aliases": [
+      "UBE2T",
+      "ube2t"
+    ]
+  },
+  {
+    "symbol": "UBE2Z",
+    "aliases": [
+      "UBE2Z",
+      "ube2z"
+    ]
+  },
+  {
+    "symbol": "UBE3A",
+    "aliases": [
+      "UBE3A",
+      "ube3a"
+    ]
+  },
+  {
+    "symbol": "UCHL5",
+    "aliases": [
+      "UCHL5",
+      "uchl5"
+    ]
+  },
+  {
+    "symbol": "UFD1",
+    "aliases": [
+      "UFD1",
+      "ufd1"
+    ]
+  },
+  {
+    "symbol": "UFL1",
+    "aliases": [
+      "UFL1",
+      "ufl1"
+    ]
+  },
+  {
+    "symbol": "UIMC1",
+    "aliases": [
+      "UIMC1",
+      "uimc1"
+    ]
+  },
+  {
+    "symbol": "UMPS",
+    "aliases": [
+      "UMPS",
+      "umps"
+    ]
+  },
+  {
+    "symbol": "UPF1",
+    "aliases": [
+      "UPF1",
+      "upf1"
+    ]
+  },
+  {
+    "symbol": "USP1",
+    "aliases": [
+      "USP1",
+      "usp1"
+    ]
+  },
+  {
+    "symbol": "USP14",
+    "aliases": [
+      "USP14",
+      "usp14"
+    ]
+  },
+  {
+    "symbol": "USP22",
+    "aliases": [
+      "USP22",
+      "usp22"
+    ]
+  },
+  {
+    "symbol": "USP28",
+    "aliases": [
+      "USP28",
+      "usp28"
+    ]
+  },
+  {
+    "symbol": "USP7",
+    "aliases": [
+      "USP7",
+      "usp7"
+    ]
+  },
+  {
+    "symbol": "USP9X",
+    "aliases": [
+      "USP9X",
+      "usp9x"
+    ]
+  },
+  {
+    "symbol": "VCL",
+    "aliases": [
+      "VCL",
+      "vcl"
+    ]
+  },
+  {
+    "symbol": "VCP",
+    "aliases": [
+      "VCP",
+      "vcp"
+    ]
+  },
+  {
+    "symbol": "VIM",
+    "aliases": [
+      "VIM",
+      "vim"
+    ]
+  },
+  {
+    "symbol": "WASF2",
+    "aliases": [
+      "WASF2",
+      "wasf2"
+    ]
+  },
+  {
+    "symbol": "WDHD1",
+    "aliases": [
+      "WDHD1",
+      "wdhd1"
+    ]
+  },
+  {
+    "symbol": "WDR48",
+    "aliases": [
+      "WDR48",
+      "wdr48"
+    ]
+  },
+  {
+    "symbol": "WDR5",
+    "aliases": [
+      "WDR5",
+      "wdr5"
+    ]
+  },
+  {
+    "symbol": "WDR62",
+    "aliases": [
+      "WDR62",
+      "wdr62"
+    ]
+  },
+  {
+    "symbol": "WDR77",
+    "aliases": [
+      "WDR77",
+      "wdr77"
+    ]
+  },
+  {
+    "symbol": "WDR88",
+    "aliases": [
+      "WDR88",
+      "wdr88"
+    ]
+  },
+  {
+    "symbol": "WEE1",
+    "aliases": [
+      "WEE1",
+      "wee1"
+    ]
+  },
+  {
+    "symbol": "WRN",
+    "aliases": [
+      "WRN",
+      "wrn"
+    ]
+  },
+  {
+    "symbol": "WRNIP1",
+    "aliases": [
+      "WRNIP1",
+      "wrnip1"
+    ]
+  },
+  {
+    "symbol": "WT1",
+    "aliases": [
+      "WT1",
+      "wt1"
+    ]
+  },
+  {
+    "symbol": "XAB2",
+    "aliases": [
+      "XAB2",
+      "xab2"
+    ]
+  },
+  {
+    "symbol": "XPA",
+    "aliases": [
+      "XPA",
+      "xpa"
+    ]
+  },
+  {
+    "symbol": "XPC",
+    "aliases": [
+      "XPC",
+      "xpc"
+    ]
+  },
+  {
+    "symbol": "XPO1",
+    "aliases": [
+      "XPO1",
+      "xpo1"
+    ]
+  },
+  {
+    "symbol": "XPO7",
+    "aliases": [
+      "XPO7",
+      "xpo7"
+    ]
+  },
+  {
+    "symbol": "XRCC1",
+    "aliases": [
+      "XRCC1",
+      "xrcc1"
+    ]
+  },
+  {
+    "symbol": "XRCC2",
+    "aliases": [
+      "XRCC2",
+      "xrcc2"
+    ]
+  },
+  {
+    "symbol": "XRCC3",
+    "aliases": [
+      "XRCC3",
+      "xrcc3"
+    ]
+  },
+  {
+    "symbol": "XRCC4",
+    "aliases": [
+      "XRCC4",
+      "xrcc4"
+    ]
+  },
+  {
+    "symbol": "XRCC5",
+    "aliases": [
+      "XRCC5",
+      "xrcc5"
+    ]
+  },
+  {
+    "symbol": "XRCC6",
+    "aliases": [
+      "XRCC6",
+      "xrcc6"
+    ]
+  },
+  {
+    "symbol": "YAP1",
+    "aliases": [
+      "YAP1",
+      "yap1"
+    ]
+  },
+  {
+    "symbol": "YBX1",
+    "aliases": [
+      "YBX1",
+      "ybx1"
+    ]
+  },
+  {
+    "symbol": "YTHDF2",
+    "aliases": [
+      "YTHDF2",
+      "ythdf2"
+    ]
+  },
+  {
+    "symbol": "YWHAZ",
+    "aliases": [
+      "YWHAZ",
+      "ywhaz"
+    ]
+  },
+  {
+    "symbol": "ZEB1",
+    "aliases": [
+      "ZEB1",
+      "zeb1"
+    ]
+  },
+  {
+    "symbol": "ZEB2",
+    "aliases": [
+      "ZEB2",
+      "zeb2"
+    ]
+  },
+  {
+    "symbol": "ZFR",
+    "aliases": [
+      "ZFR",
+      "zfr"
+    ]
+  },
+  {
+    "symbol": "ZMYM2",
+    "aliases": [
+      "ZMYM2",
+      "zmym2"
+    ]
+  },
+  {
+    "symbol": "ZMYND8",
+    "aliases": [
+      "ZMYND8",
+      "zmynd8"
+    ]
+  },
+  {
+    "symbol": "ZNF217",
+    "aliases": [
+      "ZNF217",
+      "znf217"
+    ]
+  },
+  {
+    "symbol": "ZRANB1",
+    "aliases": [
+      "ZRANB1",
+      "zranb1"
+    ]
+  },
+  {
+    "symbol": "ZUP1",
+    "aliases": [
+      "ZUP1",
+      "zup1"
+    ]
+  },
+  {
+    "symbol": "ZW10",
+    "aliases": [
+      "ZW10",
+      "zw10"
+    ]
+  },
+  {
+    "symbol": "ZWILCH",
+    "aliases": [
+      "ZWILCH",
+      "zwilch"
+    ]
+  },
+  {
+    "symbol": "ZWINT",
+    "aliases": [
+      "ZWINT",
+      "zwint"
+    ]
+  }
+]

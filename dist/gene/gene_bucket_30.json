@@ -1,0 +1,200 @@
+{
+  "AHCY": [
+    {
+      "therapy_id": "MTAP_PRMT5",
+      "display": "MTAP + PRMT5",
+      "rank": 23,
+      "score": 0.06419499205804904
+    },
+    {
+      "therapy_id": "BRCA1_PARG",
+      "display": "BRCA1 + PARG",
+      "rank": 93,
+      "score": 0.052835137973522905
+    }
+  ],
+  "CCNC": [
+    {
+      "therapy_id": "FBXW7__PKMYT1",
+      "display": "FBXW7 _PKMYT1",
+      "rank": 173,
+      "score": 0.03469737939018565
+    },
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 194,
+      "score": 0.052553039783447976
+    }
+  ],
+  "COIL": [
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 117,
+      "score": 0.05987986296201094
+    }
+  ],
+  "EGR2": [
+    {
+      "therapy_id": "KRAS_PLK1",
+      "display": "KRAS + PLK1",
+      "rank": 88,
+      "score": 0.06246480287507888
+    }
+  ],
+  "ERCC2": [
+    {
+      "therapy_id": "ATM_ATR",
+      "display": "ATM + ATR",
+      "rank": 156,
+      "score": 0.05448816133624251
+    }
+  ],
+  "ESR1": [
+    {
+      "therapy_id": "FBXW7__PKMYT1",
+      "display": "FBXW7 _PKMYT1",
+      "rank": 53,
+      "score": 0.046334692397684854
+    },
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 78,
+      "score": 0.03520524871025197
+    },
+    {
+      "therapy_id": "BRCA1_PARG",
+      "display": "BRCA1 + PARG",
+      "rank": 108,
+      "score": 0.05090806716854724
+    },
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 193,
+      "score": 0.05277280381556552
+    }
+  ],
+  "ITGAV": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 158,
+      "score": 0.027705752923787894
+    }
+  ],
+  "NFKB1": [
+    {
+      "therapy_id": "ATM_ATR",
+      "display": "ATM + ATR",
+      "rank": 82,
+      "score": 0.06522201713519886
+    },
+    {
+      "therapy_id": "BRCA1_ATR",
+      "display": "BRCA1 + ATR",
+      "rank": 119,
+      "score": 0.0621778594599165
+    }
+  ],
+  "PIK3R4": [
+    {
+      "therapy_id": "BRCA1_PARG",
+      "display": "BRCA1 + PARG",
+      "rank": 175,
+      "score": 0.0453312076040445
+    }
+  ],
+  "RANBP2": [
+    {
+      "therapy_id": "MTAP_PRMT5",
+      "display": "MTAP + PRMT5",
+      "rank": 17,
+      "score": 0.06763128484602629
+    },
+    {
+      "therapy_id": "MSH6_WRN",
+      "display": "MSH6 + WRN",
+      "rank": 198,
+      "score": 0.04574986000537768
+    }
+  ],
+  "RBBP8": [
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 58,
+      "score": 0.06101291851371122
+    },
+    {
+      "therapy_id": "BRCA1_ATR",
+      "display": "BRCA1 + ATR",
+      "rank": 104,
+      "score": 0.06442677016528506
+    },
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 104,
+      "score": 0.06211161847964118
+    },
+    {
+      "therapy_id": "BRCA1_PARG",
+      "display": "BRCA1 + PARG",
+      "rank": 128,
+      "score": 0.04920238887746552
+    },
+    {
+      "therapy_id": "MSH6_WRN",
+      "display": "MSH6 + WRN",
+      "rank": 163,
+      "score": 0.0481178408858789
+    }
+  ],
+  "SOS1": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 128,
+      "score": 0.029900905484739553
+    }
+  ],
+  "SUZ12": [
+    {
+      "therapy_id": "MTAP_PRMT5",
+      "display": "MTAP + PRMT5",
+      "rank": 149,
+      "score": 0.0444945437326586
+    },
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 184,
+      "score": 0.05317262946324688
+    }
+  ],
+  "SYNCRIP": [
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 150,
+      "score": 0.05600880326366613
+    }
+  ],
+  "TAF5L": [
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 126,
+      "score": 0.05829609145676936
+    },
+    {
+      "therapy_id": "MTAP_PRMT5",
+      "display": "MTAP + PRMT5",
+      "rank": 140,
+      "score": 0.04514373918323748
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "BLM": [
+    {
+      "therapy_id": "MSH6_WRN",
+      "display": "MSH6 + WRN",
+      "rank": 23,
+      "score": 0.08092372280590895
+    },
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 37,
+      "score": 0.06864889484714921
+    },
+    {
+      "therapy_id": "FBXW7__PKMYT1",
+      "display": "FBXW7 _PKMYT1",
+      "rank": 41,
+      "score": 0.050496998931221684
+    },
+    {
+      "therapy_id": "ATM_ATR",
+      "display": "ATM + ATR",
+      "rank": 51,
+      "score": 0.07253107473847129
+    },
+    {
+      "therapy_id": "BRCA1_ATR",
+      "display": "BRCA1 + ATR",
+      "rank": 77,
+      "score": 0.07073889056721051
+    },
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 188,
+      "score": 0.0530421862564592
+    }
+  ],
+  "COPZ1": [
+    {
+      "therapy_id": "MTAP_PRMT5",
+      "display": "MTAP + PRMT5",
+      "rank": 159,
+      "score": 0.04386167729180344
+    }
+  ],
+  "FAM209A": [
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 138,
+      "score": 0.04834218097184212
+    }
+  ],
+  "FDFT1": [
+    {
+      "therapy_id": "FBXW7__PKMYT1",
+      "display": "FBXW7 _PKMYT1",
+      "rank": 76,
+      "score": 0.04363129761777435
+    },
+    {
+      "therapy_id": "CCNE1__PKMYT1",
+      "display": "CCNE1 _PKMYT1",
+      "rank": 150,
+      "score": 0.03547916223814441
+    }
+  ],
+  "JUNB": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 198,
+      "score": 0.025666492430355525
+    }
+  ],
+  "KHSRP": [
+    {
+      "therapy_id": "MSH6_WRN",
+      "display": "MSH6 + WRN",
+      "rank": 129,
+      "score": 0.05129787092982523
+    }
+  ],
+  "KIF14": [
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 24,
+      "score": 0.07263676582729704
+    },
+    {
+      "therapy_id": "FBXW7__PKMYT1",
+      "display": "FBXW7 _PKMYT1",
+      "rank": 49,
+      "score": 0.047480740409879534
+    },
+    {
+      "therapy_id": "KRAS_PLK1",
+      "display": "KRAS + PLK1",
+      "rank": 189,
+      "score": 0.05192364774258989
+    }
+  ],
+  "PARD6B": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 27,
+      "score": 0.046897048595831076
+    }
+  ],
+  "PNKP": [
+    {
+      "therapy_id": "BRCA1_PARG",
+      "display": "BRCA1 + PARG",
+      "rank": 124,
+      "score": 0.04933467667980263
+    },
+    {
+      "therapy_id": "ATM_ATR",
+      "display": "ATM + ATR",
+      "rank": 139,
+      "score": 0.05657737310807924
+    },
+    {
+      "therapy_id": "BRCA1_ATR",
+      "display": "BRCA1 + ATR",
+      "rank": 154,
+      "score": 0.05730199195016274
+    },
+    {
+      "therapy_id": "MSH6_WRN",
+      "display": "MSH6 + WRN",
+      "rank": 158,
+      "score": 0.04850225032887443
+    },
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 171,
+      "score": 0.04484263980288071
+    }
+  ],
+  "RAD51D": [
+    {
+      "therapy_id": "BRCA1_PARG",
+      "display": "BRCA1 + PARG",
+      "rank": 50,
+      "score": 0.060419240806346454
+    },
+    {
+      "therapy_id": "BRCA1_POLQ",
+      "display": "BRCA1 + POLQ",
+      "rank": 54,
+      "score": 0.06196952268474366
+    },
+    {
+      "therapy_id": "ATM_ATR",
+      "display": "ATM + ATR",
+      "rank": 97,
+      "score": 0.06232511975568511
+    },
+    {
+      "therapy_id": "BRCA1_ATR",
+      "display": "BRCA1 + ATR",
+      "rank": 129,
+      "score": 0.060288446092854456
+    },
+    {
+      "therapy_id": "MSH6_WRN",
+      "display": "MSH6 + WRN",
+      "rank": 137,
+      "score": 0.05016760948872634
+    },
+    {
+      "therapy_id": "BRCA1_USP1",
+      "display": "BRCA1 + USP1",
+      "rank": 144,
+      "score": 0.05640001239512324
+    }
+  ],
+  "SOX10": [
+    {
+      "therapy_id": "CDH1_ROS1",
+      "display": "CDH1 + ROS1",
+      "rank": 197,
+      "score": 0.025687808351606382
+    }
+  ]
+}

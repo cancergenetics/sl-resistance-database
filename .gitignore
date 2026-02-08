@@ -8,7 +8,7 @@
 .codex/
 
 # build output
-dist/
+dist/.DS_Store
 
 # Python
 __pycache__/
