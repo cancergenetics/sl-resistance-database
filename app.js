@@ -230,7 +230,6 @@ async function init() {
     state.therapyFiles = therapyFiles;
     state.geneBuckets = geneBuckets;
 
-    el.metaInfo.textContent = `${meta.num_therapies} therapy pairs, ${meta.num_genes} genes. Score direction: ${meta.score_direction}.`;
     if (meta.top_n) {
       el.therapyTopnNote.textContent = `Showing Top-${meta.top_n} only.`;
     } else {
@@ -272,7 +271,6 @@ async function init() {
     });
   } catch (error) {
     console.error(error);
-    el.metaInfo.textContent = "Failed to load data. Run build_static_data.py and serve from project root.";
     renderEmpty(el.therapyResults, "Unable to load data files.", 3);
     renderEmpty(el.geneResults, "Unable to load data files.", 3);
   }
