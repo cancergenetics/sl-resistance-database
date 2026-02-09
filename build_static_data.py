@@ -27,7 +27,7 @@ COLUMN_MAP_OVERRIDES = {
 
 DEFAULT_INPUT_GLOB = "PredictingSLResistanceFeatures*_pred.csv"
 DEFAULT_OUTPUT_DIR = "dist"
-TOP_N = 200
+TOP_N = 0
 NUM_GENE_BUCKETS = 64
 HIGHER_SCORE_BETTER = True
 
@@ -422,7 +422,7 @@ def parse_args() -> argparse.Namespace:
         "--top-n",
         type=int,
         default=TOP_N,
-        help="Keep top N ranked genes per therapy pair. Use 0 for all rows.",
+        help="Keep top N ranked genes per therapy pair (default: all rows). Use 0 for all rows.",
     )
     parser.add_argument(
         "--num-gene-buckets",

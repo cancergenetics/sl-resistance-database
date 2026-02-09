@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-02-08T14:17:54.087876+00:00",
+  "generated_at_utc": "2026-02-09T10:14:01.608911+00:00",
   "input_pattern": "PredictingSLResistanceFeatures*_pred.csv",
   "input_files": [
     "PredictingSLResistanceFeatures_ATM_ATR_main_withfeatures_pred.csv",
@@ -14,9 +14,9 @@
     "PredictingSLResistanceFeatures_MSH6_WRN_main_withfeatures_pred.csv",
     "PredictingSLResistanceFeatures_MTAP_PRMT5_main_withfeatures_pred.csv"
   ],
-  "top_n": 200,
+  "top_n": null,
   "num_therapies": 11,
-  "num_genes": 897,
+  "num_genes": 19143,
   "source_rows": 210554,
   "score_direction": "higher_is_better"
 }
