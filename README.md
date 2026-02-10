@@ -1,37 +1,25 @@
-# Static Database Quick Guide
+# SL Resistance Database
 
-This project is a static SL-resistance database viewer.  
-No backend or API is required.
+> **Note:** This project is currently in development. If you have questions, suggestions, or want to contribute, open an issue on GitHub.
 
-## Build data
+Interactive explorer for synthetic lethality (SL) resistance predictions.
 
-From `/Users/metinyazar/Desktop/prediction_database`:
+**Live:** https://metinyazar.github.io/sl-resistance-database/
 
-```bash
-python3 build_static_data.py
+## Data Structure
+
+```text
+dist/
+├─ index/
+│  ├─ alias_maps.json      # Normalized aliases -> canonical therapy/gene IDs
+│  ├─ therapy_pairs.json   # Therapy pair metadata
+│  ├─ therapy_files.json   # Therapy ID -> JSON file mapping
+│  ├─ genes.json           # Gene list used for search
+│  └─ gene_buckets.json    # Gene -> bucket file mapping
+├─ therapy/
+│  ├─ BRCA1_ATR.json       # Ranked resistance results for one SL pair
+│  └─ ...                  # One file per therapy pair
+└─ gene/
+   ├─ gene_bucket_00.json  # Gene-centric results bucket
+   └─ ...                  # Bucketed gene result files
 ```
-
-This generates JSON files in `/Users/metinyazar/Desktop/prediction_database/dist`.
-
-## Run locally
-
-```bash
-python3 -m http.server 8000
-```
-
-Open `http://localhost:8000`.
-
-## Use the app
-
-1. Search a therapy pair to view ranked resistance genes.
-2. Search a gene to view its scores across therapy pairs.
-3. Results are read from static JSON in `dist/`.
-
-## Deploy
-
-Host these files on any static platform (for example GitHub Pages):
-
-- `/Users/metinyazar/Desktop/prediction_database/index.html`
-- `/Users/metinyazar/Desktop/prediction_database/styles.css`
-- `/Users/metinyazar/Desktop/prediction_database/app.js`
-- `/Users/metinyazar/Desktop/prediction_database/dist/`
