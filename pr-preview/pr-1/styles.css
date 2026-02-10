@@ -1,0 +1,161 @@
+:root {
+  --bg: #f4f7f5;
+  --ink: #182028;
+  --card: #ffffff;
+  --line: #d5dede;
+  --accent: #0f766e;
+  --accent-soft: #e1f4f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Avenir Next", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at 20% 0%, #e6f3ef 0%, var(--bg) 45%);
+}
+
+.app-shell {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.app-header h1 {
+  margin: 0.25rem 0;
+  font-size: clamp(1.6rem, 2.5vw, 2.3rem);
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #3a5760;
+  font-size: 0.78rem;
+}
+
+.meta,
+.feedback,
+.topn-note {
+  margin: 0.5rem 0 0;
+  color: #39575a;
+  font-size: 0.95rem;
+}
+
+.search-panel,
+.panel {
+  margin-top: 1rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 10px 24px rgba(24, 32, 40, 0.07);
+}
+
+.search-row {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  border-radius: 10px;
+  border: 1px solid #b6c7c5;
+  padding: 0.6rem 0.75rem;
+}
+
+input,
+select {
+  width: 100%;
+  background: #fdfefe;
+}
+
+button {
+  cursor: pointer;
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.tabs {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tab {
+  background: #ebf2f1;
+  color: #294145;
+  border-color: #c8d8d8;
+}
+
+.tab.active {
+  background: var(--accent-soft);
+  border-color: #7fbdb7;
+  color: #154744;
+}
+
+.toolbar {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.panel {
+  display: none;
+}
+
+.panel.active {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.65rem;
+  border-bottom: 1px solid #ecf0ef;
+  text-align: left;
+}
+
+th {
+  font-size: 0.86rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #385358;
+}
+
+tr:hover td {
+  background: #f9fcfb;
+}
+
+.empty-row {
+  color: #51686f;
+  text-align: center;
+  font-style: italic;
+}
+
+a.suggestion-link {
+  color: #0c695f;
+}
+
+@media (max-width: 700px) {
+  .search-row {
+    flex-direction: column;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}

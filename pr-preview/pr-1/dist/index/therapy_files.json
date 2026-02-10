@@ -1,0 +1,13 @@
+{
+  "ATM_ATR": "therapy/ATM_ATR.json",
+  "BRCA1_ATR": "therapy/BRCA1_ATR.json",
+  "BRCA1_PARG": "therapy/BRCA1_PARG.json",
+  "BRCA1_POLQ": "therapy/BRCA1_POLQ.json",
+  "BRCA1_USP1": "therapy/BRCA1_USP1.json",
+  "CCNE1__PKMYT1": "therapy/CCNE1__PKMYT1.json",
+  "CDH1_ROS1": "therapy/CDH1_ROS1.json",
+  "FBXW7__PKMYT1": "therapy/FBXW7__PKMYT1.json",
+  "KRAS_PLK1": "therapy/KRAS_PLK1.json",
+  "MSH6_WRN": "therapy/MSH6_WRN.json",
+  "MTAP_PRMT5": "therapy/MTAP_PRMT5.json"
+}

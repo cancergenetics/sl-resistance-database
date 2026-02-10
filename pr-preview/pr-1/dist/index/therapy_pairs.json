@@ -1,0 +1,90 @@
+[
+  {
+    "id": "ATM_ATR",
+    "display": "ATM + ATR",
+    "aliases": [
+      "ATM + ATR",
+      "ATM_ATR"
+    ]
+  },
+  {
+    "id": "BRCA1_ATR",
+    "display": "BRCA1 + ATR",
+    "aliases": [
+      "BRCA1 + ATR",
+      "BRCA1_ATR"
+    ]
+  },
+  {
+    "id": "BRCA1_PARG",
+    "display": "BRCA1 + PARG",
+    "aliases": [
+      "BRCA1 + PARG",
+      "BRCA1_PARG"
+    ]
+  },
+  {
+    "id": "BRCA1_POLQ",
+    "display": "BRCA1 + POLQ",
+    "aliases": [
+      "BRCA1 + POLQ",
+      "BRCA1_POLQ"
+    ]
+  },
+  {
+    "id": "BRCA1_USP1",
+    "display": "BRCA1 + USP1",
+    "aliases": [
+      "BRCA1 + USP1",
+      "BRCA1_USP1"
+    ]
+  },
+  {
+    "id": "CCNE1__PKMYT1",
+    "display": "CCNE1 _PKMYT1",
+    "aliases": [
+      "CCNE1 _PKMYT1",
+      "CCNE1__PKMYT1"
+    ]
+  },
+  {
+    "id": "CDH1_ROS1",
+    "display": "CDH1 + ROS1",
+    "aliases": [
+      "CDH1 + ROS1",
+      "CDH1_ROS1"
+    ]
+  },
+  {
+    "id": "FBXW7__PKMYT1",
+    "display": "FBXW7 _PKMYT1",
+    "aliases": [
+      "FBXW7 _PKMYT1",
+      "FBXW7__PKMYT1"
+    ]
+  },
+  {
+    "id": "KRAS_PLK1",
+    "display": "KRAS + PLK1",
+    "aliases": [
+      "KRAS + PLK1",
+      "KRAS_PLK1"
+    ]
+  },
+  {
+    "id": "MSH6_WRN",
+    "display": "MSH6 + WRN",
+    "aliases": [
+      "MSH6 + WRN",
+      "MSH6_WRN"
+    ]
+  },
+  {
+    "id": "MTAP_PRMT5",
+    "display": "MTAP + PRMT5",
+    "aliases": [
+      "MTAP + PRMT5",
+      "MTAP_PRMT5"
+    ]
+  }
+]
