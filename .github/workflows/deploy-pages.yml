@@ -1,0 +1,39 @@
+name: Deploy Pages Site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-main
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare static site bundle
+        run: |
+          rm -rf .site
+          mkdir -p .site
+          cp index.html styles.css app.js .site/
+          cp -R dist .site/dist
+          if [ -f CNAME ]; then cp CNAME .site/; fi
+
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: .site
+          clean: true
+          clean-exclude: |
+            pr-preview
+          force: false
