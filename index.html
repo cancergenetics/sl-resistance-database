@@ -29,8 +29,10 @@
 
     <section id="therapy-view" class="panel active" aria-live="polite">
       <div class="toolbar">
-        <label for="therapy-select">Select therapy pair</label>
-        <select id="therapy-select"></select>
+        <label for="biomarker-select">Select biomarker</label>
+        <select id="biomarker-select"></select>
+        <label for="target-select">Select target</label>
+        <select id="target-select"></select>
       </div>
       <p id="therapy-topn-note" class="topn-note"></p>
       <table>
@@ -38,7 +40,7 @@
           <tr>
             <th>Rank</th>
             <th>Gene</th>
-            <th>PredictionScore</th>
+            <th>Prediction Score</th>
           </tr>
         </thead>
         <tbody id="therapy-results"></tbody>
@@ -53,9 +55,9 @@
       <table>
         <thead>
           <tr>
-            <th>TherapyPair</th>
+            <th>Therapy Pair</th>
             <th>Rank</th>
-            <th>PredictionScore</th>
+            <th>Prediction Score</th>
           </tr>
         </thead>
         <tbody id="gene-results"></tbody>

@@ -1,0 +1,51 @@
+name: PR Preview
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - closed
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: pr-preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  deploy-preview:
+    if: github.event.action != 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare static site bundle
+        run: |
+          rm -rf .site
+          mkdir -p .site
+          cp index.html styles.css app.js .site/
+          cp -R dist .site/dist
+          if [ -f CNAME ]; then cp CNAME .site/; fi
+
+      - name: Publish PR preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: .site
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+
+  cleanup-preview:
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cleanup preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          action: remove
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
