@@ -19,6 +19,8 @@ const state = {
   geneBucketCache: new Map(),
   currentTherapyId: "",
   currentResults: [],
+  pairRenderedRows: [],
+  globalRenderedRows: [],
   lastGlobalGeneMatches: [],
 };
 
@@ -36,10 +38,12 @@ const el = {
   pairGeneSearch: document.getElementById("pair-gene-search"),
   pairGeneSuggestBox: document.getElementById("gene-suggest-box"),
   pairResults: document.getElementById("therapy-results"),
+  pairDownloadCsv: document.getElementById("pair-download-csv"),
 
   geneGlobalSearch: document.getElementById("gene-global-search"),
   geneGlobalSuggestBox: document.getElementById("gene-global-suggest-box"),
   geneGlobalResults: document.getElementById("gene-global-results"),
+  geneDownloadCsv: document.getElementById("gene-download-csv"),
 };
 
 function scoreDisplay(score) {
@@ -109,6 +113,43 @@ function renderTableEmpty(tbody, message, colSpan = 3) {
   tbody.appendChild(row);
 }
 
+function csvEscape(value) {
+  const text = String(value ?? "");
+  if (/[",\n]/.test(text)) {
+    return `"${text.replace(/"/g, "\"\"")}"`;
+  }
+  return text;
+}
+
+function downloadCsv(filename, headers, rows) {
+  const lines = [headers.map(csvEscape).join(",")];
+  for (const row of rows) {
+    lines.push(row.map(csvEscape).join(","));
+  }
+
+  const blob = new Blob([lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = filename;
+  document.body.appendChild(anchor);
+  anchor.click();
+  document.body.removeChild(anchor);
+  URL.revokeObjectURL(url);
+}
+
+function normalizeFilePart(value) {
+  return String(value || "")
+    .trim()
+    .replace(/\s+/g, "_")
+    .replace(/[^A-Za-z0-9_-]/g, "");
+}
+
+function rankDisplay(value) {
+  const rank = Number(value);
+  return Number.isFinite(rank) ? rank : "";
+}
+
 function setActiveTab(viewName) {
   const isPair = viewName === "pair";
   el.pairTab.classList.toggle("active", isPair);
@@ -142,6 +183,7 @@ function getPairsForBiomarker(biomarker) {
 function resetPairResults() {
   state.currentTherapyId = "";
   state.currentResults = [];
+  state.pairRenderedRows = [];
   el.pairGeneSearch.value = "";
   el.pairGeneSuggestBox.classList.add("hidden");
   el.pairGeneSuggestBox.innerHTML = "";
@@ -190,6 +232,11 @@ function getSelectedTherapyId() {
 }
 
 function renderPairRows(rows) {
+  state.pairRenderedRows = rows.map((item) => ({
+    gene: item.gene,
+    score: item.score,
+    rank: item.rank,
+  }));
   el.pairResults.innerHTML = "";
 
   if (!rows.length) {
@@ -296,6 +343,7 @@ async function loadPairResults(therapyId) {
   el.pairResultsWrap.classList.remove("hidden");
 
   if (!state.currentResults.length) {
+    state.pairRenderedRows = [];
     renderTableEmpty(el.pairResults, "No results for this therapy pair.");
     return;
   }
@@ -304,6 +352,7 @@ async function loadPairResults(therapyId) {
 }
 
 function resetGlobalGeneResults() {
+  state.globalRenderedRows = [];
   el.geneGlobalSearch.value = "";
   el.geneGlobalSuggestBox.classList.add("hidden");
   el.geneGlobalSuggestBox.innerHTML = "";
@@ -373,12 +422,14 @@ async function loadGeneBucket(bucketName) {
 async function loadGlobalGeneResults(geneSymbol) {
   const normalized = normalizeGene(geneSymbol);
   if (!normalized) {
+    state.globalRenderedRows = [];
     renderTableEmpty(el.geneGlobalResults, "Type a gene symbol to search all pairs.");
     return;
   }
 
   const bucketName = state.geneBuckets[normalized];
   if (!bucketName) {
+    state.globalRenderedRows = [];
     renderTableEmpty(el.geneGlobalResults, "Gene not found.");
     return;
   }
@@ -387,11 +438,17 @@ async function loadGlobalGeneResults(geneSymbol) {
   const entries = Array.isArray(bucket[normalized]) ? bucket[normalized] : [];
 
   if (!entries.length) {
+    state.globalRenderedRows = [];
     renderTableEmpty(el.geneGlobalResults, "No therapy pairs found for this gene.");
     return;
   }
 
   const ordered = [...entries].sort((a, b) => rankNumber(a.rank) - rankNumber(b.rank));
+  state.globalRenderedRows = ordered.map((item) => ({
+    therapyPair: formatTherapyDisplay(item.therapy_id, item.display),
+    score: item.score,
+    rank: item.rank,
+  }));
   el.geneGlobalResults.innerHTML = "";
 
   for (const item of ordered) {
@@ -491,6 +548,31 @@ async function init() {
         await loadGlobalGeneResults(first);
         el.geneGlobalSuggestBox.classList.add("hidden");
       }
+    });
+
+    el.pairDownloadCsv.addEventListener("click", () => {
+      if (!state.pairRenderedRows.length) {
+        return;
+      }
+      const pair = state.therapyPairs.find((item) => item.id === state.currentTherapyId);
+      const pairLabel = pair ? pair.display : "pair_results";
+      downloadCsv(
+        `biomarker_target_${normalizeFilePart(pairLabel)}.csv`,
+        ["Gene", "Prediction Score", "Prediction Rank"],
+        state.pairRenderedRows.map((row) => [row.gene, scoreDisplay(row.score), rankDisplay(row.rank)])
+      );
+    });
+
+    el.geneDownloadCsv.addEventListener("click", () => {
+      if (!state.globalRenderedRows.length) {
+        return;
+      }
+      const gene = normalizeGene(el.geneGlobalSearch.value) || "gene";
+      downloadCsv(
+        `gene_${normalizeFilePart(gene)}_all_pairs.csv`,
+        ["Therapy Pair", "Prediction Score", "Prediction Rank"],
+        state.globalRenderedRows.map((row) => [row.therapyPair, scoreDisplay(row.score), rankDisplay(row.rank)])
+      );
     });
 
     document.addEventListener("click", (event) => {
