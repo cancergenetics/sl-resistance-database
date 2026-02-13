@@ -320,7 +320,7 @@ function findGlobalGeneMatches(rawTerm, limit = 12) {
   const matches = [];
   for (const item of state.genes) {
     const symbol = String(item.symbol || "");
-    if (!symbol || !normalizeGene(symbol).includes(term)) {
+    if (!symbol || !normalizeGene(symbol).startsWith(term)) {
       continue;
     }
     matches.push(symbol);
