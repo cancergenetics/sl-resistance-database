@@ -13,20 +13,6 @@
       <p id="meta-info" class="meta">Resistance prediction scores of the all human coding genes in 11 prominent clinical trial SL pairs.</p>
     </header>
 
-    <section class="search-panel">
-      <label for="global-search">Global Search (therapy pair or gene)</label>
-      <div class="search-row">
-        <input id="global-search" type="text" placeholder="e.g. BRCA1 + ATR or BRCA1" autocomplete="off">
-        <button id="search-button" type="button">Search</button>
-      </div>
-      <p id="search-feedback" class="feedback"></p>
-    </section>
-
-    <section class="tabs" aria-label="Views">
-      <button id="therapy-tab" class="tab active" type="button" data-target="therapy-view">Therapy Pair</button>
-      <button id="gene-tab" class="tab" type="button" data-target="gene-view">Gene</button>
-    </section>
-
     <section id="therapy-view" class="panel active" aria-live="polite">
       <div class="toolbar">
         <label for="biomarker-select">Select biomarker</label>
@@ -34,34 +20,27 @@
         <label for="target-select">Select target</label>
         <select id="target-select"></select>
       </div>
-      <p id="therapy-topn-note" class="topn-note"></p>
-      <table>
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Gene</th>
-            <th>Prediction Score</th>
-          </tr>
-        </thead>
-        <tbody id="therapy-results"></tbody>
-      </table>
-    </section>
 
-    <section id="gene-view" class="panel" aria-live="polite">
-      <div class="toolbar">
-        <label for="gene-select">Select gene</label>
-        <select id="gene-select"></select>
+      <div id="pair-results-wrap" class="hidden">
+        <p id="therapy-topn-note" class="topn-note"></p>
+
+        <div class="toolbar">
+          <label for="pair-gene-search">Search gene in selected pair</label>
+          <input id="pair-gene-search" type="text" autocomplete="off" placeholder="Type first letters, e.g. ENSG000001">
+          <div id="gene-suggest-box" class="suggest-box hidden"></div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Gene</th>
+              <th>Prediction Score</th>
+              <th>Prediction Rank</th>
+            </tr>
+          </thead>
+          <tbody id="therapy-results"></tbody>
+        </table>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Therapy Pair</th>
-            <th>Rank</th>
-            <th>Prediction Score</th>
-          </tr>
-        </thead>
-        <tbody id="gene-results"></tbody>
-      </table>
     </section>
   </main>
 

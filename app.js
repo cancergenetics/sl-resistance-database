@@ -1,35 +1,24 @@
 const DATA_ROOT = "./dist";
+const DEFAULT_TOP_N = 100;
 
 const state = {
   meta: null,
-  aliasMaps: null,
   therapyPairs: [],
-  genes: [],
   therapyFiles: {},
-  geneBuckets: {},
-  geneBucketCache: new Map(),
+  currentTherapyId: "",
+  currentResults: [],
 };
 
 const el = {
   metaInfo: document.getElementById("meta-info"),
-  searchInput: document.getElementById("global-search"),
-  searchButton: document.getElementById("search-button"),
-  searchFeedback: document.getElementById("search-feedback"),
-  therapyTab: document.getElementById("therapy-tab"),
-  geneTab: document.getElementById("gene-tab"),
-  therapyView: document.getElementById("therapy-view"),
-  geneView: document.getElementById("gene-view"),
   biomarkerSelect: document.getElementById("biomarker-select"),
   targetSelect: document.getElementById("target-select"),
-  geneSelect: document.getElementById("gene-select"),
-  therapyResults: document.getElementById("therapy-results"),
-  geneResults: document.getElementById("gene-results"),
+  pairResultsWrap: document.getElementById("pair-results-wrap"),
   therapyTopnNote: document.getElementById("therapy-topn-note"),
+  pairGeneSearch: document.getElementById("pair-gene-search"),
+  geneSuggestBox: document.getElementById("gene-suggest-box"),
+  therapyResults: document.getElementById("therapy-results"),
 };
-
-function normalizeKey(value) {
-  return String(value || "").toUpperCase().replace(/[^A-Z0-9]/g, "");
-}
 
 function scoreDisplay(score) {
   const number = Number(score);
@@ -37,6 +26,18 @@ function scoreDisplay(score) {
     return "";
   }
   return number.toFixed(6).replace(/0+$/, "").replace(/\.$/, "");
+}
+
+function normalizeGene(value) {
+  return String(value || "").toUpperCase();
+}
+
+function rankNumber(value) {
+  const n = Number(value);
+  if (Number.isFinite(n)) {
+    return n;
+  }
+  return Number.MAX_SAFE_INTEGER;
 }
 
 async function fetchJson(path) {
@@ -47,20 +48,16 @@ async function fetchJson(path) {
   return response.json();
 }
 
-function setActiveTab(tabName) {
-  const isTherapy = tabName === "therapy";
-  el.therapyTab.classList.toggle("active", isTherapy);
-  el.geneTab.classList.toggle("active", !isTherapy);
-  el.therapyView.classList.toggle("active", isTherapy);
-  el.geneView.classList.toggle("active", !isTherapy);
-}
-
-function setFeedback(text) {
-  el.searchFeedback.innerHTML = text || "";
-}
-
-function fillSelect(selectEl, options, valueKey, labelKey) {
+function fillSelect(selectEl, options, valueKey, labelKey, placeholder) {
   selectEl.innerHTML = "";
+
+  if (placeholder) {
+    const placeholderOption = document.createElement("option");
+    placeholderOption.value = "";
+    placeholderOption.textContent = placeholder;
+    selectEl.appendChild(placeholderOption);
+  }
+
   for (const option of options) {
     const node = document.createElement("option");
     node.value = option[valueKey];
@@ -69,15 +66,15 @@ function fillSelect(selectEl, options, valueKey, labelKey) {
   }
 }
 
-function renderEmpty(tbody, message, colSpan) {
-  tbody.innerHTML = "";
+function renderEmpty(message) {
+  el.therapyResults.innerHTML = "";
   const row = document.createElement("tr");
   const cell = document.createElement("td");
   cell.className = "empty-row";
-  cell.colSpan = colSpan;
+  cell.colSpan = 3;
   cell.textContent = message;
   row.appendChild(cell);
-  tbody.appendChild(row);
+  el.therapyResults.appendChild(row);
 }
 
 function parseTherapyParts(therapyId) {
@@ -96,228 +93,189 @@ function formatTherapyDisplay(therapyId, fallbackDisplay = "") {
   return fallbackDisplay || therapyId;
 }
 
-function getTherapyById(therapyId) {
-  return state.therapyPairs.find((pair) => pair.id === therapyId);
-}
-
 function getPairsForBiomarker(biomarker) {
   return state.therapyPairs
     .filter((pair) => pair.biomarker === biomarker)
     .sort((a, b) => a.target.localeCompare(b.target));
 }
 
-function syncTargetSelect(biomarker, preferredTarget = "") {
-  const pairs = getPairsForBiomarker(biomarker);
-  const targetOptions = pairs.map((pair) => ({
-    value: pair.target,
-    label: pair.target,
-  }));
-  fillSelect(el.targetSelect, targetOptions, "value", "label");
-
-  if (pairs.length === 0) {
-    return null;
-  }
-
-  let selectedPair = pairs[0];
-  if (preferredTarget) {
-    const byTarget = pairs.find((pair) => pair.target === preferredTarget);
-    if (byTarget) {
-      selectedPair = byTarget;
-    }
-  } else if (el.targetSelect.value) {
-    const byCurrent = pairs.find((pair) => pair.target === el.targetSelect.value);
-    if (byCurrent) {
-      selectedPair = byCurrent;
-    }
-  }
-
-  el.targetSelect.value = selectedPair.target;
-  return selectedPair.id;
+function resetPairResults() {
+  state.currentTherapyId = "";
+  state.currentResults = [];
+  el.pairGeneSearch.value = "";
+  el.geneSuggestBox.classList.add("hidden");
+  el.geneSuggestBox.innerHTML = "";
+  el.pairResultsWrap.classList.add("hidden");
 }
 
-function initTherapySelectors() {
+function setupBiomarkerOptions() {
   const biomarkers = [...new Set(state.therapyPairs.map((pair) => pair.biomarker))]
     .filter(Boolean)
     .sort((a, b) => a.localeCompare(b));
 
-  const biomarkerOptions = biomarkers.map((item) => ({ value: item, label: item }));
-  fillSelect(el.biomarkerSelect, biomarkerOptions, "value", "label");
+  fillSelect(el.biomarkerSelect, biomarkers.map((item) => ({ value: item, label: item })), "value", "label", "Choose biomarker");
+  fillSelect(el.targetSelect, [], "value", "label", "Choose target");
+}
 
-  if (biomarkers.length === 0) {
-    el.targetSelect.innerHTML = "";
-    return null;
+function setupTargetOptions(biomarker) {
+  if (!biomarker) {
+    fillSelect(el.targetSelect, [], "value", "label", "Choose target");
+    return;
   }
 
-  el.biomarkerSelect.value = biomarkers[0];
-  return syncTargetSelect(biomarkers[0]);
+  const targets = getPairsForBiomarker(biomarker).map((pair) => ({
+    value: pair.target,
+    label: pair.target,
+  }));
+
+  fillSelect(el.targetSelect, targets, "value", "label", "Choose target");
 }
 
 function getSelectedTherapyId() {
   const biomarker = el.biomarkerSelect.value;
   const target = el.targetSelect.value;
+
+  if (!biomarker || !target) {
+    return "";
+  }
+
   const pair = state.therapyPairs.find((item) => item.biomarker === biomarker && item.target === target);
-  return pair ? pair.id : null;
+  return pair ? pair.id : "";
 }
 
-async function selectAndRenderTherapy(therapyId) {
-  const pair = getTherapyById(therapyId);
-  if (!pair) {
-    renderEmpty(el.therapyResults, "Therapy pair not found.", 3);
-    return;
-  }
-
-  el.biomarkerSelect.value = pair.biomarker;
-  syncTargetSelect(pair.biomarker, pair.target);
-  await renderTherapy(pair.id);
-}
-
-async function renderTherapy(therapyId) {
-  const file = state.therapyFiles[therapyId];
-  if (!file) {
-    renderEmpty(el.therapyResults, "Therapy pair not found.", 3);
-    return;
-  }
-
-  const data = await fetchJson(`${DATA_ROOT}/${file}`);
+function renderRows(rows) {
   el.therapyResults.innerHTML = "";
 
-  if (!data.results || data.results.length === 0) {
-    renderEmpty(el.therapyResults, "No results for this therapy pair.", 3);
+  if (!rows.length) {
+    renderEmpty("No genes found for this input.");
     return;
   }
 
-  for (const item of data.results) {
+  for (const item of rows) {
+    const rankValue = Number.isFinite(Number(item.rank)) ? Number(item.rank) : "";
     const row = document.createElement("tr");
-    row.innerHTML = `<td>${item.rank}</td><td>${item.gene}</td><td>${scoreDisplay(item.score)}</td>`;
+    row.innerHTML = `<td>${item.gene}</td><td>${scoreDisplay(item.score)}</td><td>${rankValue}</td>`;
     el.therapyResults.appendChild(row);
   }
 }
 
-async function loadGeneBucket(bucketName) {
-  if (state.geneBucketCache.has(bucketName)) {
-    return state.geneBucketCache.get(bucketName);
-  }
-
-  const payload = await fetchJson(`${DATA_ROOT}/gene/${bucketName}`);
-  state.geneBucketCache.set(bucketName, payload);
-  return payload;
-}
-
-async function renderGene(geneSymbol) {
-  const bucketName = state.geneBuckets[geneSymbol];
-  if (!bucketName) {
-    renderEmpty(el.geneResults, "Gene not found.", 3);
-    return;
-  }
-
-  const bucket = await loadGeneBucket(bucketName);
-  const entries = bucket[geneSymbol] || [];
-  el.geneResults.innerHTML = "";
-
-  if (entries.length === 0) {
-    renderEmpty(el.geneResults, "No therapy pairs found for this gene.", 3);
-    return;
-  }
-
-  for (const item of entries) {
-    const row = document.createElement("tr");
-    const therapyDisplay = formatTherapyDisplay(item.therapy_id, item.display);
-    row.innerHTML = `<td>${therapyDisplay}</td><td>${item.rank}</td><td>${scoreDisplay(item.score)}</td>`;
-    el.geneResults.appendChild(row);
-  }
-}
-
-function findSuggestions(rawTerm, maxItems = 5) {
-  const norm = normalizeKey(rawTerm);
-  if (!norm) {
+function getGeneSuggestions(query, limit = 12) {
+  const term = normalizeGene(query);
+  if (!term) {
     return [];
   }
 
-  const therapyMatches = state.therapyPairs
-    .filter((pair) => normalizeKey(pair.display).includes(norm))
-    .slice(0, maxItems)
-    .map((pair) => ({ type: "therapy", value: pair.id, label: pair.display }));
+  const unique = new Set();
+  const suggestions = [];
 
-  const geneMatches = state.genes
-    .filter((gene) => gene.symbol.includes(rawTerm.toUpperCase()))
-    .slice(0, maxItems)
-    .map((gene) => ({ type: "gene", value: gene.symbol, label: gene.symbol }));
+  for (const item of state.currentResults) {
+    const gene = String(item.gene || "");
+    if (!gene) {
+      continue;
+    }
+    if (!normalizeGene(gene).includes(term)) {
+      continue;
+    }
+    if (unique.has(gene)) {
+      continue;
+    }
 
-  return [...therapyMatches, ...geneMatches].slice(0, maxItems);
+    unique.add(gene);
+    suggestions.push(gene);
+
+    if (suggestions.length >= limit) {
+      break;
+    }
+  }
+
+  return suggestions;
 }
 
-async function resolveSearch() {
-  const term = el.searchInput.value.trim();
-  const normalized = normalizeKey(term);
-  if (!normalized) {
-    setFeedback("Type a therapy pair or a gene symbol.");
+function renderGeneSuggestions(genes) {
+  if (!genes.length) {
+    el.geneSuggestBox.classList.add("hidden");
+    el.geneSuggestBox.innerHTML = "";
     return;
   }
 
-  const therapyId = state.aliasMaps.therapy_pairs[normalized];
-  if (therapyId) {
-    await selectAndRenderTherapy(therapyId);
-    setActiveTab("therapy");
-    const pair = getTherapyById(therapyId);
-    const pairLabel = pair ? `Biomarker: ${pair.biomarker} | Target: ${pair.target}` : therapyId;
-    setFeedback(`Matched therapy pair: <strong>${pairLabel}</strong>`);
-    return;
-  }
+  el.geneSuggestBox.innerHTML = "";
+  const fragment = document.createDocumentFragment();
 
-  const gene = state.aliasMaps.genes[normalized];
-  if (gene) {
-    el.geneSelect.value = gene;
-    await renderGene(gene);
-    setActiveTab("gene");
-    setFeedback(`Matched gene: <strong>${gene}</strong>`);
-    return;
-  }
-
-  const suggestions = findSuggestions(term);
-  if (suggestions.length === 0) {
-    setFeedback("No match found.");
-    return;
-  }
-
-  const links = suggestions
-    .map((s, idx) => `<a href="#" class="suggestion-link" data-suggestion="${idx}">${s.type}: ${s.label}</a>`)
-    .join(" | ");
-  setFeedback(`No exact match. Try: ${links}`);
-
-  const feedbackNode = el.searchFeedback;
-  feedbackNode.querySelectorAll("a[data-suggestion]").forEach((anchor) => {
-    anchor.addEventListener("click", async (event) => {
-      event.preventDefault();
-      const item = suggestions[Number(anchor.dataset.suggestion)];
-      if (!item) {
-        return;
-      }
-      if (item.type === "therapy") {
-        await selectAndRenderTherapy(item.value);
-        setActiveTab("therapy");
-      } else {
-        el.geneSelect.value = item.value;
-        await renderGene(item.value);
-        setActiveTab("gene");
-      }
-      setFeedback("");
+  for (const gene of genes) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "suggest-item";
+    button.textContent = gene;
+    button.addEventListener("click", () => {
+      el.pairGeneSearch.value = gene;
+      applyGeneSearch(gene);
+      el.geneSuggestBox.classList.add("hidden");
     });
-  });
+    fragment.appendChild(button);
+  }
+
+  el.geneSuggestBox.appendChild(fragment);
+  el.geneSuggestBox.classList.remove("hidden");
+}
+
+function applyGeneSearch(rawTerm) {
+  if (!state.currentResults.length) {
+    renderEmpty("Select biomarker and target first.");
+    return;
+  }
+
+  const term = normalizeGene(rawTerm.trim());
+
+  if (!term) {
+    const topRows = state.currentResults.slice(0, DEFAULT_TOP_N);
+    renderRows(topRows);
+    return;
+  }
+
+  const matches = state.currentResults.filter((item) => normalizeGene(item.gene).includes(term));
+  renderRows(matches);
+}
+
+async function loadTherapyResults(therapyId) {
+  const file = state.therapyFiles[therapyId];
+  if (!file) {
+    resetPairResults();
+    renderEmpty("Therapy pair not found.");
+    return;
+  }
+
+  const payload = await fetchJson(`${DATA_ROOT}/${file}`);
+  const results = Array.isArray(payload.results) ? payload.results : [];
+
+  state.currentTherapyId = therapyId;
+  state.currentResults = [...results].sort((a, b) => rankNumber(a.rank) - rankNumber(b.rank));
+
+  const pair = state.therapyPairs.find((item) => item.id === therapyId);
+  const pairLabel = pair ? pair.display : therapyId;
+
+  el.therapyTopnNote.textContent = `Showing Top-${DEFAULT_TOP_N} genes for ${pairLabel}. Use gene search to find any gene in this pair.`;
+  el.pairGeneSearch.value = "";
+  el.geneSuggestBox.classList.add("hidden");
+  el.geneSuggestBox.innerHTML = "";
+  el.pairResultsWrap.classList.remove("hidden");
+
+  if (!state.currentResults.length) {
+    renderEmpty("No results for this therapy pair.");
+    return;
+  }
+
+  renderRows(state.currentResults.slice(0, DEFAULT_TOP_N));
 }
 
 async function init() {
   try {
-    const [meta, aliasMaps, therapyPairs, genes, therapyFiles, geneBuckets] = await Promise.all([
+    const [meta, therapyPairs, therapyFiles] = await Promise.all([
       fetchJson(`${DATA_ROOT}/index/meta.json`),
-      fetchJson(`${DATA_ROOT}/index/alias_maps.json`),
       fetchJson(`${DATA_ROOT}/index/therapy_pairs.json`),
-      fetchJson(`${DATA_ROOT}/index/genes.json`),
       fetchJson(`${DATA_ROOT}/index/therapy_files.json`),
-      fetchJson(`${DATA_ROOT}/index/gene_buckets.json`),
     ]);
 
     state.meta = meta;
-    state.aliasMaps = aliasMaps;
     state.therapyPairs = therapyPairs
       .map((pair) => {
         const { biomarker, target } = parseTherapyParts(pair.id);
@@ -329,67 +287,41 @@ async function init() {
         };
       })
       .sort((a, b) => a.display.localeCompare(b.display));
-    state.genes = genes;
     state.therapyFiles = therapyFiles;
-    state.geneBuckets = geneBuckets;
 
-    if (meta.top_n) {
-      el.therapyTopnNote.textContent = `Showing Top-${meta.top_n} only.`;
-    } else {
-      el.therapyTopnNote.textContent = "Showing all ranked genes.";
-    }
+    setupBiomarkerOptions();
+    resetPairResults();
 
-    const initialTherapyId = initTherapySelectors();
-    fillSelect(el.geneSelect, genes, "symbol", "symbol");
-
-    if (initialTherapyId) {
-      await renderTherapy(initialTherapyId);
-    } else {
-      renderEmpty(el.therapyResults, "No therapy pairs available.", 3);
-    }
-
-    if (genes.length > 0) {
-      await renderGene(genes[0].symbol);
-    } else {
-      renderEmpty(el.geneResults, "No genes available.", 3);
-    }
-
-    el.therapyTab.addEventListener("click", () => setActiveTab("therapy"));
-    el.geneTab.addEventListener("click", () => setActiveTab("gene"));
-
-    el.biomarkerSelect.addEventListener("change", async (event) => {
-      const therapyId = syncTargetSelect(event.target.value);
-      if (therapyId) {
-        await renderTherapy(therapyId);
-      } else {
-        renderEmpty(el.therapyResults, "Therapy pair not found.", 3);
-      }
+    el.biomarkerSelect.addEventListener("change", () => {
+      setupTargetOptions(el.biomarkerSelect.value);
+      resetPairResults();
     });
 
     el.targetSelect.addEventListener("change", async () => {
       const therapyId = getSelectedTherapyId();
-      if (therapyId) {
-        await renderTherapy(therapyId);
-      } else {
-        renderEmpty(el.therapyResults, "Therapy pair not found.", 3);
+      if (!therapyId) {
+        resetPairResults();
+        return;
       }
+      await loadTherapyResults(therapyId);
     });
 
-    el.geneSelect.addEventListener("change", async (event) => {
-      await renderGene(event.target.value);
+    el.pairGeneSearch.addEventListener("input", () => {
+      const term = el.pairGeneSearch.value.trim();
+      applyGeneSearch(term);
+      renderGeneSuggestions(getGeneSuggestions(term));
     });
 
-    el.searchButton.addEventListener("click", resolveSearch);
-    el.searchInput.addEventListener("keydown", async (event) => {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        await resolveSearch();
+    document.addEventListener("click", (event) => {
+      if (event.target === el.pairGeneSearch || el.geneSuggestBox.contains(event.target)) {
+        return;
       }
+      el.geneSuggestBox.classList.add("hidden");
     });
   } catch (error) {
     console.error(error);
-    renderEmpty(el.therapyResults, "Unable to load data files.", 3);
-    renderEmpty(el.geneResults, "Unable to load data files.", 3);
+    el.pairResultsWrap.classList.remove("hidden");
+    renderEmpty("Unable to load data files.");
   }
 }
 
