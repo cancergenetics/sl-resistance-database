@@ -94,6 +94,27 @@ body {
   margin-bottom: 16px;
 }
 
+.action-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.download-btn {
+  border: 1px solid var(--blue);
+  background: #ffffff;
+  color: var(--blue);
+  border-radius: 10px;
+  height: 40px;
+  padding: 0 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: rgba(0, 114, 178, 0.08);
+}
+
 label {
   display: inline-flex;
   align-items: center;
