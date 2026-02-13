@@ -148,6 +148,34 @@ a.suggestion-link {
   color: #0c695f;
 }
 
+.hidden {
+  display: none !important;
+}
+
+.suggest-box {
+  border: 1px solid #c8d8d8;
+  border-radius: 10px;
+  background: #ffffff;
+  margin-top: 0.2rem;
+  padding: 0.25rem;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.suggest-item {
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.45rem 0.55rem;
+  background: transparent;
+  color: var(--ink);
+}
+
+.suggest-item:hover {
+  background: #eef5f4;
+}
+
 @media (max-width: 700px) {
   .search-row {
     flex-direction: column;
