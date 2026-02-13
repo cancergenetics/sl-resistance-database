@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resistance Map for Clinical Trials</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <h1>Resistance Map for Clinical Trials</h1>
+      <p id="meta-info" class="meta">Resistance prediction scores for all human coding genes across 11 prominent clinical trial SL pairs.</p>
+    </header>
+
+    <section class="tabs" aria-label="Views">
+      <button id="pair-tab" class="tab active" type="button">Biomarker-Target</button>
+      <button id="gene-tab" class="tab" type="button">Gene</button>
+    </section>
+
+    <section id="pair-view" class="panel active" aria-live="polite">
+      <div class="toolbar">
+        <label for="biomarker-select">Select biomarker <span class="chip chip-biomarker">Biomarker</span></label>
+        <select id="biomarker-select"></select>
+        <label for="target-select">Select target <span class="chip chip-target">Target</span></label>
+        <select id="target-select"></select>
+      </div>
+
+      <div id="pair-results-wrap" class="hidden">
+        <p id="therapy-topn-note" class="topn-note"></p>
+
+        <div class="toolbar">
+          <label for="pair-gene-search">Search gene in selected pair</label>
+          <input id="pair-gene-search" type="text" autocomplete="off" placeholder="Type first letters, e.g. TP53">
+          <div id="gene-suggest-box" class="suggest-box hidden"></div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Gene</th>
+                <th>Prediction Score</th>
+                <th>Prediction Rank</th>
+              </tr>
+            </thead>
+            <tbody id="therapy-results"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="gene-view" class="panel" aria-live="polite">
+      <div class="toolbar">
+        <label for="gene-global-search">Search gene in all pairs</label>
+        <input id="gene-global-search" type="text" autocomplete="off" placeholder="Type first letters, e.g. TP53">
+        <div id="gene-global-suggest-box" class="suggest-box hidden"></div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Therapy Pair</th>
+              <th>Prediction Score</th>
+              <th>Prediction Rank</th>
+            </tr>
+          </thead>
+          <tbody id="gene-global-results"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

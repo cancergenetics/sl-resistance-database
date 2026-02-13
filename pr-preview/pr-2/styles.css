@@ -1,0 +1,264 @@
+:root {
+  --blue: #0072b2;
+  --magenta: #cc79a7;
+  --green: #009e73;
+  --orange: #e69f00;
+
+  --bg: #ffffff;
+  --card: #f8f9fa;
+  --border: #e5e7eb;
+  --text: #1f2933;
+  --muted: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.app-header {
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  letter-spacing: -0.01em;
+}
+
+.meta,
+.topn-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.tab {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 10px 24px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.tab:hover {
+  border-color: var(--blue);
+}
+
+.tab.active {
+  background: var(--blue);
+  color: #ffffff;
+  border-color: var(--blue);
+  box-shadow: 0 8px 20px rgba(0, 114, 178, 0.25);
+}
+
+.panel {
+  display: none;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.panel.active {
+  display: block;
+}
+
+.toolbar {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.chip-biomarker {
+  color: var(--magenta);
+  background: rgba(204, 121, 167, 0.14);
+  border: 1px solid rgba(204, 121, 167, 0.22);
+}
+
+.chip-target {
+  color: #9a6800;
+  background: rgba(230, 159, 0, 0.18);
+  border: 1px solid rgba(230, 159, 0, 0.24);
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+input,
+select {
+  width: 100%;
+  height: 44px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 0 12px;
+  color: var(--text);
+}
+
+input::placeholder {
+  color: var(--muted);
+}
+
+input:focus,
+select:focus,
+button:focus-visible,
+.tab:focus-visible,
+.suggest-item:focus-visible {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(0, 114, 178, 0.2);
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th,
+td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #ffffff;
+  color: var(--text);
+  font-size: 0.84rem;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+}
+
+tbody tr:nth-child(even) td {
+  background: #fbfcfd;
+}
+
+tbody tr:hover td {
+  background: rgba(0, 158, 115, 0.08);
+}
+
+th:nth-child(2),
+th:nth-child(3),
+td:nth-child(2),
+td:nth-child(3) {
+  text-align: right;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.empty-row {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.suggest-box {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #ffffff;
+  margin-top: 2px;
+  padding: 4px;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.suggest-item {
+  width: 100%;
+  text-align: left;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.suggest-item:hover {
+  background: rgba(0, 114, 178, 0.08);
+}
+
+@media (max-width: 768px) {
+  .app-shell {
+    padding: 16px 12px 24px;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+
+  .tabs {
+    gap: 8px;
+  }
+
+  .tab {
+    padding: 8px 16px;
+  }
+
+  th,
+  td {
+    padding: 10px 10px;
+  }
+}
