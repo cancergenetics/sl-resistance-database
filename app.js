@@ -1,4 +1,21 @@
-const DATA_ROOT = "./dist";
+function resolveDataRoot() {
+  const { origin, pathname } = window.location;
+  let basePath = pathname;
+
+  if (basePath.endsWith("/")) {
+    return `${origin}${basePath}dist`;
+  }
+
+  const lastSegment = basePath.split("/").pop() || "";
+  if (lastSegment.includes(".")) {
+    const folder = basePath.slice(0, basePath.lastIndexOf("/") + 1);
+    return `${origin}${folder}dist`;
+  }
+
+  return `${origin}${basePath}/dist`;
+}
+
+const DATA_ROOT = resolveDataRoot();
 const DEFAULT_TOP_N = 100;
 
 const state = {
@@ -41,11 +58,21 @@ function rankNumber(value) {
 }
 
 async function fetchJson(path) {
-  const response = await fetch(path);
-  if (!response.ok) {
-    throw new Error(`Failed to load ${path}`);
+  let lastError = null;
+
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    try {
+      const response = await fetch(path, { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`Failed to load ${path} (${response.status})`);
+      }
+      return response.json();
+    } catch (error) {
+      lastError = error;
+    }
   }
-  return response.json();
+
+  throw lastError || new Error(`Failed to load ${path}`);
 }
 
 function fillSelect(selectEl, options, valueKey, labelKey, placeholder) {
@@ -113,13 +140,13 @@ function setupBiomarkerOptions() {
     .filter(Boolean)
     .sort((a, b) => a.localeCompare(b));
 
-  fillSelect(el.biomarkerSelect, biomarkers.map((item) => ({ value: item, label: item })), "value", "label", "Choose biomarker");
-  fillSelect(el.targetSelect, [], "value", "label", "Choose target");
+  fillSelect(el.biomarkerSelect, biomarkers.map((item) => ({ value: item, label: item })), "value", "label", "Select");
+  fillSelect(el.targetSelect, [], "value", "label", "Select");
 }
 
 function setupTargetOptions(biomarker) {
   if (!biomarker) {
-    fillSelect(el.targetSelect, [], "value", "label", "Choose target");
+    fillSelect(el.targetSelect, [], "value", "label", "Select");
     return;
   }
 
@@ -128,7 +155,7 @@ function setupTargetOptions(biomarker) {
     label: pair.target,
   }));
 
-  fillSelect(el.targetSelect, targets, "value", "label", "Choose target");
+  fillSelect(el.targetSelect, targets, "value", "label", "Select");
 }
 
 function getSelectedTherapyId() {
