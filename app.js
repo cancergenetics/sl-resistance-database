@@ -433,7 +433,7 @@ function getPairGeneSuggestions(query, limit = 12) {
 
   for (const item of state.currentResults) {
     const gene = String(item.gene || "");
-    if (!gene || !normalizeGene(gene).includes(term) || unique.has(gene)) {
+    if (!gene || !normalizeGene(gene).startsWith(term) || unique.has(gene)) {
       continue;
     }
     unique.add(gene);
@@ -485,7 +485,7 @@ function applyPairGeneSearch(rawTerm) {
     return;
   }
 
-  const matches = state.currentResults.filter((item) => normalizeGene(item.gene).includes(term));
+  const matches = state.currentResults.filter((item) => normalizeGene(item.gene).startsWith(term));
   renderPairRows(matches);
 }
 
