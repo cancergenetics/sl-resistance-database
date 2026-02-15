@@ -49,7 +49,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .tab {
@@ -74,6 +74,51 @@ body {
   color: #ffffff;
   border-color: var(--blue);
   box-shadow: 0 8px 20px rgba(0, 114, 178, 0.25);
+}
+
+.about-control {
+  margin-bottom: 16px;
+}
+
+.about-btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--text);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.about-btn:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.about-panel {
+  margin-bottom: 24px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.about-panel h2 {
+  margin: 0 0 8px;
+  font-size: 1.04rem;
+}
+
+.about-panel p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+  max-width: 86ch;
+}
+
+.about-panel a {
+  color: var(--blue);
 }
 
 .panel {
@@ -171,7 +216,8 @@ input:focus,
 select:focus,
 button:focus-visible,
 .tab:focus-visible,
-.suggest-item:focus-visible {
+.suggest-item:focus-visible,
+.about-btn:focus-visible {
   outline: none;
   border-color: var(--blue);
   box-shadow: 0 0 0 3px rgba(0, 114, 178, 0.2);

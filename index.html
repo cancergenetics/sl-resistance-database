@@ -21,6 +21,32 @@
       <button id="gene-tab" class="tab" type="button">Gene</button>
     </section>
 
+    <section class="about-control">
+      <button
+        id="about-toggle"
+        class="about-btn"
+        type="button"
+        aria-expanded="false"
+        aria-controls="about-panel"
+      >
+        About
+      </button>
+    </section>
+
+    <section
+      id="about-panel"
+      class="about-panel hidden"
+      role="region"
+      aria-labelledby="about-title"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <h2 id="about-title">About the Resistance Prediction Scores</h2>
+      <p>
+        The prediction scores in the database were obtained with our random forest classifier to predict mechanisms of resistance to 11 synthetic lethal therapies currently under active clinical evaluation. These synthetic lethal candidates (biomarker-target pairs) were obtained from a recent review of clinical trials investigating synthetic lethal strategies (<a href="https://doi.org/10.1038/s41573-025-01273-7" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/s41573-025-01273-7</a>). Resistance scores estimate how likely loss of a given gene is to confer resistance to a specific synthetic lethal (SL) therapy. Higher scores indicate stronger predicted likelihood that disruption of that gene could restore tumour cell viability under treatment. These predictions are generated using an integrative machine learning model trained on genome-wide CRISPR resistance screens across multiple SL biomarker-target pairs. Because resistance genes are rare (&lt;1% of screened genes), scores should be interpreted comparatively: genes ranked highest within a given SL pair represent the strongest computational candidates for resistance mechanisms. This resource is intended to support hypothesis generation, experimental prioritization, and mutation interpretation in synthetic lethal therapeutic contexts.
+      </p>
+    </section>
+
     <section id="pair-view" class="panel active" aria-live="polite">
       <div class="toolbar">
         <label for="biomarker-select">Select biomarker <span class="chip chip-biomarker">Biomarker</span></label>

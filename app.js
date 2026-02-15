@@ -26,6 +26,8 @@ const state = {
 
 const el = {
   metaInfo: document.getElementById("meta-info"),
+  aboutToggle: document.getElementById("about-toggle"),
+  aboutPanel: document.getElementById("about-panel"),
   pairTab: document.getElementById("pair-tab"),
   geneTab: document.getElementById("gene-tab"),
   pairView: document.getElementById("pair-view"),
@@ -148,6 +150,15 @@ function normalizeFilePart(value) {
 function rankDisplay(value) {
   const rank = Number(value);
   return Number.isFinite(rank) ? rank : "";
+}
+
+function setAboutPanelOpen(open) {
+  el.aboutToggle.setAttribute("aria-expanded", String(open));
+  el.aboutPanel.setAttribute("aria-hidden", String(!open));
+  el.aboutPanel.classList.toggle("hidden", !open);
+  if (open) {
+    el.aboutPanel.focus();
+  }
 }
 
 function setActiveTab(viewName) {
@@ -489,9 +500,14 @@ async function init() {
     setupBiomarkerOptions();
     resetPairResults();
     resetGlobalGeneResults();
+    setAboutPanelOpen(false);
 
     el.pairTab.addEventListener("click", () => setActiveTab("pair"));
     el.geneTab.addEventListener("click", () => setActiveTab("gene"));
+    el.aboutToggle.addEventListener("click", () => {
+      const expanded = el.aboutToggle.getAttribute("aria-expanded") === "true";
+      setAboutPanelOpen(!expanded);
+    });
 
     el.biomarkerSelect.addEventListener("change", () => {
       setupTargetOptions(el.biomarkerSelect.value);
