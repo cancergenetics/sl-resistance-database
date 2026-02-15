@@ -1,13 +1,15 @@
-function resolveDataRoot() {
+function resolveBasePath() {
   const { origin, pathname } = window.location;
   const cleanPath = pathname.endsWith("/") ? pathname.slice(0, -1) : pathname;
   const base = cleanPath && !cleanPath.endsWith(".html")
     ? cleanPath
     : cleanPath.slice(0, cleanPath.lastIndexOf("/"));
-  return `${origin}${base}/dist`;
+  return `${origin}${base}`;
 }
 
-const DATA_ROOT = resolveDataRoot();
+const BASE_PATH = resolveBasePath();
+const DATA_ROOT = `${BASE_PATH}/dist`;
+const CLINICAL_TRIALS_PATH = `${BASE_PATH}/SL_clinical_trials.csv`;
 const DEFAULT_TOP_N = 100;
 
 const state = {
@@ -22,6 +24,7 @@ const state = {
   pairRenderedRows: [],
   globalRenderedRows: [],
   lastGlobalGeneMatches: [],
+  clinicalTrialMap: new Map(),
 };
 
 const el = {
@@ -36,6 +39,9 @@ const el = {
   biomarkerSelect: document.getElementById("biomarker-select"),
   targetSelect: document.getElementById("target-select"),
   pairResultsWrap: document.getElementById("pair-results-wrap"),
+  clinicalTrialInfo: document.getElementById("clinical-trial-info"),
+  clinicalTrialSummary: document.getElementById("clinical-trial-summary"),
+  clinicalTrialLines: document.getElementById("clinical-trial-lines"),
   pairTopnNote: document.getElementById("therapy-topn-note"),
   pairGeneSearch: document.getElementById("pair-gene-search"),
   pairGeneSuggestBox: document.getElementById("gene-suggest-box"),
@@ -84,6 +90,14 @@ async function fetchJson(path) {
   }
 
   throw lastError || new Error(`Failed to load ${path}`);
+}
+
+async function fetchText(path) {
+  const response = await fetch(path, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Failed to load ${path} (${response.status})`);
+  }
+  return response.text();
 }
 
 function fillSelect(selectEl, options, valueKey, labelKey, placeholder = "") {
@@ -152,6 +166,150 @@ function rankDisplay(value) {
   return Number.isFinite(rank) ? rank : "";
 }
 
+function parseDelimitedLine(line, delimiter) {
+  const cells = [];
+  let current = "";
+  let inQuotes = false;
+
+  for (let i = 0; i < line.length; i += 1) {
+    const char = line[i];
+    const nextChar = i + 1 < line.length ? line[i + 1] : "";
+
+    if (char === "\"") {
+      if (inQuotes && nextChar === "\"") {
+        current += "\"";
+        i += 1;
+      } else {
+        inQuotes = !inQuotes;
+      }
+      continue;
+    }
+
+    if (char === delimiter && !inQuotes) {
+      cells.push(current.trim());
+      current = "";
+      continue;
+    }
+
+    current += char;
+  }
+
+  cells.push(current.trim());
+  return cells;
+}
+
+function detectDelimiter(headerLine) {
+  const commaCount = (headerLine.match(/,/g) || []).length;
+  const tabCount = (headerLine.match(/\t/g) || []).length;
+  return tabCount > commaCount ? "\t" : ",";
+}
+
+function parseClinicalTrialCsv(text) {
+  const lines = String(text || "")
+    .split(/\r?\n/)
+    .filter((line) => line.trim().length > 0);
+
+  if (!lines.length) {
+    return [];
+  }
+
+  const delimiter = detectDelimiter(lines[0]);
+  const headers = parseDelimitedLine(lines[0], delimiter);
+  const rows = [];
+
+  for (let i = 1; i < lines.length; i += 1) {
+    const values = parseDelimitedLine(lines[i], delimiter);
+    const row = {};
+    for (let j = 0; j < headers.length; j += 1) {
+      row[headers[j]] = values[j] !== undefined ? values[j].trim() : "";
+    }
+    rows.push(row);
+  }
+
+  return rows;
+}
+
+function buildClinicalTrialMap(rows) {
+  const map = new Map();
+
+  for (const row of rows) {
+    const biomarker = String(row["Biomarker"] || "").trim();
+    const target = String(row["Target"] || "").trim();
+    if (!biomarker || !target) {
+      continue;
+    }
+
+    const key = `${biomarker}__${target}`;
+    if (!map.has(key)) {
+      map.set(key, {
+        biomarker,
+        biomarkerApprovedName: String(row["Biomarker approved name"] || "").trim(),
+        target,
+        targetApprovedName: String(row["Target approved name"] || "").trim(),
+        trials: [],
+      });
+    }
+
+    const entry = map.get(key);
+    if (!entry.biomarkerApprovedName) {
+      entry.biomarkerApprovedName = String(row["Biomarker approved name"] || "").trim();
+    }
+    if (!entry.targetApprovedName) {
+      entry.targetApprovedName = String(row["Target approved name"] || "").trim();
+    }
+
+    entry.trials.push({
+      nct: String(row["Clinical trial"] || "").trim(),
+      phase: String(row["Phase"] || "").trim(),
+      agent: String(row["Agent"] || "").trim(),
+      cohort: String(row["Cancer cohort"] || "").trim(),
+    });
+  }
+
+  return map;
+}
+
+function renderClinicalTrialInfo(pair) {
+  if (!pair) {
+    el.clinicalTrialInfo.classList.add("hidden");
+    el.clinicalTrialSummary.textContent = "";
+    el.clinicalTrialLines.innerHTML = "";
+    return;
+  }
+
+  const key = `${pair.biomarker}__${pair.target}`;
+  const entry = state.clinicalTrialMap.get(key);
+
+  el.clinicalTrialInfo.classList.remove("hidden");
+  el.clinicalTrialLines.innerHTML = "";
+
+  if (!entry) {
+    el.clinicalTrialSummary.textContent = "";
+    const emptyLine = document.createElement("p");
+    emptyLine.className = "trial-empty";
+    emptyLine.textContent = "No curated clinical trial entry found for this pair.";
+    el.clinicalTrialLines.appendChild(emptyLine);
+    return;
+  }
+
+  const biomarkerApproved = entry.biomarkerApprovedName || "N/A";
+  const targetApproved = entry.targetApprovedName || "N/A";
+  el.clinicalTrialSummary.textContent =
+    `Biomarker: ${entry.biomarker} - ${biomarkerApproved}, ` +
+    `Target: ${entry.target} - ${targetApproved}.`;
+
+  entry.trials.forEach((trial, index) => {
+    const line = document.createElement("p");
+    line.className = "trial-line";
+    const trialId = trial.nct || "N/A";
+    const agent = trial.agent || "N/A";
+    const phase = trial.phase ? `Phase ${trial.phase}` : "Phase N/A";
+    const cohort = trial.cohort || "unspecified cohort";
+    line.textContent = `Clinical Trial ${index + 1}: ${trialId} (${agent} - ${phase}) in ${cohort}.`;
+    el.clinicalTrialLines.appendChild(line);
+  });
+}
+
 function setAboutPanelOpen(open) {
   el.aboutToggle.setAttribute("aria-expanded", String(open));
   el.aboutPanel.setAttribute("aria-hidden", String(!open));
@@ -195,6 +353,7 @@ function resetPairResults() {
   state.currentTherapyId = "";
   state.currentResults = [];
   state.pairRenderedRows = [];
+  renderClinicalTrialInfo(null);
   el.pairGeneSearch.value = "";
   el.pairGeneSuggestBox.classList.add("hidden");
   el.pairGeneSuggestBox.innerHTML = "";
@@ -346,6 +505,7 @@ async function loadPairResults(therapyId) {
 
   const pair = state.therapyPairs.find((item) => item.id === therapyId);
   const pairLabel = pair ? pair.display : therapyId;
+  renderClinicalTrialInfo(pair || null);
 
   el.pairTopnNote.textContent = `Showing Top-${DEFAULT_TOP_N} genes for ${pairLabel}. Use gene search to find any gene in this pair.`;
   el.pairGeneSearch.value = "";
@@ -473,12 +633,13 @@ async function loadGlobalGeneResults(geneSymbol) {
 
 async function init() {
   try {
-    const [meta, therapyPairs, therapyFiles, genes, geneBuckets] = await Promise.all([
+    const [meta, therapyPairs, therapyFiles, genes, geneBuckets, clinicalTrialText] = await Promise.all([
       fetchJson(`${DATA_ROOT}/index/meta.json`),
       fetchJson(`${DATA_ROOT}/index/therapy_pairs.json`),
       fetchJson(`${DATA_ROOT}/index/therapy_files.json`),
       fetchJson(`${DATA_ROOT}/index/genes.json`),
       fetchJson(`${DATA_ROOT}/index/gene_buckets.json`),
+      fetchText(CLINICAL_TRIALS_PATH).catch(() => ""),
     ]);
 
     state.meta = meta;
@@ -496,6 +657,7 @@ async function init() {
     state.therapyFiles = therapyFiles;
     state.genes = Array.isArray(genes) ? genes : [];
     state.geneBuckets = geneBuckets || {};
+    state.clinicalTrialMap = buildClinicalTrialMap(parseClinicalTrialCsv(clinicalTrialText));
 
     setupBiomarkerOptions();
     resetPairResults();

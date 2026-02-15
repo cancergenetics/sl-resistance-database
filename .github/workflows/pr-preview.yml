@@ -28,7 +28,7 @@ jobs:
         run: |
           rm -rf .site
           mkdir -p .site
-          cp index.html styles.css app.js .site/
+          cp index.html styles.css app.js SL_clinical_trials.csv .site/
           cp -R dist .site/dist
           if [ -f CNAME ]; then cp CNAME .site/; fi
 
