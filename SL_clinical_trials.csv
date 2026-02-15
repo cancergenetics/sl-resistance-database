@@ -1,0 +1,12 @@
+Biomarker,Biomarker approved name,Target,Target approved name,Clinical trial,Phase,Agent,Cancer cohort
+CDH1,cadherin 1,ROS1,"ROS proto-oncogene 1, receptor tyrosine kinase",NCT04551495,II,Entrectinib,Invasive lobular breast cancer
+CDH1,cadherin 1,ROS1,"ROS proto-oncogene 1, receptor tyrosine kinase",NCT03620643,II,Crizotinib,"lobular breast cancer, gastric cancer, TNBC, CDH1-mutant solid tumour"
+ATM,ATM serine/threonine kinase,ATR,ATR checkpoint kinase,NCT04497116,"I, II",RP-3500,Advanced solid tumours
+ATM,ATM serine/threonine kinase,ATR,ATR checkpoint kinase,NCT02278250,I,M4344,Advanced solid tumours
+CCNE1,cyclin E1,PKMYT1,"protein kinase, membrane associated tyrosine/threonine 1",NCT04855656,I,RP-6306,Advanced solid tumours
+FBXW7,F-box and WD repeat domain containing 7,PKMYT1,"protein kinase, membrane associated tyrosine/threonine 1",NCT04855656,I,RP-6306,Advanced solid tumours
+MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT05732831,"I,II",TNG462,Advanced or metastatic MTAP-null solid tumours
+MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT05094336,"I,II",AMG 193,Advanced or metastatic MTAP-null solid tumours
+MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT05245500,"I,II",MRTX1719,Advanced or metastatic MTAP-null solid tumour
+MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT06130553,"I,II",AZD3470,Advanced or metastatic MTAP-null solid tumours
+KRAS,"KRAS proto-oncogene, GTPase",PLK1,polo like kinase 1,NCT03829410,"I,II",Onvansertib,KRAS-mutant metastatic colorectal cancer
