@@ -1,5 +1,5 @@
 :root {
-  --blue: #0072b2;
+  --blue: #2f6fb3;
   --magenta: #cc79a7;
   --green: #009e73;
   --orange: #e69f00;
@@ -7,7 +7,7 @@
   --bg: #ffffff;
   --card: #f8f9fa;
   --border: #e5e7eb;
-  --text: #1f2933;
+  --text: #1a1a1a;
   --muted: #6b7280;
 }
 
@@ -36,6 +36,9 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
+  background: #e8f1fb;
+  padding: 16px 24px;
+  border-radius: 12px;
 }
 
 .site-logo {
@@ -370,16 +373,6 @@ td:nth-child(3) {
     padding: 16px 12px 24px;
   }
 
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  .site-logo {
-    height: 42px;
-  }
-
   .panel {
     padding: 16px;
   }
@@ -395,5 +388,13 @@ td:nth-child(3) {
   th,
   td {
     padding: 10px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
 }
