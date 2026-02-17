@@ -32,6 +32,17 @@ body {
   margin-bottom: 24px;
 }
 
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.site-logo {
+  height: 48px;
+  width: auto;
+}
+
 .app-header h1 {
   margin: 0;
   font-size: clamp(1.6rem, 2.5vw, 2.2rem);
@@ -357,6 +368,16 @@ td:nth-child(3) {
 @media (max-width: 768px) {
   .app-shell {
     padding: 16px 12px 24px;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .site-logo {
+    height: 42px;
   }
 
   .panel {
