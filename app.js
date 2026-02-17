@@ -47,6 +47,7 @@ const el = {
   pairGeneSuggestBox: document.getElementById("gene-suggest-box"),
   pairResults: document.getElementById("therapy-results"),
   pairDownloadCsv: document.getElementById("pair-download-csv"),
+  pairDownloadAllCsv: document.getElementById("pair-download-all-csv"),
 
   geneGlobalSearch: document.getElementById("gene-global-search"),
   geneGlobalSuggestBox: document.getElementById("gene-global-suggest-box"),
@@ -229,12 +230,36 @@ function parseClinicalTrialCsv(text) {
   return rows;
 }
 
+function getRowField(row, keys) {
+  for (const key of keys) {
+    const value = row[key];
+    if (value !== undefined && String(value).trim()) {
+      return String(value).trim();
+    }
+  }
+
+  const normalizedEntries = Object.entries(row).map(([key, value]) => [
+    String(key || "").trim().toLowerCase(),
+    String(value || "").trim(),
+  ]);
+
+  for (const key of keys) {
+    const needle = String(key || "").trim().toLowerCase();
+    const match = normalizedEntries.find(([header, value]) => header === needle && value);
+    if (match) {
+      return match[1];
+    }
+  }
+
+  return "";
+}
+
 function buildClinicalTrialMap(rows) {
   const map = new Map();
 
   for (const row of rows) {
-    const biomarker = String(row["Biomarker"] || "").trim();
-    const target = String(row["Target"] || "").trim();
+    const biomarker = getRowField(row, ["Biomarker"]);
+    const target = getRowField(row, ["Target"]);
     if (!biomarker || !target) {
       continue;
     }
@@ -243,30 +268,52 @@ function buildClinicalTrialMap(rows) {
     if (!map.has(key)) {
       map.set(key, {
         biomarker,
-        biomarkerApprovedName: String(row["Biomarker approved name"] || "").trim(),
+        biomarkerApprovedName: getRowField(row, ["Biomarker approved name"]),
         target,
-        targetApprovedName: String(row["Target approved name"] || "").trim(),
+        targetApprovedName: getRowField(row, ["Target approved name"]),
         trials: [],
       });
     }
 
     const entry = map.get(key);
     if (!entry.biomarkerApprovedName) {
-      entry.biomarkerApprovedName = String(row["Biomarker approved name"] || "").trim();
+      entry.biomarkerApprovedName = getRowField(row, ["Biomarker approved name"]);
     }
     if (!entry.targetApprovedName) {
-      entry.targetApprovedName = String(row["Target approved name"] || "").trim();
+      entry.targetApprovedName = getRowField(row, ["Target approved name"]);
     }
 
     entry.trials.push({
-      nct: String(row["Clinical trial"] || "").trim(),
-      phase: String(row["Phase"] || "").trim(),
-      agent: String(row["Agent"] || "").trim(),
-      cohort: String(row["Cancer cohort"] || "").trim(),
+      nct: getRowField(row, ["Clinical trial"]),
+      phase: getRowField(row, ["Phase"]),
+      agent: getRowField(row, ["Agent", "agent"]),
+      cohort: getRowField(row, ["Cancer cohort"]),
+      clinicalTrialLink: getRowField(row, ["Clinical trial link", "clinical trial link"]),
+      agentLink: getRowField(row, ["ChEMBL drug link", "ChEMBL Drug link", "agent link", "Agent link"]),
     });
   }
 
   return map;
+}
+
+function safeHttpUrl(url) {
+  const value = String(url || "").trim();
+  return /^https?:\/\//i.test(value) ? value : "";
+}
+
+function appendLinkedText(parent, text, url) {
+  const link = safeHttpUrl(url);
+  if (!link) {
+    parent.appendChild(document.createTextNode(text));
+    return;
+  }
+
+  const anchor = document.createElement("a");
+  anchor.href = link;
+  anchor.target = "_blank";
+  anchor.rel = "noopener noreferrer";
+  anchor.textContent = text;
+  parent.appendChild(anchor);
 }
 
 function renderClinicalTrialInfo(pair) {
@@ -305,7 +352,11 @@ function renderClinicalTrialInfo(pair) {
     const agent = trial.agent || "N/A";
     const phase = trial.phase ? `Phase ${trial.phase}` : "Phase N/A";
     const cohort = trial.cohort || "unspecified cohort";
-    line.textContent = `Clinical Trial ${index + 1}: ${trialId} (${agent} - ${phase}) in ${cohort}.`;
+    line.appendChild(document.createTextNode(`Clinical Trial ${index + 1}: `));
+    appendLinkedText(line, trialId, trial.clinicalTrialLink);
+    line.appendChild(document.createTextNode(" ("));
+    appendLinkedText(line, agent, trial.agentLink);
+    line.appendChild(document.createTextNode(` - ${phase}) in ${cohort}.`));
     el.clinicalTrialLines.appendChild(line);
   });
 }
@@ -729,15 +780,29 @@ async function init() {
     });
 
     el.pairDownloadCsv.addEventListener("click", () => {
-      if (!state.pairRenderedRows.length) {
+      if (!state.currentResults.length) {
+        return;
+      }
+      const pair = state.therapyPairs.find((item) => item.id === state.currentTherapyId);
+      const pairLabel = pair ? pair.display : "pair_results";
+      const topRows = state.currentResults.slice(0, DEFAULT_TOP_N);
+      downloadCsv(
+        `biomarker_target_${normalizeFilePart(pairLabel)}_top100.csv`,
+        ["Gene", "Prediction Score", "Prediction Rank"],
+        topRows.map((row) => [row.gene, scoreDisplay(row.score), rankDisplay(row.rank)])
+      );
+    });
+
+    el.pairDownloadAllCsv.addEventListener("click", () => {
+      if (!state.currentResults.length) {
         return;
       }
       const pair = state.therapyPairs.find((item) => item.id === state.currentTherapyId);
       const pairLabel = pair ? pair.display : "pair_results";
       downloadCsv(
-        `biomarker_target_${normalizeFilePart(pairLabel)}.csv`,
+        `biomarker_target_${normalizeFilePart(pairLabel)}_all_genes.csv`,
         ["Gene", "Prediction Score", "Prediction Rank"],
-        state.pairRenderedRows.map((row) => [row.gene, scoreDisplay(row.score), rankDisplay(row.rank)])
+        state.currentResults.map((row) => [row.gene, scoreDisplay(row.score), rankDisplay(row.rank)])
       );
     });
 
