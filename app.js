@@ -289,7 +289,6 @@ function buildClinicalTrialMap(rows) {
       agent: getRowField(row, ["Agent", "agent"]),
       cohort: getRowField(row, ["Cancer cohort"]),
       clinicalTrialLink: getRowField(row, ["Clinical trial link", "clinical trial link"]),
-      agentLink: getRowField(row, ["ChEMBL drug link", "ChEMBL Drug link", "agent link", "Agent link"]),
     });
   }
 
@@ -354,9 +353,7 @@ function renderClinicalTrialInfo(pair) {
     const cohort = trial.cohort || "unspecified cohort";
     line.appendChild(document.createTextNode(`Clinical Trial ${index + 1}: `));
     appendLinkedText(line, trialId, trial.clinicalTrialLink);
-    line.appendChild(document.createTextNode(" ("));
-    appendLinkedText(line, agent, trial.agentLink);
-    line.appendChild(document.createTextNode(` - ${phase}) in ${cohort}.`));
+    line.appendChild(document.createTextNode(` (${agent} - ${phase}) in ${cohort}.`));
     el.clinicalTrialLines.appendChild(line);
   });
 }

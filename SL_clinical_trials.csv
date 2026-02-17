@@ -1,23 +1,23 @@
-Biomarker,Biomarker approved name,Target,Target approved name,Clinical trial,Phase,Agent,Cancer cohort,Clinical trial link,,ChEMBL drug link
-CDH1,cadherin 1,ROS1,"ROS proto-oncogene 1, receptor tyrosine kinase",NCT04551495,II,Entrectinib,Invasive lobular breast cancer,https://clinicaltrials.gov/study/NCT04551495,,https://www.ebi.ac.uk/chembl/search?q=Entrectinib
-CDH1,cadherin 1,ROS1,"ROS proto-oncogene 1, receptor tyrosine kinase",NCT03620643,II,Crizotinib,"Lobular breast cancer, gastric cancer, triple negative breast cancer, CDH1-mutant solid tumour",https://clinicaltrials.gov/study/NCT03620643,,https://www.ebi.ac.uk/chembl/search?q=Crizotinib
-ATM,ATM serine/threonine kinase,ATR,ATR checkpoint kinase,NCT04497116,"I, II",RP-3500,Advanced solid tumours,https://clinicaltrials.gov/study/NCT04497116,,https://www.ebi.ac.uk/chembl/search?q=RP-3500
-ATM,ATM serine/threonine kinase,ATR,ATR checkpoint kinase,NCT02278250,I,M4344,Advanced solid tumours,https://clinicaltrials.gov/study/NCT02278250,,https://www.ebi.ac.uk/chembl/search?q=M4344
-CCNE1,cyclin E1,PKMYT1,"protein kinase, membrane associated tyrosine/threonine 1",NCT04855656,I,RP-6306,Advanced solid tumours,https://clinicaltrials.gov/study/NCT04855656,,https://www.ebi.ac.uk/chembl/search?q=ATRN-119
-FBXW7,F-box and WD repeat domain containing 7,PKMYT1,"protein kinase, membrane associated tyrosine/threonine 1",NCT04855656,I,RP-6306,Advanced solid tumours,https://clinicaltrials.gov/study/NCT04855656,,https://www.ebi.ac.uk/chembl/search?q=ART0380
-MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT05732831,"I,II",TNG462,Advanced or metastatic MTAP-null solid tumours,https://clinicaltrials.gov/study/NCT05732831,,https://www.ebi.ac.uk/chembl/search?q=RP-6306
-MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT05094336,"I,II",AMG 193,Advanced or metastatic MTAP-null solid tumours,https://clinicaltrials.gov/study/NCT05094336,,https://www.ebi.ac.uk/chembl/search?q=RP-6306
-MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT05245500,"I,II",MRTX1719,Advanced or metastatic MTAP-null solid tumour,https://clinicaltrials.gov/study/NCT05245500,,https://www.ebi.ac.uk/chembl/search?q=TNG462
-MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT06130553,"I,II",AZD3470,Advanced or metastatic MTAP-null solid tumours,https://clinicaltrials.gov/study/NCT06130553,,https://www.ebi.ac.uk/chembl/search?q=AMG%20193
-KRAS,"KRAS proto-oncogene, GTPase",PLK1,polo like kinase 1,NCT03829410,"I,II",Onvansertib,KRAS-mutant metastatic colorectal cancer,https://clinicaltrials.gov/study/NCT03829410,,https://www.ebi.ac.uk/chembl/search?q=MRTX1719
-BRCA1,BRCA1 DNA repair associated,ATR,ATR checkpoint kinase,,"I, II",ATRN-119,Advanced solid tumours with DDR mutations,https://clinicaltrials.gov/study/NCT04905914,,https://www.ebi.ac.uk/chembl/search?q=AZD3470
-BRCA1,BRCA1 DNA repair associated,ATR,ATR checkpoint kinase,,"I, II",ART0380,Advanced solid tumours with DDR mutations,https://clinicaltrials.gov/study/NCT04657068,,https://www.ebi.ac.uk/chembl/search?q=IDE-161
-BRCA1,BRCA1 DNA repair associated,PARG,poly(ADP-ribose) glycohydrolase,NCT05787587,I,IDE-161,Advanced solid tumours,https://clinicaltrials.gov/study/NCT05787587,,https://www.ebi.ac.uk/chembl/search?q=RO7623066
-BRCA1,BRCA1 DNA repair associated,USP1,ubiquitin specific peptidase 1,NCT05240898,I,RO7623066,Advanced solid tumours,https://clinicaltrials.gov/study/NCT05240898,,https://www.ebi.ac.uk/chembl/search?q=TNG348
-BRCA1,BRCA1 DNA repair associated,USP1,ubiquitin specific peptidase 1,NCT06065059,"I, II",TNG348,BRCA1/2 mutant or HRD+ solid tumours,https://clinicaltrials.gov/study/NCT06065059,,https://www.ebi.ac.uk/chembl/search?q=Novobiocin
-BRCA1,BRCA1 DNA repair associated,POLQ,DNA polymerase theta,NCT05687110,I,Novobiocin,Metastatic or unresectable solid tumours with DDR mutations,https://clinicaltrials.gov/study/NCT05687110,,https://www.ebi.ac.uk/chembl/search?q=GSK4524101
-BRCA1,BRCA1 DNA repair associated,POLQ,DNA polymerase theta,NCT06077877,"I, II",GSK4524101,Advanced or metastatic solid tumours,https://clinicaltrials.gov/study/NCT06077877,,https://www.ebi.ac.uk/chembl/search?q=ART4215
-BRCA1,BRCA1 DNA repair associated,POLQ,DNA polymerase theta,NCT04991480,I,ART4215,Advanced or metastatic solid tumours,https://clinicaltrials.gov/study/NCT04991480,,https://www.ebi.ac.uk/chembl/search?q=ART4215
-BRCA1,BRCA1 DNA repair associated,POLQ,DNA polymerase theta,NCT05898399,"I, II",ART4215,Advanced or metastatic solid tumours with DDR mutations,https://clinicaltrials.gov/study/NCT05898399,,https://www.ebi.ac.uk/chembl/search?q=MOMA-313
-BRCA1,BRCA1 DNA repair associated,POLQ,DNA polymerase theta,NCT06545942,I,MOMA-313,HRD+ advanced or metastatic solid tumours,https://clinicaltrials.gov/study/NCT06545942,,https://www.ebi.ac.uk/chembl/search?q=ART6043
-BRCA1,BRCA1 DNA repair associated,POLQ,DNA polymerase theta,NCT05898399,"I, II",ART6043,Advanced or metastatic solid tumours with DDR mutations,https://clinicaltrials.gov/study/NCT05898399,,https://www.ebi.ac.uk/chembl/search?q=Onvansertib
+Biomarker,Biomarker approved name,Target,Target approved name,Clinical trial,Phase,Agent,Cancer cohort,Clinical trial link
+CDH1,cadherin 1,ROS1,"ROS proto-oncogene 1, receptor tyrosine kinase",NCT04551495,II,Entrectinib,Invasive lobular breast cancer,https://clinicaltrials.gov/study/NCT04551495
+CDH1,cadherin 1,ROS1,"ROS proto-oncogene 1, receptor tyrosine kinase",NCT03620643,II,Crizotinib,"Lobular breast cancer, gastric cancer, triple negative breast cancer, CDH1-mutant solid tumour",https://clinicaltrials.gov/study/NCT03620643
+ATM,ATM serine/threonine kinase,ATR,ATR checkpoint kinase,NCT04497116,"I, II",RP-3500,Advanced solid tumours,https://clinicaltrials.gov/study/NCT04497116
+ATM,ATM serine/threonine kinase,ATR,ATR checkpoint kinase,NCT02278250,I,M4344,Advanced solid tumours,https://clinicaltrials.gov/study/NCT02278250
+CCNE1,cyclin E1,PKMYT1,"protein kinase, membrane associated tyrosine/threonine 1",NCT04855656,I,RP-6306,Advanced solid tumours,https://clinicaltrials.gov/study/NCT04855656
+FBXW7,F-box and WD repeat domain containing 7,PKMYT1,"protein kinase, membrane associated tyrosine/threonine 1",NCT04855656,I,RP-6306,Advanced solid tumours,https://clinicaltrials.gov/study/NCT04855656
+MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT05732831,"I,II",TNG462,Advanced or metastatic MTAP-null solid tumours,https://clinicaltrials.gov/study/NCT05732831
+MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT05094336,"I,II",AMG 193,Advanced or metastatic MTAP-null solid tumours,https://clinicaltrials.gov/study/NCT05094336
+MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT05245500,"I,II",MRTX1719,Advanced or metastatic MTAP-null solid tumour,https://clinicaltrials.gov/study/NCT05245500
+MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT06130553,"I,II",AZD3470,Advanced or metastatic MTAP-null solid tumours,https://clinicaltrials.gov/study/NCT06130553
+KRAS,"KRAS proto-oncogene, GTPase",PLK1,polo like kinase 1,NCT03829410,"I,II",Onvansertib,KRAS-mutant metastatic colorectal cancer,https://clinicaltrials.gov/study/NCT03829410
+BRCA1,BRCA1 DNA repair associated,ATR,ATR checkpoint kinase,NCT04905914,"I, II",ATRN-119,Advanced solid tumours with DDR mutations,https://clinicaltrials.gov/study/NCT04905914
+BRCA1,BRCA1 DNA repair associated,ATR,ATR checkpoint kinase,NCT04657068,"I, II",ART0380,Advanced solid tumours with DDR mutations,https://clinicaltrials.gov/study/NCT04657068
+BRCA1,BRCA1 DNA repair associated,PARG,poly(ADP-ribose) glycohydrolase,NCT05787587,I,IDE-161,Advanced solid tumours,https://clinicaltrials.gov/study/NCT05787587
+BRCA1,BRCA1 DNA repair associated,USP1,ubiquitin specific peptidase 1,NCT05240898,I,RO7623066,Advanced solid tumours,https://clinicaltrials.gov/study/NCT05240898
+BRCA1,BRCA1 DNA repair associated,USP1,ubiquitin specific peptidase 1,NCT06065059,"I, II",TNG348,BRCA1/2 mutant or HRD+ solid tumours,https://clinicaltrials.gov/study/NCT06065059
+BRCA1,BRCA1 DNA repair associated,POLQ,DNA polymerase theta,NCT05687110,I,Novobiocin,Metastatic or unresectable solid tumours with DDR mutations,https://clinicaltrials.gov/study/NCT05687110
+BRCA1,BRCA1 DNA repair associated,POLQ,DNA polymerase theta,NCT06077877,"I, II",GSK4524101,Advanced or metastatic solid tumours,https://clinicaltrials.gov/study/NCT06077877
+BRCA1,BRCA1 DNA repair associated,POLQ,DNA polymerase theta,NCT04991480,I,ART4215,Advanced or metastatic solid tumours,https://clinicaltrials.gov/study/NCT04991480
+BRCA1,BRCA1 DNA repair associated,POLQ,DNA polymerase theta,NCT05898399,"I, II",ART4215,Advanced or metastatic solid tumours with DDR mutations,https://clinicaltrials.gov/study/NCT05898399
+BRCA1,BRCA1 DNA repair associated,POLQ,DNA polymerase theta,NCT06545942,I,MOMA-313,HRD+ advanced or metastatic solid tumours,https://clinicaltrials.gov/study/NCT06545942
+BRCA1,BRCA1 DNA repair associated,POLQ,DNA polymerase theta,NCT05898399,"I, II",ART6043,Advanced or metastatic solid tumours with DDR mutations,https://clinicaltrials.gov/study/NCT05898399
