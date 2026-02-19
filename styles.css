@@ -41,11 +41,6 @@ body {
   border-radius: 12px;
 }
 
-.site-logo {
-  height: 48px;
-  width: auto;
-}
-
 .app-header h1 {
   margin: 0;
   font-size: clamp(1.6rem, 2.5vw, 2.2rem);
