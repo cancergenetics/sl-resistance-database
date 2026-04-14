@@ -1,14 +1,21 @@
+/* Previous palette for quick restore:
+   --blue: #2f6fb3; --bg: #ffffff; --card: #f8f9fa; --border: #e5e7eb;
+   --text: #1a1a1a; --muted: #6b7280; .site-header background: #e8f1fb.
+*/
 :root {
-  --blue: #2f6fb3;
+  --blue: #285d99;
   --magenta: #cc79a7;
   --green: #009e73;
   --orange: #e69f00;
 
-  --bg: #ffffff;
-  --card: #f8f9fa;
-  --border: #e5e7eb;
-  --text: #1a1a1a;
-  --muted: #6b7280;
+  --bg: #e7edf4;
+  --card: #f2f6fa;
+  --surface: #fbfdff;
+  --surface-soft: #f5f8fb;
+  --header-bg: #dbe7f5;
+  --border: #c9d4e2;
+  --text: #162235;
+  --muted: #5b687b;
 }
 
 * {
@@ -36,7 +43,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #e8f1fb;
+  background: var(--header-bg);
   padding: 16px 24px;
   border-radius: 12px;
 }
@@ -88,7 +95,7 @@ body {
   background: var(--blue);
   color: #ffffff;
   border-color: var(--blue);
-  box-shadow: 0 8px 20px rgba(0, 114, 178, 0.25);
+  box-shadow: 0 8px 20px rgba(40, 93, 153, 0.25);
 }
 
 .about-control {
@@ -100,7 +107,7 @@ body {
 .about-btn {
   appearance: none;
   border: 1px solid var(--border);
-  background: #ffffff;
+  background: var(--surface);
   color: var(--text);
   border-radius: 10px;
   padding: 6px 10px;
@@ -118,7 +125,7 @@ body {
 
 .about-panel {
   margin-bottom: 24px;
-  background: #ffffff;
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 16px;
@@ -158,7 +165,7 @@ body {
 
 .trial-info {
   border: 1px solid var(--border);
-  background: #ffffff;
+  background: var(--surface);
   border-radius: 12px;
   padding: 12px 14px;
   margin-bottom: 12px;
@@ -205,7 +212,7 @@ body {
 
 .download-btn {
   border: 1px solid var(--blue);
-  background: #ffffff;
+  background: var(--surface);
   color: var(--blue);
   border-radius: 10px;
   height: 40px;
@@ -215,7 +222,7 @@ body {
 }
 
 .download-btn:hover {
-  background: rgba(0, 114, 178, 0.08);
+  background: rgba(40, 93, 153, 0.08);
 }
 
 label {
@@ -260,7 +267,7 @@ select {
   width: 100%;
   height: 44px;
   border: 1px solid var(--border);
-  background: #ffffff;
+  background: var(--surface);
   border-radius: 10px;
   padding: 0 12px;
   color: var(--text);
@@ -278,7 +285,7 @@ button:focus-visible,
 .about-btn:focus-visible {
   outline: none;
   border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(0, 114, 178, 0.2);
+  box-shadow: 0 0 0 3px rgba(40, 93, 153, 0.2);
 }
 
 .table-wrap {
@@ -286,7 +293,7 @@ button:focus-visible,
   overflow-x: auto;
   border: 1px solid var(--border);
   border-radius: 12px;
-  background: #ffffff;
+  background: var(--surface);
 }
 
 table {
@@ -307,7 +314,7 @@ thead th {
   position: sticky;
   top: 0;
   z-index: 1;
-  background: #ffffff;
+  background: var(--surface);
   color: var(--text);
   font-size: 0.84rem;
   letter-spacing: 0.01em;
@@ -315,7 +322,7 @@ thead th {
 }
 
 tbody tr:nth-child(even) td {
-  background: #fbfcfd;
+  background: var(--surface-soft);
 }
 
 tbody tr:hover td {
@@ -343,7 +350,7 @@ td:nth-child(3) {
 .suggest-box {
   border: 1px solid var(--border);
   border-radius: 10px;
-  background: #ffffff;
+  background: var(--surface);
   margin-top: 2px;
   padding: 4px;
   max-height: 240px;
@@ -362,7 +369,7 @@ td:nth-child(3) {
 }
 
 .suggest-item:hover {
-  background: rgba(0, 114, 178, 0.08);
+  background: rgba(40, 93, 153, 0.08);
 }
 
 @media (max-width: 768px) {
