@@ -10,6 +10,7 @@ import hashlib
 import json
 import math
 import re
+import shutil
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -312,9 +313,12 @@ def build_outputs(
     therapy_dir = out_dir / "therapy"
     gene_dir = out_dir / "gene"
 
-    index_dir.mkdir(parents=True, exist_ok=True)
-    therapy_dir.mkdir(parents=True, exist_ok=True)
-    gene_dir.mkdir(parents=True, exist_ok=True)
+    # Rebuild generated assets from scratch so renamed or removed therapy files
+    # do not linger in the deployed static bundle.
+    for path in (index_dir, therapy_dir, gene_dir):
+        if path.exists():
+            shutil.rmtree(path)
+        path.mkdir(parents=True, exist_ok=True)
 
     alias_maps = {"therapy_pairs": {}, "genes": {}}
     therapy_pairs = []
