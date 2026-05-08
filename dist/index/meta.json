@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-14T10:38:42.198059+00:00",
+  "generated_at_utc": "2026-05-08T10:53:59.824780+00:00",
   "input_pattern": "PredictingSLResistanceFeatures*_pred.csv",
   "input_files": [
     "PredictingSLResistanceFeatures_ATM_ATR_main_withfeatures_pred.csv",
@@ -7,7 +7,6 @@
     "PredictingSLResistanceFeatures_BRCA1_PARG_main_withfeatures_pred.csv",
     "PredictingSLResistanceFeatures_BRCA1_POLQ_main_withfeatures_pred.csv",
     "PredictingSLResistanceFeatures_BRCA1_USP1_main_withfeatures_pred.csv",
-    "PredictingSLResistanceFeatures_CCNE1_PKMYT1_main_withfeatures_pred.csv",
     "PredictingSLResistanceFeatures_CDH1_ROS1_main_withfeatures_pred.csv",
     "PredictingSLResistanceFeatures_FBXW7_PKMYT1_main_withfeatures_pred.csv",
     "PredictingSLResistanceFeatures_KRAS_PLK1_main_withfeatures_pred.csv",
@@ -15,8 +14,8 @@
     "PredictingSLResistanceFeatures_MTAP_PRMT5_main_withfeatures_pred.csv"
   ],
   "top_n": null,
-  "num_therapies": 11,
+  "num_therapies": 10,
   "num_genes": 19129,
-  "source_rows": 210397,
+  "source_rows": 191270,
   "score_direction": "higher_is_better"
 }
