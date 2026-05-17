@@ -691,6 +691,13 @@ async function init() {
     ]);
 
     state.meta = meta;
+    if (el.metaInfo && Number.isFinite(Number(state.meta?.num_therapies))) {
+      const numTherapies = Number(state.meta.num_therapies);
+      const pairLabel = numTherapies === 1 ? "pair" : "pairs";
+      el.metaInfo.textContent =
+        `Resistance prediction scores for all human coding genes across ` +
+        `${numTherapies} prominent clinical trial SL ${pairLabel}.`;
+    }
     state.therapyPairs = therapyPairs
       .map((pair) => {
         const { biomarker, target } = parseTherapyParts(pair.id);
