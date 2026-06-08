@@ -4,7 +4,7 @@
 
 Interactive explorer for synthetic lethality (SL) resistance predictions.
 
-**Live:** https://metinyazar.github.io/sl-resistance-database/
+**Live:** https://cancergenetics.github.io/sl-resistance-database/
 
 ## Data Structure
 
