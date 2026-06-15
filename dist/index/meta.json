@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-10T19:13:42.421749+00:00",
+  "generated_at_utc": "2026-06-15T18:40:48.795438+00:00",
   "input_pattern": "PredictingSLResistanceFeatures*_pred.csv",
   "input_files": [
     "PredictingSLResistanceFeatures_ATM_ATR_main_withfeatures_pred.csv",
@@ -16,6 +16,6 @@
   "top_n": null,
   "num_therapies": 10,
   "num_genes": 19129,
-  "source_rows": 191270,
+  "source_rows": 191290,
   "score_direction": "higher_is_better"
 }
