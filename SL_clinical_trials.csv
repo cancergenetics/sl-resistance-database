@@ -3,6 +3,7 @@ CDH1,cadherin 1,ROS1,"ROS proto-oncogene 1, receptor tyrosine kinase",NCT0455149
 CDH1,cadherin 1,ROS1,"ROS proto-oncogene 1, receptor tyrosine kinase",NCT03620643,II,Crizotinib,"Lobular breast cancer, gastric cancer, triple negative breast cancer, CDH1-mutant solid tumour",https://clinicaltrials.gov/study/NCT03620643
 ATM,ATM serine/threonine kinase,ATR,ATR checkpoint kinase,NCT04497116,"I, II",RP-3500,Advanced solid tumours,https://clinicaltrials.gov/study/NCT04497116
 ATM,ATM serine/threonine kinase,ATR,ATR checkpoint kinase,NCT02278250,I,M4344,Advanced solid tumours,https://clinicaltrials.gov/study/NCT02278250
+ATM,ATM serine/threonine kinase,ATR,ATR checkpoint kinase,NCT04657068,"I, II",ART0380,Advanced solid tumours with DDR mutations,https://clinicaltrials.gov/study/NCT04657068
 FBXW7,F-box and WD repeat domain containing 7,PKMYT1,"protein kinase, membrane associated tyrosine/threonine 1",NCT04855656,I,RP-6306,Advanced solid tumours,https://clinicaltrials.gov/study/NCT04855656
 MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT05732831,"I,II",TNG462,Advanced or metastatic MTAP-null solid tumours,https://clinicaltrials.gov/study/NCT05732831
 MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT05094336,"I,II",AMG 193,Advanced or metastatic MTAP-null solid tumours,https://clinicaltrials.gov/study/NCT05094336
@@ -10,7 +11,6 @@ MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 
 MTAP,methylthioadenosine phosphorylase,PRMT5,protein arginine methyltransferase 5,NCT06130553,"I,II",AZD3470,Advanced or metastatic MTAP-null solid tumours,https://clinicaltrials.gov/study/NCT06130553
 KRAS,"KRAS proto-oncogene, GTPase",PLK1,polo like kinase 1,NCT03829410,"I,II",Onvansertib,KRAS-mutant metastatic colorectal cancer,https://clinicaltrials.gov/study/NCT03829410
 BRCA1,BRCA1 DNA repair associated,ATR,ATR checkpoint kinase,NCT04905914,"I, II",ATRN-119,Advanced solid tumours with DDR mutations,https://clinicaltrials.gov/study/NCT04905914
-BRCA1,BRCA1 DNA repair associated,ATR,ATR checkpoint kinase,NCT04657068,"I, II",ART0380,Advanced solid tumours with DDR mutations,https://clinicaltrials.gov/study/NCT04657068
 BRCA1,BRCA1 DNA repair associated,PARG,poly(ADP-ribose) glycohydrolase,NCT05787587,I,IDE-161,Advanced solid tumours,https://clinicaltrials.gov/study/NCT05787587
 BRCA1,BRCA1 DNA repair associated,USP1,ubiquitin specific peptidase 1,NCT05240898,I,RO7623066,Advanced solid tumours,https://clinicaltrials.gov/study/NCT05240898
 BRCA1,BRCA1 DNA repair associated,USP1,ubiquitin specific peptidase 1,NCT06065059,"I, II",TNG348,BRCA1/2 mutant or HRD+ solid tumours,https://clinicaltrials.gov/study/NCT06065059
